@@ -2,10 +2,9 @@ from framework.button import Button
 from framework.util.util import LEFT_CLICK
 
 class CounterButton(Button):
-    def __init__(self, initial, max, *args, **kwargs):
+    def __init__(self, max, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self._initial = initial
-        self.value = initial
+        self.value = 0
         self.max = max
         self.callback = self._callback
 
@@ -32,7 +31,6 @@ class CounterButton(Button):
     def to_dict(self):
         temp_button_dict = super().to_dict()
         temp_button_dict['type'] = CounterButton.__name__
-        temp_button_dict['initial'] = self._initial
         temp_button_dict['max'] = self.max
         return temp_button_dict
 
@@ -48,5 +46,4 @@ class CounterButton(Button):
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'],
-                    initial=button_dict['initial'],
                     max=button_dict['max'])

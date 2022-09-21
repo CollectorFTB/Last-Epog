@@ -30,7 +30,7 @@ class Rect:
 
     @property
     def center(self):
-        return self.width//2, self.height//2
+        return self.left + self.width//2, self.top + self.height//2
 
 
 class Button:
@@ -41,8 +41,9 @@ class Button:
         self.callback = callback
         self.click_rv = click_rv
                 
-    def draw(self, screen):
-        pygame.draw.rect(screen, (0, 100, 255), (self.rect.left, self.rect.top, self.rect.width, self.rect.height), 3)
+    def draw(self, screen, debug):
+        if debug:
+            pygame.draw.rect(screen, (0, 100, 255), (self.rect.left, self.rect.top, self.rect.width, self.rect.height), 3)
 
     def checkForInput(self, position) -> bool:
         x,y = position

@@ -29,7 +29,6 @@ class PassiveTreeButton(CounterButton):
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'],
-                    initial=button_dict['initial'],
                     max=button_dict['max'],
                     stats=button_dict['stats'],
                     required_passives=button_dict['required_passives'])

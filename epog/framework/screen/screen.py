@@ -1,7 +1,7 @@
 import json
 import weakref
 import pygame
-from framework.button import Button, CounterButton, PassiveTreeButton
+from framework.button import Button, CounterButton, PassiveTreeButton, TextButton
 from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, quit_func
 
 class Screen:
@@ -86,9 +86,8 @@ class Screen:
         last_click = None
 
         while True:
-            if debug:
-                for button in self.buttons:
-                    button.draw(self.surface)
+            for button in self.buttons:
+                button.draw(self.surface, debug=debug)
             
 
             for event in pygame.event.get():
