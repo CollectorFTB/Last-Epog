@@ -1,14 +1,17 @@
 import json
-import pdb
-import uuid
+import weakref
 import pygame
-from framework.button import Button
-from framework.counter_button import CounterButton
-from framework.util import ORIGIN, SCREEN_RECT, quit_func
-from screens import screen_buttons
+from framework.button import Button, CounterButton, PassiveTreeButton
+from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, quit_func
 
 class Screen:
-    def __init__(self, name, surface, parent, background_path=None):
+    INSTANCES = []
+
+    @classmethod
+    def get_instance(cls, name):
+        return next((screen for screen in cls.INSTANCES if screen.name == name), None) 
+
+    def __init__(self, name, surface, parent, screen_buttons, background_path=None):
         self.surface: pygame.surface.Surface = surface
         self.parent: Screen = parent 
         self.buttons: list[Button] = []
@@ -20,31 +23,38 @@ class Screen:
             self.image = pygame.transform.scale(self.image, SCREEN_RECT)
 
         self._load_buttons()
+        self._load_callbacks(screen_buttons)
 
         if self.back_button:
             self.back_button.click_rv = self.parent
 
-    def _load_buttons(self):
-        with open(f'screens/{self.name}.json', 'r') as f:
-            buttons_data = json.load(f)
+        self.__class__.INSTANCES.append(weakref.proxy(self))
 
-        for button_data in buttons_data:
-            cls = eval(button_data['type'])
-            new_button = cls.from_dict(button_data)
-            
+
+    def _load_buttons(self):
+        try:
+            with open(f'game_screens/data/{self.name}.json', 'r') as f:
+                buttons_data = json.load(f)
+
+            for button_data in buttons_data:
+                cls = eval(button_data['type'])                
+                self.buttons.append(cls.from_dict(button_data))
+        # Screen json doesnt exist, load it without buttons
+        except:
+            pass
+    
+    def _load_callbacks(self, screen_buttons):
+        for button in self.buttons:
             try:
-                new_button.callback = screen_buttons.screen_buttons[self.name][new_button.name]
+                button.callback = screen_buttons[self.name][button.name]
             except KeyError: # Button doesn't have a preconfigred callback
                 pass
 
-            self.buttons.append(new_button)
-        # Screen json doesnt exist, load it without buttons
-            
 
     def _save_buttons(self):
         buttons_to_dump = [button.to_dict() for button in self.buttons]
                 
-        with open(f'screens/{self.name}.json', 'w') as f:
+        with open(f'game_screens/data/{self.name}.json', 'w') as f:
             json.dump(buttons_to_dump, f)
 
     @property
@@ -63,7 +73,8 @@ class Screen:
         try:
             return self._mainloop(debug=debug)
         finally:
-            self._save_buttons()
+            if debug:
+                self._save_buttons()
 
     def _mainloop(self, debug=False):
         pygame.display.set_caption(self.name)
@@ -87,12 +98,13 @@ class Screen:
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     mouse_pos = pygame.mouse.get_pos()
                     if (clicked_button := next((button for button in self.buttons if button.checkForInput(mouse_pos)), None)):
-                        print(clicked_button.name)
+                        if 'Temp-' in clicked_button.name:
+                            clicked_button.name = input(f'Replacing {clicked_button.name}: ')
                         if clicked_button.click_rv:
                             return clicked_button.click_rv
                         if clicked_button.callback:
-                            clicked_button.callback(event.button)
-                    elif debug and False:
+                            clicked_button.callback(mouse=event.button, screen=self)
+                    elif debug:
                         if last_click:
                             self._add_new_button(last_click, mouse_pos)
                             last_click = None
@@ -102,24 +114,25 @@ class Screen:
                         print(mouse_pos)
 
                 if event.type == pygame.KEYUP:
-                    nums = [pygame.K_0, pygame.K_1, pygame.K_2, pygame.K_3]
+                    nums = [eval(f'pygame.K_{i}') for i in range(10)]
                     if event.key in nums:
                         i = nums.index(event.key)
                         if i in range(len(self.buttons)): 
                             if self.buttons[i].click_rv:
                                 return self.buttons[i].click_rv
                             if self.buttons[i].callback:
-                                self.buttons[i].callback(0)
+                                self.buttons[i].callback(mouse=LEFT_CLICK)
                         
             pygame.display.update()
     
-    def link_to(self, screens):
-        for button in self.buttons:
-            if (matching_screen := next((screen for screen in screens if screen.name == button.name), None)):
-                button.click_rv = matching_screen
-                continue
     
-
+    @classmethod
+    def link_screens(cls):
+        for screen_to_match in cls.INSTANCES:
+            for button in screen_to_match.buttons:
+                if (matching_screen := next((screen for screen in cls.INSTANCES if screen.name == button.name), None)):
+                    button.click_rv = matching_screen
+                    continue
     
     def __enter__(self):
         pass

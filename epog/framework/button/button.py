@@ -44,14 +44,9 @@ class Button:
     def draw(self, screen):
         pygame.draw.rect(screen, (0, 100, 255), (self.rect.left, self.rect.top, self.rect.width, self.rect.height), 3)
 
-    def update(self, screen):
-        pass
-
     def checkForInput(self, position) -> bool:
         x,y = position
-        if x in range(self.rect.left, self.rect.right) and y in range(self.rect.top, self.rect.bottom):
-            return True
-        return False
+        return x in range(self.rect.left, self.rect.right) and y in range(self.rect.top, self.rect.bottom)
     
     def __call__(self, *args, **kwargs):
         return self.callback(self, *args, **kwargs) if self.callback else None

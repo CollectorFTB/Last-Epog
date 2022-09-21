@@ -1,6 +1,5 @@
-from framework import button
 from framework.button import Button
-from framework.util import LEFT_CLICK
+from framework.util.util import LEFT_CLICK
 
 class CounterButton(Button):
     def __init__(self, initial, max, *args, **kwargs):
@@ -10,10 +9,19 @@ class CounterButton(Button):
         self.max = max
         self.callback = self._callback
 
-    def _callback(self, mouse, *args, **kwargs):
-        rv = self._increment() if mouse == LEFT_CLICK else self._decrement()
-        print(self.value)
-        return rv
+    def _is_unlocked(self, *args):
+        return True
+
+    def _callback(self, *args, **kwargs):
+        try:
+            mouse = kwargs['mouse']
+        except:
+            return
+            
+        if self._is_unlocked(self):
+            print('Allocated!')
+            return self._increment() if mouse == LEFT_CLICK else self._decrement()
+        print('Cant allocate :(', self.value, self.name, self.required_passives)
 
     def _increment(self):
         self.value = min(self.max, self.value + 1)
