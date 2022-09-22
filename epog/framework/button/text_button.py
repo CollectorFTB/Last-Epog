@@ -1,9 +1,6 @@
-import pdb
-import pygame
-
 from framework.button import Button
 from framework.button.button import Rect
-font = lambda size: pygame.font.Font('assets/font.ttf', size)
+from framework.util.font import font
 
 class TextButton(Button):
     def __init__(self, text, *args, **kwargs):
@@ -14,7 +11,6 @@ class TextButton(Button):
         super().draw(surface, debug)
         text = font(self.rect.width//len(self.text)).render(self.text, True, (255, 255, 255))
         surface.blit(text, text.get_rect(center=self.rect.center))
-
 
     def to_dict(self):
         temp_button_dict = super().to_dict()

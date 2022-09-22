@@ -1,5 +1,6 @@
 from framework.button import CounterButton
-from framework.util.util import LEFT_CLICK
+from framework.util.util import BLACK, LEFT_CLICK
+import pygame
 
 class PassiveTreeButton(CounterButton):
     def __init__(self, stats, required_passives, *args, **kwargs):
@@ -7,6 +8,11 @@ class PassiveTreeButton(CounterButton):
         self.stats = stats
         self.required_passives = required_passives
         
+    def draw(self, surface: pygame.surface.Surface, debug):
+        super().draw(surface, debug)
+        black_rect = pygame.rect.Rect(self.rect.left, self.rect.bottom-18, self.rect.width, 18)
+        surface.fill(BLACK, black_rect)
+    
     def to_dict(self):
         temp_button_dict = super().to_dict()
         temp_button_dict['type'] = PassiveTreeButton.__name__
