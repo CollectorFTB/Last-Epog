@@ -55,6 +55,9 @@ class Button:
     def hover(self, surface):
         pass
 
+    def toggle(self):
+        pass
+
     def __call__(self, *args, **kwargs):
         return self.callback(self, *args, **kwargs) if self.callback else None
 

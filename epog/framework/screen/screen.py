@@ -80,6 +80,8 @@ class Screen:
         pygame.display.set_caption(self.name)
 
         last_click = None
+        unhighlight_event = pygame.USEREVENT + 1
+        highlighted_buttons = []
 
         while True:
             if self.image:
@@ -93,11 +95,14 @@ class Screen:
                 button.draw(self.surface, debug=debug)
                 if button.check_collision(mouse_pos):
                     button.hover(self.surface)                            
-
+            
             for event in pygame.event.get():
-                
                 if event.type == pygame.QUIT:
                     quit_func()
+               
+                if event.type == unhighlight_event:
+                    highlighted_buttons[0].toggle()
+                    highlighted_buttons = highlighted_buttons[1:]
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
@@ -107,6 +112,9 @@ class Screen:
                             return clicked_button.click_rv
                         if clicked_button.callback:
                             clicked_button.callback(mouse=event.button, screen=self)
+                            clicked_button.toggle()
+                            highlighted_buttons.append(clicked_button)
+                            pygame.time.set_timer(unhighlight_event, 200, 1)
                     elif debug:
                         if last_click:
                             self._add_new_button(last_click, mouse_pos)
@@ -116,15 +124,15 @@ class Screen:
                     else:
                         print(mouse_pos)
 
-                if event.type == pygame.KEYUP:
-                    nums = [eval(f'pygame.K_{i}') for i in range(10)]
-                    if event.key in nums:
-                        i = nums.index(event.key)
-                        if i in range(len(self.buttons)): 
-                            if self.buttons[i].click_rv:
-                                return self.buttons[i].click_rv
-                            if self.buttons[i].callback:
-                                self.buttons[i].callback(mouse=LEFT_CLICK)
+                # if event.type == pygame.KEYUP:
+                #     nums = [eval(f'pygame.K_{i}') for i in range(10)]
+                #     if event.key in nums:
+                #         i = nums.index(event.key)
+                #         if i in range(len(self.buttons)): 
+                #             if self.buttons[i].click_rv:
+                #                 return self.buttons[i].click_rv
+                #             if self.buttons[i].callback:
+                #                 self.buttons[i].callback(mouse=LEFT_CLICK)
                         
             pygame.display.update()
     
