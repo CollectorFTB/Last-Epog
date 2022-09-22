@@ -3,7 +3,7 @@ from framework.screen import Screen, PassiveTreeScreen
 
 GLOBAL_SCREEN_NAMES = ['Sentinel', 'Void Knight', 'Paladin', 'Forge Guard']
 
-def temp(**kwargs):
+def save_state(**kwargs):
     try:
         screen = kwargs['screen']
     except:
@@ -18,5 +18,5 @@ def temp(**kwargs):
 
 main_menu = {
     'quit': quit_func,
-    'calculate': temp
+    'save': save_state
 }

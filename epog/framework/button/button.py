@@ -2,6 +2,8 @@ from dataclasses import dataclass
 
 import pygame
 
+from framework.label.label import Label
+
 @dataclass
 class Rect:
     left: int
@@ -44,11 +46,15 @@ class Button:
     def draw(self, screen, debug):
         if debug:
             pygame.draw.rect(screen, (0, 100, 255), (self.rect.left, self.rect.top, self.rect.width, self.rect.height), 3)
+        
 
-    def checkForInput(self, position) -> bool:
+    def check_collision(self, position) -> bool:
         x,y = position
         return x in range(self.rect.left, self.rect.right) and y in range(self.rect.top, self.rect.bottom)
     
+    def hover(self, surface):
+        pass
+
     def __call__(self, *args, **kwargs):
         return self.callback(self, *args, **kwargs) if self.callback else None
 

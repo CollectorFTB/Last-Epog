@@ -1,5 +1,6 @@
 from framework.button import CounterButton
 from framework.label.label import Label
+from framework.button.button import Rect
 from framework.util.util import BLACK, LEFT_CLICK
 import pygame
 
@@ -14,7 +15,10 @@ class PassiveTreeButton(CounterButton):
         black_rect = pygame.rect.Rect(self.rect.left, self.rect.bottom-18, self.rect.width, 18)
         surface.fill(BLACK, black_rect)
         Label(black_rect, f'{self.value}/{self.max}').draw(surface)
-        
+    
+    def hover(self, surface):
+        Label(Rect(self.rect.right, self.rect.top -50, self.rect.right + 200, self.rect.bottom + 50), self.name).draw(surface)
+
     
     def to_dict(self):
         temp_button_dict = super().to_dict()

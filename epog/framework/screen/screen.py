@@ -78,25 +78,29 @@ class Screen:
 
     def _mainloop(self, debug=False):
         pygame.display.set_caption(self.name)
-        if self.image:
-            self.surface.blit(self.image, ORIGIN)
-        else:
-            self.surface.fill('black')
 
         last_click = None
 
         while True:
+            if self.image:
+                self.surface.blit(self.image, ORIGIN)
+            else:
+                self.surface.fill('black')
+
+            mouse_pos = pygame.mouse.get_pos()
+
             for button in self.buttons:
                 button.draw(self.surface, debug=debug)
-            
+                if button.check_collision(mouse_pos):
+                    button.hover(self.surface)                            
 
             for event in pygame.event.get():
+                
                 if event.type == pygame.QUIT:
                     quit_func()
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    mouse_pos = pygame.mouse.get_pos()
-                    if (clicked_button := next((button for button in self.buttons if button.checkForInput(mouse_pos)), None)):
+                    if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
                         if 'Temp-' in clicked_button.name:
                             clicked_button.name = input(f'Replacing {clicked_button.name}: ')
                         if clicked_button.click_rv:
