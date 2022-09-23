@@ -10,11 +10,13 @@ class PassiveTreeButton(CounterButton):
         self.stats = stats
         self.required_passives = required_passives
         
-    def draw(self, surface: pygame.surface.Surface, debug):
+    def draw(self, surface: pygame.surface.Surface, debug, show_counter=True):
         super().draw(surface, debug)
-        black_rect = pygame.rect.Rect(self.rect.left, self.rect.bottom-18, self.rect.width, 18)
-        surface.fill(BLACK, black_rect)
-        Label(black_rect, f'{self.value}/{self.max}').draw(surface)
+        
+        if show_counter:
+            black_rect = pygame.rect.Rect(self.rect.left, self.rect.bottom-18, self.rect.width, 18)
+            surface.fill(BLACK, black_rect)
+            Label(black_rect, f'{self.value}/{self.max}').draw(surface)
     
     def hover(self, surface):
         Label(Rect(self.rect.right, self.rect.top -50, self.rect.right + 200, self.rect.bottom + 50), self.name).draw(surface)

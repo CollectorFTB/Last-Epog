@@ -2,7 +2,7 @@ import json
 import weakref
 import pygame
 from framework.button import Button, CounterButton, PassiveTreeButton, TextButton
-from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, quit_func
+from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, greyscale, quit_func
 
 class Screen:
     INSTANCES = []
@@ -19,8 +19,10 @@ class Screen:
         self.image = None
 
         if background_path:
-            self.image = pygame.image.load(background_path)
-            self.image = pygame.transform.scale(self.image, SCREEN_RECT)
+            self.colored_image = pygame.image.load(background_path)
+            self.colored_image = pygame.transform.scale(self.image, SCREEN_RECT)
+            self.greyscale_image = greyscale(self.image)
+            self.image = self.colored_image
 
         self._load_buttons()
         self._load_callbacks(screen_buttons)
