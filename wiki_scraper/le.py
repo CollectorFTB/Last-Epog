@@ -59,6 +59,23 @@ class Wiki:
 
         return output
 
+
+    @staticmethod
+    @needs_driver
+    def scrape_blessings(browser: Chrome):
+        item_names = browser.find_elements(By.CLASS_NAME, 'item-name')
+        implicits = browser.find_elements(By.CLASS_NAME, 'item-implicit')
+        dropped_from = browser.find_elements(By.CLASS_NAME, 'dropped-from')
+
+        return [
+            {
+                'blessing_name': item_name.text,
+                'implicit': implicit.text,
+                'timeline': (timeline_data := drop.text.split('\n')[1].split(' (level: '))[0],
+                'level': int(timeline_data[1][:-1])
+            } for item_name, implicit, drop in zip(item_names, implicits, dropped_from)
+        ]
+
     @staticmethod
     @needs_driver
     def scrape_affixes(browser: Chrome, slot_name):
