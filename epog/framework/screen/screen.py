@@ -20,8 +20,8 @@ class Screen:
 
         if background_path:
             self.colored_image = pygame.image.load(background_path)
-            self.colored_image = pygame.transform.scale(self.image, SCREEN_RECT)
-            self.greyscale_image = greyscale(self.image)
+            self.colored_image = pygame.transform.scale(self.colored_image, SCREEN_RECT)
+            self.greyscale_image = greyscale(self.colored_image)
             self.image = self.colored_image
 
         self._load_buttons()

@@ -16,11 +16,14 @@ def main():
 
     main_menu = Screen(name='MainMenu', surface=screen, screen_buttons=screen_buttons, parent=None)
 
-    screens = [PassiveTreeScreen(name='Sentinel', surface=screen, background_path='assets/Sentinel.png', screen_buttons=screen_buttons, parent=main_menu),
-    PassiveTreeScreen(name='Void Knight', surface=screen, background_path='assets/Void Knight.png', screen_buttons=screen_buttons, parent=main_menu),
-    PassiveTreeScreen(name='Paladin', surface=screen, background_path='assets/Paladin.png', screen_buttons=screen_buttons, parent=main_menu),
-    PassiveTreeScreen(name='Forge Guard', surface=screen, background_path='assets/Forge Guard.png', screen_buttons=screen_buttons, parent=main_menu)]
+    screens = [
+        PassiveTreeScreen(name='Sentinel', surface=screen, background_path='assets/Sentinel.png', screen_buttons=screen_buttons, parent=main_menu),
+        PassiveTreeScreen(name='Void Knight', surface=screen, background_path='assets/Void Knight.png', screen_buttons=screen_buttons, parent=main_menu),
+        PassiveTreeScreen(name='Paladin', surface=screen, background_path='assets/Paladin.png', screen_buttons=screen_buttons, parent=main_menu),
+        PassiveTreeScreen(name='Forge Guard', surface=screen, background_path='assets/Forge Guard.png', screen_buttons=screen_buttons, parent=main_menu),
+        Screen(name='Blessings', surface=screen, screen_buttons=screen_buttons, parent=main_menu)
 
+    ]
     Screen.link_screens()
 
     next_screen = main_menu    
