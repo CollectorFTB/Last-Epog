@@ -2,7 +2,6 @@ import json
 import weakref
 import pygame
 import os
-
 from framework.button import Button, CounterButton, PassiveTreeButton, TextButton
 from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, greyscale, quit_func
 from framework.logic.screen_connections import screen_information
@@ -60,13 +59,6 @@ class Screen:
         with open(f'game_screens/data/{self.name}.json', 'w') as f:
             json.dump(buttons_to_dump, f)
 
-    # @property
-    # def back_button(self):
-    #     try:
-    #         return next(button for button in self.buttons if button.name == 'BackButton')
-    #     except:
-    #         return None
-
     def _add_new_button(self, last_pos, new_pos):
         x1,y1 = new_pos
         x2,y2 = last_pos
@@ -107,24 +99,30 @@ class Screen:
                     highlighted_buttons[0].toggle()
                     highlighted_buttons = highlighted_buttons[1:]
 
+                if event.type == pygame.KEYDOWN and event.key == pygame.K_d:
+                    debug = not debug
+
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
-                        if 'Temp-' in clicked_button.name:
-                            clicked_button.name = input(f'Replacing {clicked_button.name}: ')
-                        if clicked_button.click_rv:
-                            return clicked_button.click_rv
-                        if clicked_button.callback:
-                            clicked_button.callback(mouse=event.button, screen=self)
-                            clicked_button.toggle()
-                            highlighted_buttons.append(clicked_button)
-                            pygame.time.set_timer(unhighlight_event, 200, 1)
-                    elif debug:
-                        if last_click:
-                            self._add_new_button(last_click, mouse_pos)
-                            last_click = None
-                        else:
-                            last_click = mouse_pos
+                    if event.button == 1:
+                        if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
+                            if 'Temp-' in clicked_button.name:
+                                # clicked_button.name = input(f'Replacing {clicked_button.name}: ')
+                                print(clicked_button.name)
+                            if clicked_button.click_rv:
+                                return clicked_button.click_rv
+                            if clicked_button.callback:
+                                clicked_button.callback(mouse=event.button, screen=self)
+                                clicked_button.toggle()
+                                highlighted_buttons.append(clicked_button)
+                                pygame.time.set_timer(unhighlight_event, 200, 1)
+                        elif debug:
+                            if last_click:
+                                self._add_new_button(last_click, mouse_pos)
+                                last_click = None
+                            else:
+                                last_click = mouse_pos
                     else:
+                        last_click = None
                         print(mouse_pos)
 
             pygame.display.update()

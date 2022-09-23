@@ -1,10 +1,10 @@
 [
     {
         "rect": {
-            "left": 195,
-            "top": 110,
-            "right": 269,
-            "bottom": 182
+            "left": 273,
+            "top": 137,
+            "right": 436,
+            "bottom": 297
         },
         "name": "Sentinel",
         "callback": null,
@@ -13,10 +13,10 @@
     },
     {
         "rect": {
-            "left": 127,
-            "top": 195,
-            "right": 184,
-            "bottom": 259
+            "left": 170,
+            "top": 273,
+            "right": 299,
+            "bottom": 401
         },
         "name": "Void Knight",
         "callback": null,
@@ -25,10 +25,10 @@
     },
     {
         "rect": {
-            "left": 209,
-            "top": 266,
-            "right": 259,
-            "bottom": 319
+            "left": 292,
+            "top": 374,
+            "right": 422,
+            "bottom": 504
         },
         "name": "Paladin",
         "callback": null,
@@ -37,10 +37,10 @@
     },
     {
         "rect": {
-            "left": 292,
-            "top": 201,
-            "right": 340,
-            "bottom": 250
+            "left": 412,
+            "top": 274,
+            "right": 542,
+            "bottom": 404
         },
         "name": "Forge Guard",
         "callback": null,
@@ -62,10 +62,10 @@
     },
     {
         "rect": {
-            "left": 445,
-            "top": 214,
-            "right": 485,
-            "bottom": 262
+            "left": 667,
+            "top": 323,
+            "right": 727,
+            "bottom": 397
         },
         "name": "Temp-",
         "callback": null,
@@ -74,22 +74,10 @@
     },
     {
         "rect": {
-            "left": 443,
-            "top": 340,
-            "right": 482,
-            "bottom": 390
-        },
-        "name": "Temp-443:340",
-        "callback": null,
-        "click_rv": null,
-        "type": "Button"
-    },
-    {
-        "rect": {
-            "left": 444,
-            "top": 465,
-            "right": 483,
-            "bottom": 513
+            "left": 667,
+            "top": 691,
+            "right": 727,
+            "bottom": 765
         },
         "name": "Temp-444:465",
         "callback": null,
@@ -98,10 +86,10 @@
     },
     {
         "rect": {
-            "left": 521,
-            "top": 220,
-            "right": 564,
-            "bottom": 265
+            "left": 784,
+            "top": 323,
+            "right": 844,
+            "bottom": 397
         },
         "name": "Temp-521:220",
         "callback": null,
@@ -110,10 +98,10 @@
     },
     {
         "rect": {
-            "left": 524,
-            "top": 282,
-            "right": 562,
-            "bottom": 328
+            "left": 784,
+            "top": 415,
+            "right": 844,
+            "bottom": 489
         },
         "name": "Temp-524:282",
         "callback": null,
@@ -122,10 +110,10 @@
     },
     {
         "rect": {
-            "left": 524,
-            "top": 403,
-            "right": 560,
-            "bottom": 453
+            "left": 784,
+            "top": 599,
+            "right": 844,
+            "bottom": 673
         },
         "name": "Temp-524:403",
         "callback": null,
@@ -134,10 +122,10 @@
     },
     {
         "rect": {
-            "left": 603,
-            "top": 220,
-            "right": 641,
-            "bottom": 266
+            "left": 901,
+            "top": 323,
+            "right": 961,
+            "bottom": 397
         },
         "name": "Temp-603:220",
         "callback": null,
@@ -146,22 +134,10 @@
     },
     {
         "rect": {
-            "left": 604,
-            "top": 343,
-            "right": 640,
-            "bottom": 390
-        },
-        "name": "Temp-604:343",
-        "callback": null,
-        "click_rv": null,
-        "type": "Button"
-    },
-    {
-        "rect": {
-            "left": 601,
-            "top": 462,
-            "right": 642,
-            "bottom": 516
+            "left": 901,
+            "top": 691,
+            "right": 961,
+            "bottom": 765
         },
         "name": "Temp-601:462",
         "callback": null,
@@ -170,10 +146,10 @@
     },
     {
         "rect": {
-            "left": 681,
-            "top": 222,
-            "right": 720,
-            "bottom": 265
+            "left": 1018,
+            "top": 323,
+            "right": 1078,
+            "bottom": 397
         },
         "name": "Temp-681:222",
         "callback": null,
@@ -182,10 +158,10 @@
     },
     {
         "rect": {
-            "left": 681,
-            "top": 284,
-            "right": 719,
-            "bottom": 329
+            "left": 1018,
+            "top": 415,
+            "right": 1078,
+            "bottom": 489
         },
         "name": "Temp-681:284",
         "callback": null,
@@ -194,10 +170,10 @@
     },
     {
         "rect": {
-            "left": 680,
-            "top": 404,
-            "right": 720,
-            "bottom": 445
+            "left": 1018,
+            "top": 599,
+            "right": 1078,
+            "bottom": 673
         },
         "name": "Temp-680:404",
         "callback": null,
@@ -206,10 +182,10 @@
     },
     {
         "rect": {
-            "left": 679,
-            "top": 466,
-            "right": 720,
-            "bottom": 513
+            "left": 1018,
+            "top": 691,
+            "right": 1078,
+            "bottom": 765
         },
         "name": "Temp-679:466",
         "callback": null,
@@ -218,10 +194,10 @@
     },
     {
         "rect": {
-            "left": 757,
-            "top": 223,
-            "right": 797,
-            "bottom": 264
+            "left": 1135,
+            "top": 323,
+            "right": 1195,
+            "bottom": 397
         },
         "name": "Temp-757:223",
         "callback": null,
@@ -230,22 +206,10 @@
     },
     {
         "rect": {
-            "left": 758,
-            "top": 341,
-            "right": 800,
-            "bottom": 393
-        },
-        "name": "Temp-758:341",
-        "callback": null,
-        "click_rv": null,
-        "type": "Button"
-    },
-    {
-        "rect": {
-            "left": 758,
-            "top": 463,
-            "right": 794,
-            "bottom": 508
+            "left": 1135,
+            "top": 691,
+            "right": 1195,
+            "bottom": 765
         },
         "name": "Temp-758:463",
         "callback": null,
@@ -254,10 +218,10 @@
     },
     {
         "rect": {
-            "left": 834,
-            "top": 279,
-            "right": 877,
-            "bottom": 327
+            "left": 1252,
+            "top": 415,
+            "right": 1312,
+            "bottom": 489
         },
         "name": "Temp-834:279",
         "callback": null,
@@ -266,22 +230,10 @@
     },
     {
         "rect": {
-            "left": 839,
-            "top": 347,
-            "right": 876,
-            "bottom": 388
-        },
-        "name": "Temp-839:347",
-        "callback": null,
-        "click_rv": null,
-        "type": "Button"
-    },
-    {
-        "rect": {
-            "left": 837,
-            "top": 405,
-            "right": 871,
-            "bottom": 452
+            "left": 1252,
+            "top": 599,
+            "right": 1312,
+            "bottom": 673
         },
         "name": "Temp-837:405",
         "callback": null,
@@ -290,10 +242,10 @@
     },
     {
         "rect": {
-            "left": 915,
-            "top": 222,
-            "right": 951,
-            "bottom": 267
+            "left": 1369,
+            "top": 323,
+            "right": 1429,
+            "bottom": 397
         },
         "name": "Temp-915:222",
         "callback": null,
@@ -302,10 +254,10 @@
     },
     {
         "rect": {
-            "left": 918,
-            "top": 284,
-            "right": 951,
-            "bottom": 328
+            "left": 1369,
+            "top": 415,
+            "right": 1429,
+            "bottom": 489
         },
         "name": "Temp-918:284",
         "callback": null,
@@ -314,10 +266,10 @@
     },
     {
         "rect": {
-            "left": 914,
-            "top": 406,
-            "right": 953,
-            "bottom": 449
+            "left": 1369,
+            "top": 599,
+            "right": 1429,
+            "bottom": 673
         },
         "name": "Temp-914:406",
         "callback": null,
@@ -326,10 +278,10 @@
     },
     {
         "rect": {
-            "left": 915,
-            "top": 467,
-            "right": 952,
-            "bottom": 514
+            "left": 1369,
+            "top": 691,
+            "right": 1429,
+            "bottom": 765
         },
         "name": "Temp-915:467",
         "callback": null,
@@ -338,10 +290,10 @@
     },
     {
         "rect": {
-            "left": 1070,
-            "top": 220,
-            "right": 1109,
-            "bottom": 267
+            "left": 1603,
+            "top": 323,
+            "right": 1663,
+            "bottom": 397
         },
         "name": "Temp-1070:220",
         "callback": null,
@@ -350,10 +302,10 @@
     },
     {
         "rect": {
-            "left": 1073,
-            "top": 283,
-            "right": 1109,
-            "bottom": 330
+            "left": 1603,
+            "top": 415,
+            "right": 1663,
+            "bottom": 489
         },
         "name": "Temp-1073:283",
         "callback": null,
@@ -362,10 +314,10 @@
     },
     {
         "rect": {
-            "left": 1072,
-            "top": 405,
-            "right": 1110,
-            "bottom": 450
+            "left": 1603,
+            "top": 599,
+            "right": 1663,
+            "bottom": 673
         },
         "name": "Temp-1072:405",
         "callback": null,
@@ -374,10 +326,10 @@
     },
     {
         "rect": {
-            "left": 1073,
-            "top": 466,
-            "right": 1109,
-            "bottom": 513
+            "left": 1603,
+            "top": 691,
+            "right": 1663,
+            "bottom": 765
         },
         "name": "Temp-1073:466",
         "callback": null,
@@ -386,12 +338,96 @@
     },
     {
         "rect": {
-            "left": 1150,
-            "top": 283,
-            "right": 1191,
-            "bottom": 332
+            "left": 1720,
+            "top": 415,
+            "right": 1780,
+            "bottom": 489
         },
         "name": "Temp-1150:283",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 667,
+            "top": 507,
+            "right": 727,
+            "bottom": 581
+        },
+        "name": "Temp-0",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 901,
+            "top": 507,
+            "right": 961,
+            "bottom": 581
+        },
+        "name": "Temp-1",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 1135,
+            "top": 507,
+            "right": 1195,
+            "bottom": 581
+        },
+        "name": "Temp-2",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 1252,
+            "top": 507,
+            "right": 1312,
+            "bottom": 581
+        },
+        "name": "Temp-3",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 1486,
+            "top": 507,
+            "right": 1546,
+            "bottom": 581
+        },
+        "name": "Temp-4",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 1720,
+            "top": 507,
+            "right": 1780,
+            "bottom": 581
+        },
+        "name": "Temp-1151:357",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 1720,
+            "top": 599,
+            "right": 1780,
+            "bottom": 673
+        },
+        "name": "Temp-1151:408",
         "callback": null,
         "click_rv": null,
         "type": "Button"

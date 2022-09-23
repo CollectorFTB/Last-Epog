@@ -1,10 +1,10 @@
 [
     {
         "rect": {
-            "left": 195,
-            "top": 110,
-            "right": 269,
-            "bottom": 182
+            "left": 273,
+            "top": 137,
+            "right": 436,
+            "bottom": 297
         },
         "name": "Sentinel",
         "callback": null,
@@ -13,10 +13,10 @@
     },
     {
         "rect": {
-            "left": 127,
-            "top": 195,
-            "right": 184,
-            "bottom": 259
+            "left": 170,
+            "top": 270,
+            "right": 300,
+            "bottom": 400
         },
         "name": "Void Knight",
         "callback": null,
@@ -25,10 +25,10 @@
     },
     {
         "rect": {
-            "left": 209,
-            "top": 266,
-            "right": 259,
-            "bottom": 319
+            "left": 292,
+            "top": 374,
+            "right": 422,
+            "bottom": 504
         },
         "name": "Paladin",
         "callback": null,
@@ -37,10 +37,10 @@
     },
     {
         "rect": {
-            "left": 292,
-            "top": 201,
-            "right": 340,
-            "bottom": 250
+            "left": 412,
+            "top": 274,
+            "right": 542,
+            "bottom": 404
         },
         "name": "Forge Guard",
         "callback": null,
@@ -62,10 +62,10 @@
     },
     {
         "rect": {
-            "left": 446,
-            "top": 218,
-            "right": 485,
-            "bottom": 262
+            "left": 667,
+            "top": 323,
+            "right": 727,
+            "bottom": 397
         },
         "name": "Abyssal Endurance",
         "callback": null,
@@ -81,10 +81,10 @@
     },
     {
         "rect": {
-            "left": 447,
-            "top": 343,
-            "right": 484,
-            "bottom": 387
+            "left": 667,
+            "top": 507,
+            "right": 727,
+            "bottom": 581
         },
         "name": "Temporal Corruption",
         "callback": null,
@@ -98,10 +98,10 @@
     },
     {
         "rect": {
-            "left": 446,
-            "top": 465,
-            "right": 486,
-            "bottom": 511
+            "left": 667,
+            "top": 691,
+            "right": 727,
+            "bottom": 765
         },
         "name": "Temp-446:465",
         "callback": null,
@@ -110,10 +110,10 @@
     },
     {
         "rect": {
-            "left": 524,
-            "top": 220,
-            "right": 562,
-            "bottom": 262
+            "left": 784,
+            "top": 323,
+            "right": 844,
+            "bottom": 397
         },
         "name": "Temp-524:220",
         "callback": null,
@@ -122,10 +122,10 @@
     },
     {
         "rect": {
-            "left": 524,
-            "top": 466,
-            "right": 566,
-            "bottom": 509
+            "left": 784,
+            "top": 691,
+            "right": 844,
+            "bottom": 765
         },
         "name": "World Eater",
         "callback": null,
@@ -140,10 +140,10 @@
     },
     {
         "rect": {
-            "left": 604,
-            "top": 219,
-            "right": 639,
-            "bottom": 264
+            "left": 901,
+            "top": 323,
+            "right": 961,
+            "bottom": 397
         },
         "name": "Void Corruption",
         "callback": null,
@@ -157,10 +157,10 @@
     },
     {
         "rect": {
-            "left": 599,
-            "top": 281,
-            "right": 641,
-            "bottom": 325
+            "left": 901,
+            "top": 415,
+            "right": 961,
+            "bottom": 489
         },
         "name": "Void Bolts",
         "callback": null,
@@ -175,10 +175,10 @@
     },
     {
         "rect": {
-            "left": 601,
-            "top": 345,
-            "right": 642,
-            "bottom": 384
+            "left": 901,
+            "top": 507,
+            "right": 961,
+            "bottom": 581
         },
         "name": "Temp-601:345",
         "callback": null,
@@ -187,10 +187,10 @@
     },
     {
         "rect": {
-            "left": 602,
-            "top": 401,
-            "right": 641,
-            "bottom": 448
+            "left": 901,
+            "top": 599,
+            "right": 961,
+            "bottom": 673
         },
         "name": "Temp-602:401",
         "callback": null,
@@ -199,10 +199,10 @@
     },
     {
         "rect": {
-            "left": 600,
-            "top": 466,
-            "right": 643,
-            "bottom": 509
+            "left": 901,
+            "top": 691,
+            "right": 961,
+            "bottom": 765
         },
         "name": "Temp-600:466",
         "callback": null,
@@ -211,10 +211,10 @@
     },
     {
         "rect": {
-            "left": 679,
-            "top": 278,
-            "right": 720,
-            "bottom": 326
+            "left": 1018,
+            "top": 415,
+            "right": 1078,
+            "bottom": 489
         },
         "name": "Temp-679:278",
         "callback": null,
@@ -223,10 +223,10 @@
     },
     {
         "rect": {
-            "left": 680,
-            "top": 403,
-            "right": 720,
-            "bottom": 450
+            "left": 1018,
+            "top": 599,
+            "right": 1078,
+            "bottom": 673
         },
         "name": "Temp-680:403",
         "callback": null,
@@ -235,10 +235,10 @@
     },
     {
         "rect": {
-            "left": 759,
-            "top": 463,
-            "right": 800,
-            "bottom": 511
+            "left": 1135,
+            "top": 691,
+            "right": 1195,
+            "bottom": 765
         },
         "name": "Temp-759:463",
         "callback": null,
@@ -247,10 +247,10 @@
     },
     {
         "rect": {
-            "left": 836,
-            "top": 463,
-            "right": 878,
-            "bottom": 509
+            "left": 1252,
+            "top": 691,
+            "right": 1312,
+            "bottom": 765
         },
         "name": "Temp-836:463",
         "callback": null,
@@ -259,10 +259,10 @@
     },
     {
         "rect": {
-            "left": 758,
-            "top": 343,
-            "right": 800,
-            "bottom": 384
+            "left": 1135,
+            "top": 507,
+            "right": 1195,
+            "bottom": 581
         },
         "name": "Temp-758:343",
         "callback": null,
@@ -271,10 +271,10 @@
     },
     {
         "rect": {
-            "left": 757,
-            "top": 218,
-            "right": 795,
-            "bottom": 265
+            "left": 1135,
+            "top": 323,
+            "right": 1195,
+            "bottom": 397
         },
         "name": "Temp-757:218",
         "callback": null,
@@ -283,10 +283,10 @@
     },
     {
         "rect": {
-            "left": 834,
-            "top": 219,
-            "right": 873,
-            "bottom": 266
+            "left": 1252,
+            "top": 323,
+            "right": 1312,
+            "bottom": 397
         },
         "name": "Renouncement",
         "callback": null,
@@ -300,10 +300,10 @@
     },
     {
         "rect": {
-            "left": 836,
-            "top": 281,
-            "right": 874,
-            "bottom": 326
+            "left": 1252,
+            "top": 415,
+            "right": 1312,
+            "bottom": 489
         },
         "name": "Temp-836:281",
         "callback": null,
@@ -312,10 +312,10 @@
     },
     {
         "rect": {
-            "left": 834,
-            "top": 401,
-            "right": 879,
-            "bottom": 451
+            "left": 1252,
+            "top": 599,
+            "right": 1312,
+            "bottom": 673
         },
         "name": "Temp-834:401",
         "callback": null,
@@ -324,10 +324,10 @@
     },
     {
         "rect": {
-            "left": 914,
-            "top": 405,
-            "right": 955,
-            "bottom": 453
+            "left": 1369,
+            "top": 599,
+            "right": 1429,
+            "bottom": 673
         },
         "name": "Eternal Form",
         "callback": null,
@@ -342,10 +342,10 @@
     },
     {
         "rect": {
-            "left": 910,
-            "top": 341,
-            "right": 951,
-            "bottom": 391
+            "left": 1369,
+            "top": 507,
+            "right": 1429,
+            "bottom": 581
         },
         "name": "Temp-910:341",
         "callback": null,
@@ -354,10 +354,10 @@
     },
     {
         "rect": {
-            "left": 915,
-            "top": 218,
-            "right": 956,
-            "bottom": 266
+            "left": 1369,
+            "top": 323,
+            "right": 1429,
+            "bottom": 397
         },
         "name": "Echoing Strikes",
         "callback": null,
@@ -371,34 +371,10 @@
     },
     {
         "rect": {
-            "left": 956,
-            "top": 266,
-            "right": 911,
-            "bottom": 277
-        },
-        "name": "Temp-956:266",
-        "callback": null,
-        "click_rv": null,
-        "type": "Button"
-    },
-    {
-        "rect": {
-            "left": 955,
-            "top": 324,
-            "right": 1010,
-            "bottom": 209
-        },
-        "name": "Temp-955:324",
-        "callback": null,
-        "click_rv": null,
-        "type": "Button"
-    },
-    {
-        "rect": {
-            "left": 915,
-            "top": 280,
-            "right": 954,
-            "bottom": 323
+            "left": 1369,
+            "top": 415,
+            "right": 1429,
+            "bottom": 489
         },
         "name": "Temp-915:280",
         "callback": null,
@@ -407,10 +383,10 @@
     },
     {
         "rect": {
-            "left": 992,
-            "top": 343,
-            "right": 1034,
-            "bottom": 389
+            "left": 1486,
+            "top": 507,
+            "right": 1546,
+            "bottom": 581
         },
         "name": "Void Aegis",
         "callback": null,
@@ -424,10 +400,10 @@
     },
     {
         "rect": {
-            "left": 1071,
-            "top": 221,
-            "right": 1107,
-            "bottom": 265
+            "left": 1603,
+            "top": 323,
+            "right": 1663,
+            "bottom": 397
         },
         "name": "Time Legion",
         "callback": null,
@@ -441,10 +417,10 @@
     },
     {
         "rect": {
-            "left": 1071,
-            "top": 340,
-            "right": 1108,
-            "bottom": 385
+            "left": 1603,
+            "top": 507,
+            "right": 1663,
+            "bottom": 581
         },
         "name": "Dread",
         "callback": null,
@@ -459,10 +435,10 @@
     },
     {
         "rect": {
-            "left": 991,
-            "top": 464,
-            "right": 1032,
-            "bottom": 514
+            "left": 1486,
+            "top": 691,
+            "right": 1546,
+            "bottom": 765
         },
         "name": "Temp-991:464",
         "callback": null,
@@ -471,10 +447,10 @@
     },
     {
         "rect": {
-            "left": 1071,
-            "top": 405,
-            "right": 1107,
-            "bottom": 449
+            "left": 1603,
+            "top": 599,
+            "right": 1663,
+            "bottom": 673
         },
         "name": "Temp-1071:405",
         "callback": null,
@@ -483,10 +459,10 @@
     },
     {
         "rect": {
-            "left": 1146,
-            "top": 404,
-            "right": 1187,
-            "bottom": 450
+            "left": 1720,
+            "top": 599,
+            "right": 1780,
+            "bottom": 673
         },
         "name": "Temp-1146:404",
         "callback": null,
@@ -495,10 +471,10 @@
     },
     {
         "rect": {
-            "left": 1146,
-            "top": 281,
-            "right": 1187,
-            "bottom": 326
+            "left": 1720,
+            "top": 415,
+            "right": 1780,
+            "bottom": 489
         },
         "name": "Avatar of Regret",
         "callback": null,
