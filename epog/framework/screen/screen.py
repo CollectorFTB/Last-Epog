@@ -1,8 +1,11 @@
 import json
 import weakref
 import pygame
+import os
+
 from framework.button import Button, CounterButton, PassiveTreeButton, TextButton
 from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, greyscale, quit_func
+from framework.logic.screen_connections import screen_information
 
 class Screen:
     INSTANCES = []
@@ -11,24 +14,22 @@ class Screen:
     def get_instance(cls, name):
         return next((screen for screen in cls.INSTANCES if screen.name == name), None) 
 
-    def __init__(self, name, surface, parent, screen_buttons, background_path=None):
+    def __init__(self, name, surface, screen_buttons):
         self.surface: pygame.surface.Surface = surface
-        self.parent: Screen = parent 
+        self.parent: Screen = None
         self.buttons: list[Button] = []
         self.name = name
-        self.image = None
 
-        if background_path:
-            self.colored_image = pygame.image.load(background_path)
+        try:
+            self.colored_image = pygame.image.load(f'assets/{self.name}.png')
             self.colored_image = pygame.transform.scale(self.colored_image, SCREEN_RECT)
             self.greyscale_image = greyscale(self.colored_image)
             self.image = self.colored_image
+        except:
+            self.image = None
 
         self._load_buttons()
         self._load_callbacks(screen_buttons)
-
-        if self.back_button:
-            self.back_button.click_rv = self.parent
 
         self.__class__.INSTANCES.append(weakref.proxy(self))
 
@@ -59,12 +60,12 @@ class Screen:
         with open(f'game_screens/data/{self.name}.json', 'w') as f:
             json.dump(buttons_to_dump, f)
 
-    @property
-    def back_button(self):
-        try:
-            return next(button for button in self.buttons if button.name == 'BackButton')
-        except:
-            return None
+    # @property
+    # def back_button(self):
+    #     try:
+    #         return next(button for button in self.buttons if button.name == 'BackButton')
+    #     except:
+    #         return None
 
     def _add_new_button(self, last_pos, new_pos):
         x1,y1 = new_pos
@@ -126,21 +127,11 @@ class Screen:
                     else:
                         print(mouse_pos)
 
-                # if event.type == pygame.KEYUP:
-                #     nums = [eval(f'pygame.K_{i}') for i in range(10)]
-                #     if event.key in nums:
-                #         i = nums.index(event.key)
-                #         if i in range(len(self.buttons)): 
-                #             if self.buttons[i].click_rv:
-                #                 return self.buttons[i].click_rv
-                #             if self.buttons[i].callback:
-                #                 self.buttons[i].callback(mouse=LEFT_CLICK)
-                        
             pygame.display.update()
-    
     
     @classmethod
     def link_screens(cls):
+        """Set each screen's buttons with names matching to other existing screens, to redirect to that screen when clicked"""
         for screen_to_match in cls.INSTANCES:
             for button in screen_to_match.buttons:
                 if (matching_screen := next((screen for screen in cls.INSTANCES if screen.name == button.name), None)):

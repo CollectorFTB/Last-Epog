@@ -1,1 +1,303 @@
-[{"rect": {"left": 195, "top": 110, "right": 269, "bottom": 182}, "name": "Sentinel", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 127, "top": 195, "right": 184, "bottom": 259}, "name": "Void Knight", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 209, "top": 266, "right": 259, "bottom": 319}, "name": "Paladin", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 292, "top": 201, "right": 340, "bottom": 250}, "name": "Forge Guard", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 100, "top": 460, "right": 260, "bottom": 500}, "name": "BackButton", "callback": null, "click_rv": null, "type": "TextButton", "text": "Back"}, {"rect": {"left": 442, "top": 280, "right": 485, "bottom": 328}, "name": "Overwhelm", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 446, "top": 344, "right": 485, "bottom": 392}, "name": "Juggernaut", "callback": null, "click_rv": null, "type": "PassiveTreeButton", "max": 8, "stats": {"Added Strength": 1, "Added Fire Resistence": 3, "Added Void Resistance": 3}, "required_passives": 0}, {"rect": {"left": 445, "top": 405, "right": 487, "bottom": 449}, "name": "Fearless", "callback": null, "click_rv": null, "type": "PassiveTreeButton", "max": 8, "stats": {"Added Vitality": 1, "Increasd health regen": 10}, "required_passives": 0}, {"rect": {"left": 577, "top": 218, "right": 621, "bottom": 263}, "name": "cc8449ba-129a-4607-ae03-0f72ef7283c3", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 579, "top": 284, "right": 618, "bottom": 327}, "name": "f50c3c59-09fd-430b-9238-efd628425dc8", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 577, "top": 404, "right": 618, "bottom": 452}, "name": "Armour Clad", "callback": null, "click_rv": null, "type": "PassiveTreeButton", "max": 5, "stats": {"Added Armour": 15, "Increased damage taken from nearby enemies": -2}, "required_passives": 5}, {"rect": {"left": 579, "top": 467, "right": 617, "bottom": 506}, "name": "8191b413-c23f-473c-b725-4a8342f121fb", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 709, "top": 342, "right": 748, "bottom": 390}, "name": "d7985095-995e-4302-b277-b5a0b677d9f0", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 842, "top": 220, "right": 882, "bottom": 267}, "name": "0912b8c1-ed9d-4a06-8740-c7e3d21cfe0c", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 844, "top": 340, "right": 882, "bottom": 389}, "name": "Time and Faith", "callback": null, "click_rv": null, "type": "PassiveTreeButton", "max": 5, "stats": {"Health Gain": 5, "Mana Gain": 2}, "required_passives": 15}, {"rect": {"left": 840, "top": 464, "right": 882, "bottom": 512}, "name": "0ff794db-8d1f-4629-bce3-c78f423cccc4", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 974, "top": 280, "right": 1018, "bottom": 332}, "name": "c9f4d0e1-e0ea-4792-9ff1-b694785c99b9", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 972, "top": 404, "right": 1015, "bottom": 452}, "name": "122ef5cf-8b51-4d79-90d4-80b1c4d2bf73", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 1110, "top": 464, "right": 1150, "bottom": 513}, "name": "76512696-5073-4204-afa1-187253bd3287", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 1108, "top": 219, "right": 1147, "bottom": 262}, "name": "58ea4b0e-666d-4205-9990-6517397d3759", "callback": null, "click_rv": null, "type": "CounterButton", "max": 5}, {"rect": {"left": 463, "top": 394, "right": 460, "bottom": 397}, "name": "Temp-463:394", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 470, "top": 395, "right": 887, "bottom": 348}, "name": "Temp-470:395", "callback": null, "click_rv": null, "type": "Button"}]
+[
+    {
+        "rect": {
+            "left": 195,
+            "top": 110,
+            "right": 269,
+            "bottom": 182
+        },
+        "name": "Sentinel",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 127,
+            "top": 195,
+            "right": 184,
+            "bottom": 259
+        },
+        "name": "Void Knight",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 209,
+            "top": 266,
+            "right": 259,
+            "bottom": 319
+        },
+        "name": "Paladin",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 292,
+            "top": 201,
+            "right": 340,
+            "bottom": 250
+        },
+        "name": "Forge Guard",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 100,
+            "top": 460,
+            "right": 260,
+            "bottom": 500
+        },
+        "name": "MainMenu",
+        "callback": null,
+        "click_rv": null,
+        "type": "TextButton",
+        "text": "Back"
+    },
+    {
+        "rect": {
+            "left": 442,
+            "top": 280,
+            "right": 485,
+            "bottom": 328
+        },
+        "name": "Overwhelm",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 446,
+            "top": 344,
+            "right": 485,
+            "bottom": 392
+        },
+        "name": "Juggernaut",
+        "callback": null,
+        "click_rv": null,
+        "type": "PassiveTreeButton",
+        "max": 8,
+        "stats": {
+            "Added Strength": 1,
+            "Added Fire Resistence": 3,
+            "Added Void Resistance": 3
+        },
+        "required_passives": 0
+    },
+    {
+        "rect": {
+            "left": 445,
+            "top": 405,
+            "right": 487,
+            "bottom": 449
+        },
+        "name": "Fearless",
+        "callback": null,
+        "click_rv": null,
+        "type": "PassiveTreeButton",
+        "max": 8,
+        "stats": {
+            "Added Vitality": 1,
+            "Increasd health regen": 10
+        },
+        "required_passives": 0
+    },
+    {
+        "rect": {
+            "left": 577,
+            "top": 218,
+            "right": 621,
+            "bottom": 263
+        },
+        "name": "cc8449ba-129a-4607-ae03-0f72ef7283c3",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 579,
+            "top": 284,
+            "right": 618,
+            "bottom": 327
+        },
+        "name": "f50c3c59-09fd-430b-9238-efd628425dc8",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 577,
+            "top": 404,
+            "right": 618,
+            "bottom": 452
+        },
+        "name": "Armour Clad",
+        "callback": null,
+        "click_rv": null,
+        "type": "PassiveTreeButton",
+        "max": 5,
+        "stats": {
+            "Added Armour": 15,
+            "Increased damage taken from nearby enemies": -2
+        },
+        "required_passives": 5
+    },
+    {
+        "rect": {
+            "left": 579,
+            "top": 467,
+            "right": 617,
+            "bottom": 506
+        },
+        "name": "8191b413-c23f-473c-b725-4a8342f121fb",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 709,
+            "top": 342,
+            "right": 748,
+            "bottom": 390
+        },
+        "name": "d7985095-995e-4302-b277-b5a0b677d9f0",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 842,
+            "top": 220,
+            "right": 882,
+            "bottom": 267
+        },
+        "name": "0912b8c1-ed9d-4a06-8740-c7e3d21cfe0c",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 844,
+            "top": 340,
+            "right": 882,
+            "bottom": 389
+        },
+        "name": "Time and Faith",
+        "callback": null,
+        "click_rv": null,
+        "type": "PassiveTreeButton",
+        "max": 5,
+        "stats": {
+            "Health Gain": 5,
+            "Mana Gain": 2
+        },
+        "required_passives": 15
+    },
+    {
+        "rect": {
+            "left": 840,
+            "top": 464,
+            "right": 882,
+            "bottom": 512
+        },
+        "name": "0ff794db-8d1f-4629-bce3-c78f423cccc4",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 974,
+            "top": 280,
+            "right": 1018,
+            "bottom": 332
+        },
+        "name": "c9f4d0e1-e0ea-4792-9ff1-b694785c99b9",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 972,
+            "top": 404,
+            "right": 1015,
+            "bottom": 452
+        },
+        "name": "122ef5cf-8b51-4d79-90d4-80b1c4d2bf73",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 1110,
+            "top": 464,
+            "right": 1150,
+            "bottom": 513
+        },
+        "name": "76512696-5073-4204-afa1-187253bd3287",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 1108,
+            "top": 219,
+            "right": 1147,
+            "bottom": 262
+        },
+        "name": "58ea4b0e-666d-4205-9990-6517397d3759",
+        "callback": null,
+        "click_rv": null,
+        "type": "CounterButton",
+        "max": 5
+    },
+    {
+        "rect": {
+            "left": 463,
+            "top": 394,
+            "right": 460,
+            "bottom": 397
+        },
+        "name": "Temp-463:394",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    },
+    {
+        "rect": {
+            "left": 470,
+            "top": 395,
+            "right": 887,
+            "bottom": 348
+        },
+        "name": "Temp-470:395",
+        "callback": null,
+        "click_rv": null,
+        "type": "Button"
+    }
+]

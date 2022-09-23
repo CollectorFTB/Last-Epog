@@ -1,1 +1,67 @@
-[{"rect": {"left": 302, "top": 412, "right": 598, "bottom": 449}, "name": "Sentinel", "callback": null, "click_rv": null, "type": "TextButton", "text": "Passives"}, {"rect": {"left": 0, "top": 60, "right": 160, "bottom": 100}, "name": "quit", "callback": null, "click_rv": null, "type": "TextButton", "text": "Quit"}, {"rect": {"left": 763, "top": 262, "right": 995, "bottom": 321}, "name": "save", "callback": null, "click_rv": null, "type": "TextButton", "text": "Save"}, {"rect": {"left": 763, "top": 462, "right": 995, "bottom": 521}, "name": "load", "callback": null, "click_rv": null, "type": "TextButton", "text": "Load"}, {"rect": {"left": 763, "top": 662, "right": 995, "bottom": 721}, "name": "Blessings", "callback": null, "click_rv": null, "type": "TextButton", "text": "Blessings"}]
+[
+    {
+        "rect": {
+            "left": 302,
+            "top": 412,
+            "right": 598,
+            "bottom": 449
+        },
+        "name": "Sentinel",
+        "callback": null,
+        "click_rv": null,
+        "type": "TextButton",
+        "text": "Passives"
+    },
+    {
+        "rect": {
+            "left": 0,
+            "top": 60,
+            "right": 160,
+            "bottom": 100
+        },
+        "name": "quit",
+        "callback": null,
+        "click_rv": null,
+        "type": "TextButton",
+        "text": "Quit"
+    },
+    {
+        "rect": {
+            "left": 763,
+            "top": 262,
+            "right": 995,
+            "bottom": 321
+        },
+        "name": "save",
+        "callback": null,
+        "click_rv": null,
+        "type": "TextButton",
+        "text": "Save"
+    },
+    {
+        "rect": {
+            "left": 763,
+            "top": 462,
+            "right": 995,
+            "bottom": 521
+        },
+        "name": "load",
+        "callback": null,
+        "click_rv": null,
+        "type": "TextButton",
+        "text": "Load"
+    },
+    {
+        "rect": {
+            "left": 763,
+            "top": 662,
+            "right": 995,
+            "bottom": 721
+        },
+        "name": "Blessings",
+        "callback": null,
+        "click_rv": null,
+        "type": "TextButton",
+        "text": "Blessings"
+    }
+]
