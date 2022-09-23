@@ -66,9 +66,10 @@ class Screen:
 
     def mainloop(self, debug=False):
         try:
+            self.should_save = debug
             return self._mainloop(debug=debug)
         finally:
-            if debug:
+            if self.should_save:
                 self._save_buttons()
 
     def _mainloop(self, debug=False):
@@ -103,8 +104,11 @@ class Screen:
                     debug = not debug
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
-                    if event.button == 1:
-                        if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
+                    if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
+                        if debug:
+                            self.dragged_button = clicked_button
+                            self.dragged_position = mouse_pos
+                        else:
                             if 'Temp-' in clicked_button.name:
                                 # clicked_button.name = input(f'Replacing {clicked_button.name}: ')
                                 print(clicked_button.name)
@@ -115,15 +119,26 @@ class Screen:
                                 clicked_button.toggle()
                                 highlighted_buttons.append(clicked_button)
                                 pygame.time.set_timer(unhighlight_event, 200, 1)
-                        elif debug:
-                            if last_click:
-                                self._add_new_button(last_click, mouse_pos)
-                                last_click = None
-                            else:
-                                last_click = mouse_pos
+                            
+                    elif debug and False:
+                        if last_click:
+                            self._add_new_button(last_click, mouse_pos)
+                            last_click = None
+                        else:
+                            last_click = mouse_pos
                     else:
                         last_click = None
                         print(mouse_pos)
+
+                if event.type == pygame.MOUSEBUTTONUP:
+                    if debug:
+                        w,h = self.dragged_button.rect.width, self.dragged_button.rect.height
+                        self.dragged_button.rect.left = mouse_pos[0]
+                        self.dragged_button.rect.right = mouse_pos[0] + w
+                        self.dragged_button.rect.top = mouse_pos[1]
+                        self.dragged_button.rect.bottom = mouse_pos[1] + h
+                        self.should_save = True
+
 
             pygame.display.update()
     
