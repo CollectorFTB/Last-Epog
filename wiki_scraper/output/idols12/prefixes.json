@@ -1,0 +1,100 @@
+[
+    {
+        "affix_name": "Chance To Gain 30 Ward When Hit",
+        "affix_form": [
+            "Added Chance To Gain 30 Ward When Hit"
+        ],
+        "affix_values": [
+            [
+                "(6-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Ignite On Hit",
+        "affix_form": [
+            "Added Chance To Ignite On Hit"
+        ],
+        "affix_values": [
+            [
+                "(5-11)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Sentinel / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Shock On Hit",
+        "affix_form": [
+            "Added Chance To Shock On Hit"
+        ],
+        "affix_values": [
+            [
+                "(7-19)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Chance",
+        "affix_form": [
+            "Increased Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(8-21)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Freeze Rate Multiplier",
+        "affix_form": [
+            "Added Freeze Rate Multiplier"
+        ],
+        "affix_values": [
+            [
+                "(6-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health",
+        "affix_form": [
+            "Increased Health"
+        ],
+        "affix_values": [
+            [
+                "(2-5)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Potion Health Converted To Ward",
+        "affix_form": [
+            "Added Potion Health Converted To Ward"
+        ],
+        "affix_values": [
+            [
+                "(8-21)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    }
+]

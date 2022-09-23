@@ -1,0 +1,72 @@
+[
+    {
+        "affix_name": "Damage Over Time",
+        "affix_form": [
+            "Increased Damage Over Time"
+        ],
+        "affix_values": [
+            [
+                "(4-10)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Dodge Rating",
+        "affix_form": [
+            "Added Dodge Rating"
+        ],
+        "affix_values": [
+            [
+                "(4-12)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health Regeneration",
+        "affix_form": [
+            "Increased Health Regeneration"
+        ],
+        "affix_values": [
+            [
+                "(4-12)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Healing Effectiveness",
+        "affix_form": [
+            "Added Increased Healing Effectiveness"
+        ],
+        "affix_values": [
+            [
+                "(6-17)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Stun Chance",
+        "affix_form": [
+            "Added Increased Stun Chance"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    }
+]

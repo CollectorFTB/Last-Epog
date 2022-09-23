@@ -1,0 +1,512 @@
+[
+    {
+        "affix_name": "Bleed Chance per Equipped Sword",
+        "affix_form": [
+            "Added Bleed Chance per Equipped Sword"
+        ],
+        "affix_values": [
+            [
+                "(12-33)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Bow Physical Damage for Ballistae",
+        "affix_form": [
+            "Added Bow Physical Damage for Ballistae"
+        ],
+        "affix_values": [
+            [
+                "(4-10)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance For Summon Wraith To Summon A Flame Wraith Instead",
+        "affix_form": [
+            "Added Chance For Summon Wraith To Summon A Flame Wraith Instead"
+        ],
+        "affix_values": [
+            [
+                "(24-57)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance For Summon Wraith To Summon A Putrid Wraith Instead",
+        "affix_form": [
+            "Added Chance For Summon Wraith To Summon A Putrid Wraith Instead"
+        ],
+        "affix_values": [
+            [
+                "(24-57)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance On 10 Or More Mana Spent To Cast Lightning At A Nearby Enemy",
+        "affix_form": [
+            "Added Chance On 10 Or More Mana Spent To Cast Lightning At A Nearby Enemy"
+        ],
+        "affix_values": [
+            [
+                "(17-48)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Apply Frostbite on Hit with Cold Skills",
+        "affix_form": [
+            "Added Chance To Apply Frostbite on Hit with Cold Skills"
+        ],
+        "affix_values": [
+            [
+                "(24-57)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Apply Frostbite With Cold Skills",
+        "affix_form": [
+            "Added Chance To Apply Frostbite With Cold Skills"
+        ],
+        "affix_values": [
+            [
+                "(24-57)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance to Bleed on Hit with Shurikens",
+        "affix_form": [
+            "Added Chance to Bleed on Hit with Shurikens"
+        ],
+        "affix_values": [
+            [
+                "(14-38)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Blind With Spells",
+        "affix_form": [
+            "Added Chance To Blind With Spells"
+        ],
+        "affix_values": [
+            [
+                "(12-33)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Elemental Nova When Hit",
+        "affix_form": [
+            "Added Chance To Cast Elemental Nova When Hit"
+        ],
+        "affix_values": [
+            [
+                "(4-10)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Fire Aura On Crit (1 second cooldown)",
+        "affix_form": [
+            "Added Chance To Cast Fire Aura On Crit (1 second cooldown)"
+        ],
+        "affix_values": [
+            [
+                "(6-14)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Lightning Blast When Hit While You Have Lightning Aegis",
+        "affix_form": [
+            "Added Chance To Cast Lightning Blast When Hit While You Have Lightning Aegis"
+        ],
+        "affix_values": [
+            [
+                "(9-19)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Chance To Cast Poison Nova When Hit",
+        "affix_form": [
+            "Added Chance To Cast Poison Nova When Hit"
+        ],
+        "affix_values": [
+            [
+                "(4-10)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Smite When You Hit With Throwing Attacks",
+        "affix_form": [
+            "Added Chance To Cast Smite When You Hit With Throwing Attacks"
+        ],
+        "affix_values": [
+            [
+                "(4-9)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Create An Aftershock Under A Nearby Enemy On Melee Attack",
+        "affix_form": [
+            "Added Chance To Create An Aftershock Under A Nearby Enemy On Melee Attack"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage Over Time While At Low Health",
+        "affix_form": [
+            "Increased Damage Over Time While At Low Health"
+        ],
+        "affix_values": [
+            [
+                "(25-66)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage Reflected While You Have Lightning Aegis",
+        "affix_form": [
+            "Added Damage Reflected While You Have Lightning Aegis"
+        ],
+        "affix_values": [
+            [
+                "(28-95)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Fire Damage Taken As Physical",
+        "affix_form": [
+            "Added Fire Damage Taken As Physical"
+        ],
+        "affix_values": [
+            [
+                "(8-19)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Healing Effectiveness",
+        "affix_form": [
+            "Added Healing Effectiveness"
+        ],
+        "affix_values": [
+            [
+                "(30-66)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Health on Kill",
+        "affix_form": [
+            "Added Health on Kill"
+        ],
+        "affix_values": [
+            [
+                "(10-19)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Area of mirage attacks with Lethal Mirage",
+        "affix_form": [
+            "Added Increased Area of mirage attacks with Lethal Mirage"
+        ],
+        "affix_values": [
+            [
+                "(13-33)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Aspect Of The Shark Duration",
+        "affix_form": [
+            "Added Increased Aspect Of The Shark Duration"
+        ],
+        "affix_values": [
+            [
+                "(7-24)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Bow Attack Speed for 3 seconds when you use a Bow Attack (10 second cooldown)",
+        "affix_form": [
+            "Added Increased Bow Attack Speed for 3 seconds when you use a Bow Attack (10 second cooldown)"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Damage With Rip Blood And Blood Splatter",
+        "affix_form": [
+            "Added Increased Rip Blood Damage",
+            "Added Increased Blood Splatter Damage"
+        ],
+        "affix_values": [
+            [
+                "(27-71)%",
+                "(27-71)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Healing Effectiveness",
+        "affix_form": [
+            "Added Increased Healing Effectiveness"
+        ],
+        "affix_values": [
+            [
+                "(35-95)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Lightning Damage While You Have Lightning Aegis",
+        "affix_form": [
+            "Added Increased Lightning Damage While You Have Lightning Aegis"
+        ],
+        "affix_values": [
+            [
+                "(23-66)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Increased Melee Damage For 4 Seconds When a Skill Echoes",
+        "affix_form": [
+            "Added Increased Melee Damage For 4 Seconds When a Skill Echoes"
+        ],
+        "affix_values": [
+            [
+                "(24-62)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Stun Chance",
+        "affix_form": [
+            "Added Increased Stun Chance"
+        ],
+        "affix_values": [
+            [
+                "(42-114)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Stun Duration",
+        "affix_form": [
+            "Added Increased Stun Duration"
+        ],
+        "affix_values": [
+            [
+                "(14-38)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Void Damage For 4 Seconds When a Skill Echoes",
+        "affix_form": [
+            "Added Increased Void Damage For 4 Seconds When a Skill Echoes"
+        ],
+        "affix_values": [
+            [
+                "(28-76)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Bleed Duration For You And Your Minions",
+        "affix_form": [
+            "Added Increased Bleed Duration",
+            "Added Increased Minion Bleed Duration"
+        ],
+        "affix_values": [
+            [
+                "(7-24)%",
+                "(7-19)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Physical Damage For Swarm Strike and Locusts",
+        "affix_form": [
+            "Added Melee Physical Damage with Swarm Strike",
+            "Added Melee Physical Damage for Locusts"
+        ],
+        "affix_values": [
+            [
+                "(3-8)",
+                "(2-4)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Increased Healing Effectiveness",
+        "affix_form": [
+            "Added Minion Increased Healing Effectiveness"
+        ],
+        "affix_values": [
+            [
+                "(37-100)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Poison Chance per Equipped Dagger",
+        "affix_form": [
+            "Added Poison Chance per Equipped Dagger"
+        ],
+        "affix_values": [
+            [
+                "(12-33)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward Gained When Damage Leaves You At Low Health (5 Second Cooldown)",
+        "affix_form": [
+            "Added Ward Gained When Damage Leaves You At Low Health (5 Second Cooldown)"
+        ],
+        "affix_values": [
+            [
+                "(33-95)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward Retention",
+        "affix_form": [
+            "Added Ward Retention"
+        ],
+        "affix_values": [
+            [
+                "(12-28)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    }
+]

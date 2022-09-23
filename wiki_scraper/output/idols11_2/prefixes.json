@@ -1,0 +1,72 @@
+[
+    {
+        "affix_name": "Armour",
+        "affix_form": [
+            "Added Armour"
+        ],
+        "affix_values": [
+            [
+                "(10-27)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Mana",
+        "affix_form": [
+            "Added Mana"
+        ],
+        "affix_values": [
+            [
+                "(3-7)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Stun Avoidance",
+        "affix_form": [
+            "Added Stun Avoidance"
+        ],
+        "affix_values": [
+            [
+                "(34-77)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward On Potion Use",
+        "affix_form": [
+            "Added Ward On Potion Use"
+        ],
+        "affix_values": [
+            [
+                "(5-14)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward Retention",
+        "affix_form": [
+            "Added Ward Retention"
+        ],
+        "affix_values": [
+            [
+                "(2-5)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    }
+]

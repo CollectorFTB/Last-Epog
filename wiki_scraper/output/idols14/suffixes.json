@@ -1,0 +1,766 @@
+[
+    {
+        "affix_name": "Block Effectiveness",
+        "affix_form": [
+            "Added Block Effectiveness"
+        ],
+        "affix_values": [
+            [
+                "(185-500)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Bow Damage",
+        "affix_form": [
+            "Increased Bow Damage"
+        ],
+        "affix_values": [
+            [
+                "(17-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Bleed on Melee Hit for You and Your Minions",
+        "affix_form": [
+            "Added Melee Chance To Bleed On Hit",
+            "Added Minion Melee Chance To Bleed On Hit"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%",
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Fire Aura When Hit (1 second cooldown)",
+        "affix_form": [
+            "Added Chance To Cast Fire Aura When Hit (1 second cooldown)"
+        ],
+        "affix_values": [
+            [
+                "(2-5)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Fear On Hit",
+        "affix_form": [
+            "Added Chance To Fear On Hit"
+        ],
+        "affix_values": [
+            [
+                "(6-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance to Gain 20 Ward on Melee Hit",
+        "affix_form": [
+            "Added Chance to Gain 20 Ward on Melee Hit"
+        ],
+        "affix_values": [
+            [
+                "(8-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Gain Lightning Aegis When Hit",
+        "affix_form": [
+            "Added Chance To Gain Lightning Aegis When Hit"
+        ],
+        "affix_values": [
+            [
+                "(4-10)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Shred Armor on Hit With Fire Skills",
+        "affix_form": [
+            "Added Chance To Shred Armor on Hit With Fire Skills"
+        ],
+        "affix_values": [
+            [
+                "(30-80)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Shred Armor on Hit with Throwing Attacks",
+        "affix_form": [
+            "Added Chance To Shred Armor on Hit with Throwing Attacks"
+        ],
+        "affix_values": [
+            [
+                "(30-80)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Shred Armor on Melee Hit",
+        "affix_form": [
+            "Added Chance To Shred Armor on Melee Hit"
+        ],
+        "affix_values": [
+            [
+                "(30-80)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Cold Resistance",
+        "affix_form": [
+            "Added Cold Resistance"
+        ],
+        "affix_values": [
+            [
+                "(20-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Avoidance for You and Your Minions",
+        "affix_form": [
+            "Added Critical Strike Avoidance",
+            "Added Minion Critical Strike Avoidance"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%",
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Chance For You And Your Minions",
+        "affix_form": [
+            "Increased Critical Strike Chance",
+            "Increased Minion Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%",
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Chance with Lightning Skills for You and Your Minions",
+        "affix_form": [
+            "Increased Critical Strike Chance With Lightning Skills",
+            "Increased Minion Critical Strike Chance With Lightning Skills"
+        ],
+        "affix_values": [
+            [
+                "(19-50)%",
+                "(19-50)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage Over Time For You And Your Minions",
+        "affix_form": [
+            "Increased Damage Over Time",
+            "Increased Minion Damage Over Time"
+        ],
+        "affix_values": [
+            [
+                "(18-48)%",
+                "(18-48)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Elemental Resistance",
+        "affix_form": [
+            "Added Elemental Resistance"
+        ],
+        "affix_values": [
+            [
+                "(8-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Fire Penetration With Melee Attacks",
+        "affix_form": [
+            "Added Fire Penetration With Melee Attacks"
+        ],
+        "affix_values": [
+            [
+                "(7-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Fire Resistance",
+        "affix_form": [
+            "Added Fire Resistance"
+        ],
+        "affix_values": [
+            [
+                "(20-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health",
+        "affix_form": [
+            "Added Health"
+        ],
+        "affix_values": [
+            [
+                "(30-80)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Sentinel / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health Gained on Dodge",
+        "affix_form": [
+            "Added Health Gained on Dodge"
+        ],
+        "affix_values": [
+            [
+                "(5-12)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Armour Shred Duration",
+        "affix_form": [
+            "Added Increased Armour Shred Duration"
+        ],
+        "affix_values": [
+            [
+                "(40-100)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Aspect Of The Shark Effect",
+        "affix_form": [
+            "Added Increased Aspect Of The Shark Effect"
+        ],
+        "affix_values": [
+            [
+                "(6-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Cold Damage (Doubled If You Have Over 300 Max Mana)",
+        "affix_form": [
+            "Added Increased Cold Damage (Doubled If You Have Over 300 Max Mana)"
+        ],
+        "affix_values": [
+            [
+                "(16-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Damage of Attacks use by Shadows",
+        "affix_form": [
+            "Added Increased Damage of Attacks use by Shadows"
+        ],
+        "affix_values": [
+            [
+                "(25-60)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased damage while wielding a bow",
+        "affix_form": [
+            "Added Increased damage while wielding a bow"
+        ],
+        "affix_values": [
+            [
+                "(17-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Minion Cooldown Recovery Speed",
+        "affix_form": [
+            "Added Increased Minion Cooldown Recovery Speed"
+        ],
+        "affix_values": [
+            [
+                "(12-35)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Lightning Resistance",
+        "affix_form": [
+            "Added Lightning Resistance"
+        ],
+        "affix_values": [
+            [
+                "(20-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Damage For You And Your Minions",
+        "affix_form": [
+            "Increased Melee Damage",
+            "Increased Minion Melee Damage"
+        ],
+        "affix_values": [
+            [
+                "(18-48)%",
+                "(18-48)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Fire Damage",
+        "affix_form": [
+            "Added Melee Fire Damage"
+        ],
+        "affix_values": [
+            [
+                "(2-4)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Lightning Damage",
+        "affix_form": [
+            "Added Melee Lightning Damage"
+        ],
+        "affix_values": [
+            [
+                "(2-4)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Chance To Apply Mark For Death On Hit",
+        "affix_form": [
+            "Added Minion Chance To Apply Mark For Death On Hit"
+        ],
+        "affix_values": [
+            [
+                "(4-10)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Chance To Poison On Hit",
+        "affix_form": [
+            "Added Minion Chance To Poison On Hit"
+        ],
+        "affix_values": [
+            [
+                "(11-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Dodge Rating",
+        "affix_form": [
+            "Added Minion Dodge Rating"
+        ],
+        "affix_values": [
+            [
+                "(89-240)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Percent Missing Health Restored On Lunge",
+        "affix_form": [
+            "Added Percent Missing Health Restored On Lunge"
+        ],
+        "affix_values": [
+            [
+                "(5-12)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical And Poison Damage",
+        "affix_form": [
+            "Increased Physical Damage",
+            "Increased Poison Damage"
+        ],
+        "affix_values": [
+            [
+                "(18-48)%",
+                "(18-48)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical Damage Over Time",
+        "affix_form": [
+            "Increased Physical Damage Over Time"
+        ],
+        "affix_values": [
+            [
+                "(33-90)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical Damage over Time",
+        "affix_form": [
+            "Increased Physical Damage over Time"
+        ],
+        "affix_values": [
+            [
+                "(33-90)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical Spell Critical Strike Chance",
+        "affix_form": [
+            "Increased Physical Spell Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(24-65)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Poison Chance On Spell Hit",
+        "affix_form": [
+            "Added Poison Chance On Spell Hit"
+        ],
+        "affix_values": [
+            [
+                "(15-36)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Cold Damage",
+        "affix_form": [
+            "Increased Cold Damage",
+            "Increased Minion Cold Damage"
+        ],
+        "affix_values": [
+            [
+                "(17-45)%",
+                "(17-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Fire Damage",
+        "affix_form": [
+            "Increased Fire Damage",
+            "Increased Minion Fire Damage"
+        ],
+        "affix_values": [
+            [
+                "(17-45)%",
+                "(17-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Sentinel / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Lightning Damage",
+        "affix_form": [
+            "Increased Lightning Damage",
+            "Increased Minion Lightning Damage"
+        ],
+        "affix_values": [
+            [
+                "(17-45)%",
+                "(17-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Spell Damage For You And Your Minions",
+        "affix_form": [
+            "Increased Spell Damage",
+            "Increased Minion Spell Damage"
+        ],
+        "affix_values": [
+            [
+                "(18-48)%",
+                "(18-48)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Spell Damage Leeched While Channelling",
+        "affix_form": [
+            "Added Spell Damage Leeched While Channelling"
+        ],
+        "affix_values": [
+            [
+                "(1-3)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Spell Fire Damage",
+        "affix_form": [
+            "Added Spell Fire Damage"
+        ],
+        "affix_values": [
+            [
+                "(2-4)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Spell Lightning Damage",
+        "affix_form": [
+            "Added Spell Lightning Damage"
+        ],
+        "affix_values": [
+            [
+                "(2-4)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Throwing Physical Damage",
+        "affix_form": [
+            "Increased Throwing Physical Damage"
+        ],
+        "affix_values": [
+            [
+                "(22-60)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Totem Damage",
+        "affix_form": [
+            "Increased Totem Damage"
+        ],
+        "affix_values": [
+            [
+                "(30-80)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Totem Health",
+        "affix_form": [
+            "Increased Totem Health"
+        ],
+        "affix_values": [
+            [
+                "(61-165)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Void Damage Over Time",
+        "affix_form": [
+            "Increased Void Damage Over Time"
+        ],
+        "affix_values": [
+            [
+                "(33-90)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward gained on use with Shift",
+        "affix_form": [
+            "Added Ward gained on use with Shift"
+        ],
+        "affix_values": [
+            [
+                "(17-45)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward Gained When You Create a Shadow",
+        "affix_form": [
+            "Added Ward Gained When You Create a Shadow"
+        ],
+        "affix_values": [
+            [
+                "(5-15)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward Retention",
+        "affix_form": [
+            "Added Ward Retention"
+        ],
+        "affix_values": [
+            [
+                "(13-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    }
+]

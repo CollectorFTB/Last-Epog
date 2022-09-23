@@ -1,0 +1,480 @@
+[
+    {
+        "affix_name": "Abyssal Decay Duration",
+        "affix_form": [
+            "Increased Abyssal Decay Duration"
+        ],
+        "affix_values": [
+            [
+                "(8-16)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Added Static Orb Tendrils",
+        "affix_form": [
+            "Added Added Static Orb Tendrils"
+        ],
+        "affix_values": [
+            [
+                "(1-3)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Armor Granted By Bone Armor",
+        "affix_form": [
+            "Added Armor Granted By Bone Armor"
+        ],
+        "affix_values": [
+            [
+                "(40-134)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Apply Damned On Hit",
+        "affix_form": [
+            "Added Chance To Apply Damned On Hit"
+        ],
+        "affix_values": [
+            [
+                "(9-24)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Ice Thorns When Hit",
+        "affix_form": [
+            "Added Chance To Cast Ice Thorns When Hit"
+        ],
+        "affix_values": [
+            [
+                "(2-5)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Deal 20 Fire Damage On Hit With Shield Throw",
+        "affix_form": [
+            "Added Chance To Deal 20 Fire Damage On Hit With Shield Throw"
+        ],
+        "affix_values": [
+            [
+                "(10-27)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Gain Haste For 3 Seconds When You Summon A Totem",
+        "affix_form": [
+            "Added Chance To Gain Haste For 3 Seconds When You Summon A Totem"
+        ],
+        "affix_values": [
+            [
+                "(11-34)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance to Ignite on Bow Hit",
+        "affix_form": [
+            "Added Chance to Ignite on Bow Hit"
+        ],
+        "affix_values": [
+            [
+                "(10-23)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Poison On Hit",
+        "affix_form": [
+            "Added Chance To Poison On Hit"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Cold Damage Taken As Physical",
+        "affix_form": [
+            "Added Cold Damage Taken As Physical"
+        ],
+        "affix_values": [
+            [
+                "(5-13)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Chance For Skeletons And Skeletal Mages",
+        "affix_form": [
+            "Added Skeleton Critical Strike Chance",
+            "Added Skeletal Mage Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(1-2)%",
+                "(1-2)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Chance With Lightning Skills",
+        "affix_form": [
+            "Increased Critical Strike Chance With Lightning Skills"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Multiplier while dual wielding",
+        "affix_form": [
+            "Added Critical Strike Multiplier while dual wielding"
+        ],
+        "affix_values": [
+            [
+                "(8-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage Over Time",
+        "affix_form": [
+            "Increased Damage Over Time"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage Over Time While Transformed",
+        "affix_form": [
+            "Increased Damage Over Time While Transformed"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Frostbite Duration",
+        "affix_form": [
+            "Added Frostbite Duration"
+        ],
+        "affix_values": [
+            [
+                "(10-24)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health Regeneration",
+        "affix_form": [
+            "Increased Health Regeneration"
+        ],
+        "affix_values": [
+            [
+                "(17-46)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Area with Cinder Strike's First Attack",
+        "affix_form": [
+            "Added Increased Area with Cinder Strike's First Attack"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Area with Dancing Strikes",
+        "affix_form": [
+            "Added Increased Area with Dancing Strikes"
+        ],
+        "affix_values": [
+            [
+                "(9-23)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Area with Detonating Arrow",
+        "affix_form": [
+            "Added Increased Area with Detonating Arrow"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Critical Strike Chance per Equipped Sword",
+        "affix_form": [
+            "Added Increased Critical Strike Chance per Equipped Sword"
+        ],
+        "affix_values": [
+            [
+                "(13-37)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Elemental Nova Area",
+        "affix_form": [
+            "Added Increased Elemental Nova Area"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Fire Aura Area",
+        "affix_form": [
+            "Added Increased Fire Aura Area"
+        ],
+        "affix_values": [
+            [
+                "(10-24)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Warpath Area",
+        "affix_form": [
+            "Added Increased Warpath Area"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Lightning Damage With Hammer Throw",
+        "affix_form": [
+            "Added Lightning Damage With Hammer Throw"
+        ],
+        "affix_values": [
+            [
+                "(3-8)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Mana",
+        "affix_form": [
+            "Added Mana"
+        ],
+        "affix_values": [
+            [
+                "(10-27)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Mana Gained When Transforming Back To Human Form",
+        "affix_form": [
+            "Added Mana Gained When Transforming Back To Human Form"
+        ],
+        "affix_values": [
+            [
+                "(3-10)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Critical Strike Multiplier While Transformed",
+        "affix_form": [
+            "Added Melee Critical Strike Multiplier While Transformed"
+        ],
+        "affix_values": [
+            [
+                "(8-22)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Damage While Transformed",
+        "affix_form": [
+            "Increased Melee Damage While Transformed"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Chance To Inflict Plague on Hit",
+        "affix_form": [
+            "Added Minion Chance To Inflict Plague on Hit"
+        ],
+        "affix_values": [
+            [
+                "(3-7)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Cold Damage",
+        "affix_form": [
+            "Increased Minion Cold Damage"
+        ],
+        "affix_values": [
+            [
+                "(26-72)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Fire Damage",
+        "affix_form": [
+            "Increased Minion Fire Damage"
+        ],
+        "affix_values": [
+            [
+                "(26-72)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Spell Damage While Transformed",
+        "affix_form": [
+            "Increased Spell Damage While Transformed"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ward Granted When Casting Flame Ward",
+        "affix_form": [
+            "Added Ward Granted When Casting Flame Ward"
+        ],
+        "affix_values": [
+            [
+                "(28-64)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    }
+]

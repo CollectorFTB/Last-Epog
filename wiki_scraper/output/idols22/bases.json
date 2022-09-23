@@ -1,0 +1,52 @@
+[
+    {
+        "item_name": "Adorned Arcane Idol",
+        "level_requirement": "Minimum Drop Level: 25",
+        "class": null,
+        "implicits": [
+            "Size: 2\u00d72",
+            "Requires Level: 1",
+            "Requires Class: Mage"
+        ]
+    },
+    {
+        "item_name": "Adorned Heorot Idol",
+        "level_requirement": "Minimum Drop Level: 25",
+        "class": null,
+        "implicits": [
+            "Size: 2\u00d72",
+            "Requires Level: 1",
+            "Requires Class: Primalist"
+        ]
+    },
+    {
+        "item_name": "Adorned Immortal Idol",
+        "level_requirement": "Minimum Drop Level: 25",
+        "class": null,
+        "implicits": [
+            "Size: 2\u00d72",
+            "Requires Level: 1",
+            "Requires Class: Acolyte"
+        ]
+    },
+    {
+        "item_name": "Adorned Majasan Idol",
+        "level_requirement": "Minimum Drop Level: 25",
+        "class": null,
+        "implicits": [
+            "Size: 2\u00d72",
+            "Requires Level: 1",
+            "Requires Class: Rogue"
+        ]
+    },
+    {
+        "item_name": "Adorned Rahyeh Idol",
+        "level_requirement": "Minimum Drop Level: 25",
+        "class": null,
+        "implicits": [
+            "Size: 2\u00d72",
+            "Requires Level: 1",
+            "Requires Class: Sentinel"
+        ]
+    }
+]

@@ -1,0 +1,122 @@
+[
+    {
+        "affix_name": "Necrotic Resistance",
+        "affix_form": [
+            "Added Necrotic Resistance"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical Resistance",
+        "affix_form": [
+            "Added Physical Resistance"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Poison Resistance",
+        "affix_form": [
+            "Added Poison Resistance"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Necrotic Damage",
+        "affix_form": [
+            "Increased Necrotic Damage",
+            "Increased Minion Necrotic Damage"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%",
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Physical Damage",
+        "affix_form": [
+            "Increased Physical Damage",
+            "Increased Minion Physical Damage"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%",
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Poison Damage",
+        "affix_form": [
+            "Increased Poison Damage",
+            "Increased Minion Poison Damage"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%",
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Void Damage",
+        "affix_form": [
+            "Increased Void Damage",
+            "Increased Minion Void Damage"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%",
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Void Resistance",
+        "affix_form": [
+            "Added Void Resistance"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    }
+]

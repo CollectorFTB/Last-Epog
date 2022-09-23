@@ -21,7 +21,6 @@ class Wiki:
     def open_wiki(browser, slot=None, category=None):
         if slot and category:
             browser.get(WIKI_FORMAT.format(slot=slot, category=category))
-            pdb.set_trace()
             wait_for_element('item-card', By.CLASS_NAME)
 
             rarity_selector = browser.find_element(By.CLASS_NAME, 'rarity-selector')

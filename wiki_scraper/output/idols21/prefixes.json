@@ -1,0 +1,72 @@
+[
+    {
+        "affix_name": "Chance To Bleed On Hit",
+        "affix_form": [
+            "Added Chance To Bleed On Hit"
+        ],
+        "affix_values": [
+            [
+                "(5-14)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Poison On Hit",
+        "affix_form": [
+            "Added Chance To Poison On Hit"
+        ],
+        "affix_values": [
+            [
+                "(4-11)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health on Kill",
+        "affix_form": [
+            "Added Health on Kill"
+        ],
+        "affix_values": [
+            [
+                "(4-8)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Stun Duration",
+        "affix_form": [
+            "Added Increased Stun Duration"
+        ],
+        "affix_values": [
+            [
+                "(6-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Vitality",
+        "affix_form": [
+            "Added Vitality"
+        ],
+        "affix_values": [
+            [
+                "(1-3)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    }
+]

@@ -1,6 +1,7 @@
 import os
 import pdb
 import sys
+import json
 from pprint import pprint as pp
 from selenium import webdriver
 
@@ -21,7 +22,6 @@ SLOT_TO_SLOT_NAME = {
     'amulets': 'Amulet',
 }
 
-import json
 
 DIR_NAME = 'output/'
 
@@ -82,7 +82,7 @@ def idols_main():
 
         for affix in AFFIXES:
             Wiki.open_wiki(slot=slot, category=affix)       
-            affix_mods = Wiki.scrape_affixes(SLOT_TO_SLOT_NAME[slot])
+            affix_mods = Wiki.scrape_affixes(slot)
             d(affix_mods, f'{slot_dir_name}/{affix}')
     
 

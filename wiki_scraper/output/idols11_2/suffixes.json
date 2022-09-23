@@ -1,0 +1,120 @@
+[
+    {
+        "affix_name": "Cold Resistance",
+        "affix_form": [
+            "Added Cold Resistance"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Elemental Resistance",
+        "affix_form": [
+            "Added Elemental Resistance"
+        ],
+        "affix_values": [
+            [
+                "(1-3)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Fire Resistance",
+        "affix_form": [
+            "Added Fire Resistance"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health",
+        "affix_form": [
+            "Added Health"
+        ],
+        "affix_values": [
+            [
+                "(5-14)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Sentinel / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Lightning Resistance",
+        "affix_form": [
+            "Added Lightning Resistance"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Cold Damage",
+        "affix_form": [
+            "Increased Cold Damage",
+            "Increased Minion Cold Damage"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%",
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Fire Damage",
+        "affix_form": [
+            "Increased Fire Damage",
+            "Increased Minion Fire Damage"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%",
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Sentinel / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Shared Lightning Damage",
+        "affix_form": [
+            "Increased Lightning Damage",
+            "Increased Minion Lightning Damage"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%",
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    }
+]

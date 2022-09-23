@@ -1,0 +1,434 @@
+[
+    {
+        "affix_name": "Armour",
+        "affix_form": [
+            "Added Armour"
+        ],
+        "affix_values": [
+            [
+                "(58-156)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Bees Per 10 Seconds",
+        "affix_form": [
+            "Added Bees Per 10 Seconds"
+        ],
+        "affix_values": [
+            [
+                "(3-7)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Very rare)"
+    },
+    {
+        "affix_name": "Black Arrows dropped by Dark Quiver and Increased Bow Damage (hybrid mod)",
+        "affix_form": [
+            "Added Black Arrows Dropped by Dark Quiver",
+            "Increased Bow Damage"
+        ],
+        "affix_values": [
+            [
+                "(2-2)",
+                "(10-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Bow Elemental Damage",
+        "affix_form": [
+            "Increased Bow Elemental Damage"
+        ],
+        "affix_values": [
+            [
+                "(20-50)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Cast Speed for Totems",
+        "affix_form": [
+            "Increased Cast Speed for Totems"
+        ],
+        "affix_values": [
+            [
+                "(11-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance For Hungering Souls To Fire 6 Additional Projectiles",
+        "affix_form": [
+            "Added Chance For Hungering Souls To Fire 6 Additional Projectiles"
+        ],
+        "affix_values": [
+            [
+                "(8-25)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance On Hit To Summon A Thorn Totem",
+        "affix_form": [
+            "Added Chance On Hit To Summon A Thorn Totem"
+        ],
+        "affix_values": [
+            [
+                "(4-10)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Bleed On Hit",
+        "affix_form": [
+            "Added Chance To Bleed On Hit"
+        ],
+        "affix_values": [
+            [
+                "(13-36)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast An Avalanche Boulder At a Nearby Enemy On Melee Attack",
+        "affix_form": [
+            "Added Chance To Cast An Avalanche Boulder At a Nearby Enemy On Melee Attack"
+        ],
+        "affix_values": [
+            [
+                "(5-14)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast An Avalanche Boulder At a Nearby Enemy On Spell Cast",
+        "affix_form": [
+            "Added Chance To Cast An Avalanche Boulder At a Nearby Enemy On Spell Cast"
+        ],
+        "affix_values": [
+            [
+                "(4-11)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Create A Void Essence On Kill",
+        "affix_form": [
+            "Added Chance To Create A Void Essence On Kill"
+        ],
+        "affix_values": [
+            [
+                "(4-10)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Gain 30 Ward When Hit",
+        "affix_form": [
+            "Added Chance To Gain 30 Ward When Hit"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Chance for Totems",
+        "affix_form": [
+            "Added Critical Strike Chance for Totems"
+        ],
+        "affix_values": [
+            [
+                "(2-4)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Multiplier With Rive And Judgement",
+        "affix_form": [
+            "Added Judgement Critical Strike Multiplier",
+            "Added Rive Critical Strike Multiplier"
+        ],
+        "affix_values": [
+            [
+                "(17-45)%",
+                "(17-45)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage While Transformed",
+        "affix_form": [
+            "Increased Damage While Transformed"
+        ],
+        "affix_values": [
+            [
+                "(26-70)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Ignite And Spreading Flames Duration",
+        "affix_form": [
+            "Added Ignite Duration",
+            "Added Spreading Flames Duration"
+        ],
+        "affix_values": [
+            [
+                "(7-25)%",
+                "(7-25)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Area of Void Cleave",
+        "affix_form": [
+            "Added Increased Area of Void Cleave"
+        ],
+        "affix_values": [
+            [
+                "(11-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Area With Rive And Forge Strike",
+        "affix_form": [
+            "Added Increased Area with Rive",
+            "Added Increased Area with Forge Strike"
+        ],
+        "affix_values": [
+            [
+                "(11-30)%",
+                "(11-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Cooldown Recovery Speed for Surge",
+        "affix_form": [
+            "Added Increased Cooldown Recovery Speed for Surge"
+        ],
+        "affix_values": [
+            [
+                "(6-18)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Critical Strike Chance per Equipped Dagger",
+        "affix_form": [
+            "Added Increased Critical Strike Chance per Equipped Dagger"
+        ],
+        "affix_values": [
+            [
+                "(20-55)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased damage per arrow with Multishot",
+        "affix_form": [
+            "Added Increased damage per arrow with Multishot"
+        ],
+        "affix_values": [
+            [
+                "(3-6)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Damage with Umbral Blades per stack of Dusk Shroud",
+        "affix_form": [
+            "Added Increased Damage with Umbral Blades per stack of Dusk Shroud"
+        ],
+        "affix_values": [
+            [
+                "(4-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Echo Damage When A Skill Echoes",
+        "affix_form": [
+            "Added Increased Echo Damage When A Skill Echoes"
+        ],
+        "affix_values": [
+            [
+                "(40-150)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Ignite Effect",
+        "affix_form": [
+            "Added Increased Ignite Effect"
+        ],
+        "affix_values": [
+            [
+                "(9-16)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Poison Damage while Aura of Decay is active",
+        "affix_form": [
+            "Added Increased Poison Damage while Aura of Decay is active"
+        ],
+        "affix_values": [
+            [
+                "(60-100)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Volcanic Orb Damage And Reduced Speed",
+        "affix_form": [
+            "Added Increased Volcanic Orb Damage",
+            "Added Reduced Volcanic Orb Speed"
+        ],
+        "affix_values": [
+            [
+                "(20-55)%",
+                "(20-55)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Mana Efficiency With Void Spells",
+        "affix_form": [
+            "Added Mana Efficiency With Void Spells"
+        ],
+        "affix_values": [
+            [
+                "(9-25)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Melee Elemental Damage",
+        "affix_form": [
+            "Increased Melee Elemental Damage"
+        ],
+        "affix_values": [
+            [
+                "(28-70)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Vitality",
+        "affix_form": [
+            "Added Vitality"
+        ],
+        "affix_values": [
+            [
+                "(3-7)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Rogue / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Volatile Zombie Damage and Explosion Area",
+        "affix_form": [
+            "Added increased Volatile Zombie Damage",
+            "Added increased Volatile Zombie Explosion Area"
+        ],
+        "affix_values": [
+            [
+                "(15-35)%",
+                "(15-35)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    }
+]

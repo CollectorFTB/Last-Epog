@@ -1,0 +1,52 @@
+[
+    {
+        "item_name": "Large Arcane Idol",
+        "level_requirement": "Minimum Drop Level: 30",
+        "class": null,
+        "implicits": [
+            "Size: 1\u00d73",
+            "Requires Level: 1",
+            "Requires Class: Mage"
+        ]
+    },
+    {
+        "item_name": "Large Immortal Idol",
+        "level_requirement": "Minimum Drop Level: 30",
+        "class": null,
+        "implicits": [
+            "Size: 1\u00d73",
+            "Requires Level: 1",
+            "Requires Class: Acolyte"
+        ]
+    },
+    {
+        "item_name": "Large Nomad Idol",
+        "level_requirement": "Minimum Drop Level: 30",
+        "class": null,
+        "implicits": [
+            "Size: 1\u00d73",
+            "Requires Level: 1",
+            "Requires Class: Primalist"
+        ]
+    },
+    {
+        "item_name": "Large Rahyeh Idol",
+        "level_requirement": "Minimum Drop Level: 30",
+        "class": null,
+        "implicits": [
+            "Size: 1\u00d73",
+            "Requires Level: 1",
+            "Requires Class: Sentinel"
+        ]
+    },
+    {
+        "item_name": "Large Shadow Idol",
+        "level_requirement": "Minimum Drop Level: 30",
+        "class": null,
+        "implicits": [
+            "Size: 1\u00d73",
+            "Requires Level: 1",
+            "Requires Class: Rogue"
+        ]
+    }
+]

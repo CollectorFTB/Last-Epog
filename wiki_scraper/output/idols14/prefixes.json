@@ -1,0 +1,524 @@
+[
+    {
+        "affix_name": "Added lightning damage with Shurikens",
+        "affix_form": [
+            "Added Added lightning damage with Shurikens"
+        ],
+        "affix_values": [
+            [
+                "(2-5)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance For Additional Multistrike Swords",
+        "affix_form": [
+            "Added Chance For Additional Multistrike Swords"
+        ],
+        "affix_values": [
+            [
+                "(15-50)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Divine Bolt When You Use A 0 Cost Skill",
+        "affix_form": [
+            "Added Chance To Cast Divine Bolt When You Use A 0 Cost Skill"
+        ],
+        "affix_values": [
+            [
+                "(4-13)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Healing Nova When Hit",
+        "affix_form": [
+            "Added Chance To Cast Healing Nova When Hit"
+        ],
+        "affix_values": [
+            [
+                "(3-8)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Cast Marrow Shards When You Cast Transplant",
+        "affix_form": [
+            "Added Chance To Cast Marrow Shards When You Cast Transplant"
+        ],
+        "affix_values": [
+            [
+                "(7-17)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Chill Nearby Enemies When you use a skill that costs at least 20 Mana",
+        "affix_form": [
+            "Added Chance To Chill Nearby Enemies When you use a skill that costs at least 20 Mana"
+        ],
+        "affix_values": [
+            [
+                "(10-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Ignite With Fire Skills",
+        "affix_form": [
+            "Added Chance To Ignite With Fire Skills"
+        ],
+        "affix_values": [
+            [
+                "(16-42)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Shock On Hit",
+        "affix_form": [
+            "Added Chance To Shock On Hit"
+        ],
+        "affix_values": [
+            [
+                "(19-50)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance To Shock With Lightning Skills",
+        "affix_form": [
+            "Added Chance To Shock With Lightning Skills"
+        ],
+        "affix_values": [
+            [
+                "(30-80)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance to Summon A Bee with Acid Flask",
+        "affix_form": [
+            "Added Chance to Summon A Bee with Acid Flask"
+        ],
+        "affix_values": [
+            [
+                "(10-28)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Very rare)"
+    },
+    {
+        "affix_name": "Critical Strike Chance",
+        "affix_form": [
+            "Increased Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(20-55)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage Reflected For Skeletons And Skeletal Mages",
+        "affix_form": [
+            "Added Damage Reflected For Skeletons",
+            "Added Damage Reflected For Skeleton Mages"
+        ],
+        "affix_values": [
+            [
+                "(7-18)%",
+                "(7-18)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Fire Penetration while wielding a dagger",
+        "affix_form": [
+            "Added Fire Penetration while wielding a dagger"
+        ],
+        "affix_values": [
+            [
+                "(4-9)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Freeze Rate Multiplier",
+        "affix_form": [
+            "Added Freeze Rate Multiplier"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Mage / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health Gained When Stunned",
+        "affix_form": [
+            "Added Health Gained When Stunned"
+        ],
+        "affix_values": [
+            [
+                "(56-150)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Aspect Of The Lynx Effect",
+        "affix_form": [
+            "Added Increased Aspect Of The Lynx Effect"
+        ],
+        "affix_values": [
+            [
+                "(10-25)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Aspect Of The Viper Duration",
+        "affix_form": [
+            "Added Increased Aspect Of The Viper Duration"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Aura Of Decay Area",
+        "affix_form": [
+            "Added Increased Aura Of Decay Area"
+        ],
+        "affix_values": [
+            [
+                "(10-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Damage For 4 Seconds If You Have Cast Devouring Orb Recently",
+        "affix_form": [
+            "Added Increased Damage For 4 Seconds If You Have Cast Devouring Orb Recently"
+        ],
+        "affix_values": [
+            [
+                "(22-60)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased damage per active Shadow with Shadow Cascade",
+        "affix_form": [
+            "Added Increased damage per active Shadow with Shadow Cascade"
+        ],
+        "affix_values": [
+            [
+                "(10-28)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Minion Melee Stun Chance",
+        "affix_form": [
+            "Added Increased Minion Melee Stun Chance"
+        ],
+        "affix_values": [
+            [
+                "(46-125)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Projectile Speed With Marrow Shards And Bone Nova",
+        "affix_form": [
+            "Added Increased Projectile Speed With Marrow Shards",
+            "Added Increased Projectile Speed With Bone Nova"
+        ],
+        "affix_values": [
+            [
+                "(10-30)%",
+                "(10-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Increased Stun Chance With Throwing Attacks",
+        "affix_form": [
+            "Added Increased Stun Chance With Throwing Attacks"
+        ],
+        "affix_values": [
+            [
+                "(56-150)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Lightning Damage Taken As Physical",
+        "affix_form": [
+            "Added Lightning Damage Taken As Physical"
+        ],
+        "affix_values": [
+            [
+                "(8-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Mana Efficiency with Synchronised Strike",
+        "affix_form": [
+            "Added Mana Efficiency with Synchronised Strike"
+        ],
+        "affix_values": [
+            [
+                "(8-16)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Increased Cooldown Recovery Speed",
+        "affix_form": [
+            "Added Minion Increased Cooldown Recovery Speed"
+        ],
+        "affix_values": [
+            [
+                "(7-20)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Melee Critical Strike Chance",
+        "affix_form": [
+            "Added Minion Melee Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(1-2)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Melee Damage Leeched As Health",
+        "affix_form": [
+            "Added Minion Melee Damage Leeched As Health"
+        ],
+        "affix_values": [
+            [
+                "(1-3)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Necrotic Spell Damage Per Skeletal Mage",
+        "affix_form": [
+            "Added Necrotic Spell Damage Per Skeletal Mage"
+        ],
+        "affix_values": [
+            [
+                "(1-2)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Acolyte",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical Penetration while wielding a dagger",
+        "affix_form": [
+            "Added Physical Penetration while wielding a dagger"
+        ],
+        "affix_values": [
+            [
+                "(4-9)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical penetration with Puncture",
+        "affix_form": [
+            "Added Physical penetration with Puncture"
+        ],
+        "affix_values": [
+            [
+                "(5-12)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Rogue",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Potion Health Converted To Ward",
+        "affix_form": [
+            "Added Potion Health Converted To Ward"
+        ],
+        "affix_values": [
+            [
+                "(20-55)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Seconds Of Stun Immunity After Using Teleport",
+        "affix_form": [
+            "Added Seconds Of Stun Immunity After Using Teleport"
+        ],
+        "affix_values": [
+            [
+                "(2-3)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Seconds to Sigils of Hope Duration",
+        "affix_form": [
+            "Added Seconds to Sigils of Hope Duration"
+        ],
+        "affix_values": [
+            [
+                "(3-6)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Static Charges Generated Per Second",
+        "affix_form": [
+            "Added Static Charges Generated Per Second"
+        ],
+        "affix_values": [
+            [
+                "(2-5)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Stun Avoidance",
+        "affix_form": [
+            "Added Stun Avoidance"
+        ],
+        "affix_values": [
+            [
+                "(200-450)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Time Rot Duration",
+        "affix_form": [
+            "Added Time Rot Duration"
+        ],
+        "affix_values": [
+            [
+                "(15-40)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Sentinel",
+        "rarity": "Random Drop (Common)"
+    }
+]
