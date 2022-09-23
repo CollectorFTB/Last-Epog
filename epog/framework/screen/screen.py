@@ -76,8 +76,10 @@ class Screen:
         pygame.display.set_caption(self.name)
 
         last_click = None
-        unhighlight_event = pygame.USEREVENT + 1
+        dragged_button = None
+        row_clicks = []
         highlighted_buttons = []
+        unhighlight_event = pygame.USEREVENT + 1
 
         while True:
             if self.image:
@@ -105,8 +107,8 @@ class Screen:
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
-                        if debug:
-                            self.dragged_button = clicked_button
+                        if debug and event.button == 1:
+                            dragged_button = clicked_button
                             self.dragged_position = mouse_pos
                         else:
                             if 'Temp-' in clicked_button.name:
@@ -119,8 +121,20 @@ class Screen:
                                 clicked_button.toggle()
                                 highlighted_buttons.append(clicked_button)
                                 pygame.time.set_timer(unhighlight_event, 200, 1)
-                            
-                    elif debug and False:
+                    
+                    elif debug and event.button == 1:
+                        row_clicks.append(mouse_pos)
+                        if len(row_clicks) == 5:
+                            leftx = row_clicks[0][0]
+                            rightx = row_clicks[1][0]
+                            topy = row_clicks[2][1]
+                            bottomy = row_clicks[3][1]
+                            dx = row_clicks[4][0] - leftx
+                            for i in range(int(input('row length?'))):
+                                self.buttons.append(Button((i * dx + leftx, topy), (rightx-leftx), (bottomy-topy), name=f'Temp-{leftx}:{topy}'))
+                            row_clicks = []
+
+                    elif debug and event.button == 2:
                         if last_click:
                             self._add_new_button(last_click, mouse_pos)
                             last_click = None
@@ -131,13 +145,14 @@ class Screen:
                         print(mouse_pos)
 
                 if event.type == pygame.MOUSEBUTTONUP:
-                    if debug:
-                        w,h = self.dragged_button.rect.width, self.dragged_button.rect.height
-                        self.dragged_button.rect.left = mouse_pos[0]
-                        self.dragged_button.rect.right = mouse_pos[0] + w
-                        self.dragged_button.rect.top = mouse_pos[1]
-                        self.dragged_button.rect.bottom = mouse_pos[1] + h
+                    if debug and dragged_button:
+                        w,h = dragged_button.rect.width, dragged_button.rect.height
+                        dragged_button.rect.left = mouse_pos[0]
+                        dragged_button.rect.right = mouse_pos[0] + w
+                        dragged_button.rect.top = mouse_pos[1]
+                        dragged_button.rect.bottom = mouse_pos[1] + h
                         self.should_save = True
+                        dragged_button = None
 
 
             pygame.display.update()

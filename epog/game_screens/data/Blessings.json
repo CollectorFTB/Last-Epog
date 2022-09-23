@@ -1,15 +1,1 @@
-[
-    {
-        "rect": {
-            "left": 100,
-            "top": 460,
-            "right": 260,
-            "bottom": 500
-        },
-        "name": "MainMenu",
-        "callback": null,
-        "click_rv": null,
-        "type": "TextButton",
-        "text": "Back"
-    }
-]
+[{"rect": {"left": 116, "top": 568, "right": 276, "bottom": 608}, "name": "MainMenu", "callback": null, "click_rv": null, "type": "TextButton", "text": "Back"}, {"rect": {"left": 337, "top": 500, "right": 555, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 687, "top": 500, "right": 905, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 1037, "top": 500, "right": 1255, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 1387, "top": 500, "right": 1605, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}]
