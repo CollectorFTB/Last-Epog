@@ -1,1 +1,88 @@
-[{"item_name": "Ruby Amulet", "level_requirement": "Requires Level: 1", "class": null, "implicits": ["+(5-25) Health"]}, {"item_name": "Brass Amulet", "level_requirement": "Requires Level: 4", "class": null, "implicits": ["(5-15)% increased Cast Speed"]}, {"item_name": "Jade Amulet", "level_requirement": "Requires Level: 4", "class": null, "implicits": ["(5-15)% increased Melee Attack Speed", "(5-15)% increased Throwing Attack Speed"]}, {"item_name": "Copper Amulet", "level_requirement": "Requires Level: 18", "class": null, "implicits": ["+(6-20)% Lightning Resistance", "+(2-3) Spell Lightning Damage"]}, {"item_name": "Silver Amulet", "level_requirement": "Requires Level: 24", "class": null, "implicits": ["(5-35)% increased Critical Strike Chance"]}, {"item_name": "Turquoise Amulet", "level_requirement": "Requires Level: 36", "class": null, "implicits": ["(5-35)% increased Minion Damage", "(5-35)% increased Minion Critical Strike Chance"]}, {"item_name": "Sapphire Amulet", "level_requirement": "Requires Level: 44", "class": null, "implicits": ["+(10-100)% Freeze Rate Multiplier", "+(15-20)% Cold Resistance"]}, {"item_name": "Bone Amulet", "level_requirement": "Requires Level: 58", "class": null, "implicits": ["+(13-40)% Physical Resistance", "+(13-40)% Necrotic Resistance"]}, {"item_name": "Gold Amulet", "level_requirement": "Requires Level: 71", "class": null, "implicits": ["+(18-42)% Fire Resistance", "+(18-42)% Lightning Resistance"]}, {"item_name": "Oracle Amulet", "level_requirement": "Requires Level: 76", "class": null, "implicits": ["(6-20)% less Damage Over Time Taken"]}]
+[
+    {
+        "item_name": "Ruby Amulet",
+        "level_requirement": "Requires Level: 1",
+        "class": null,
+        "implicits": [
+            "+(5-25) Health"
+        ]
+    },
+    {
+        "item_name": "Brass Amulet",
+        "level_requirement": "Requires Level: 4",
+        "class": null,
+        "implicits": [
+            "(5-15)% increased Cast Speed"
+        ]
+    },
+    {
+        "item_name": "Jade Amulet",
+        "level_requirement": "Requires Level: 4",
+        "class": null,
+        "implicits": [
+            "(5-15)% increased Melee Attack Speed",
+            "(5-15)% increased Throwing Attack Speed"
+        ]
+    },
+    {
+        "item_name": "Copper Amulet",
+        "level_requirement": "Requires Level: 18",
+        "class": null,
+        "implicits": [
+            "+(6-20)% Lightning Resistance",
+            "+(2-3) Spell Lightning Damage"
+        ]
+    },
+    {
+        "item_name": "Silver Amulet",
+        "level_requirement": "Requires Level: 24",
+        "class": null,
+        "implicits": [
+            "(5-35)% increased Critical Strike Chance"
+        ]
+    },
+    {
+        "item_name": "Turquoise Amulet",
+        "level_requirement": "Requires Level: 36",
+        "class": null,
+        "implicits": [
+            "(5-35)% increased Minion Damage",
+            "(5-35)% increased Minion Critical Strike Chance"
+        ]
+    },
+    {
+        "item_name": "Sapphire Amulet",
+        "level_requirement": "Requires Level: 44",
+        "class": null,
+        "implicits": [
+            "+(10-100)% Freeze Rate Multiplier",
+            "+(15-20)% Cold Resistance"
+        ]
+    },
+    {
+        "item_name": "Bone Amulet",
+        "level_requirement": "Requires Level: 58",
+        "class": null,
+        "implicits": [
+            "+(13-40)% Physical Resistance",
+            "+(13-40)% Necrotic Resistance"
+        ]
+    },
+    {
+        "item_name": "Gold Amulet",
+        "level_requirement": "Requires Level: 71",
+        "class": null,
+        "implicits": [
+            "+(18-42)% Fire Resistance",
+            "+(18-42)% Lightning Resistance"
+        ]
+    },
+    {
+        "item_name": "Oracle Amulet",
+        "level_requirement": "Requires Level: 76",
+        "class": null,
+        "implicits": [
+            "(6-20)% less Damage Over Time Taken"
+        ]
+    }
+]

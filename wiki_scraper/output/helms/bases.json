@@ -1,1 +1,433 @@
-[{"item_name": "Battered Helm", "level_requirement": "Requires Level: 1", "class": "Requires Class: Sentinel", "implicits": ["+30 Armor"]}, {"item_name": "Copper Circlet", "level_requirement": "Requires Level: 1", "class": "Requires Class: Mage", "implicits": ["+10 Armor"]}, {"item_name": "Leather Cowl", "level_requirement": "Requires Level: 1", "class": "Requires Class: Primalist", "implicits": ["+12 Armor"]}, {"item_name": "Leather Mask", "level_requirement": "Requires Level: 1", "class": "Requires Class: Rogue", "implicits": ["+11 Armor"]}, {"item_name": "Outcast Cage", "level_requirement": "Requires Level: 1", "class": "Requires Class: Acolyte", "implicits": ["+13 Armor"]}, {"item_name": "Refuge Helmet", "level_requirement": "Requires Level: 1", "class": "Can't drop", "implicits": ["+14 Armor"]}, {"item_name": "Crested Helm", "level_requirement": "Requires Level: 4", "class": "Requires Class: Sentinel", "implicits": ["+40 Armor"]}, {"item_name": "Skull Cage", "level_requirement": "Requires Level: 5", "class": "Requires Class: Acolyte", "implicits": ["+7 Armor", "(10-20)% increased Spell Damage"]}, {"item_name": "Weathered Crown", "level_requirement": "Requires Level: 6", "class": "Requires Class: Mage", "implicits": ["+20 Armor", "+(7-15) Mana"]}, {"item_name": "Cloth Hood", "level_requirement": "Requires Level: 7", "class": "Requires Class: Rogue", "implicits": ["+18 Armor"]}, {"item_name": "Jewelled Circlet", "level_requirement": "Requires Level: 7", "class": "Can't drop", "implicits": ["+5 Armor", "+(10-35) Mana", "(5-25)% increased Spell Damage"]}, {"item_name": "Iron Casque", "level_requirement": "Requires Level: 10", "class": "Can't drop", "implicits": ["+40 Armor"]}, {"item_name": "Wolf Pelt", "level_requirement": "Requires Level: 12", "class": "Requires Class: Primalist", "implicits": ["+16 Armor", "+(1-3) Strength"]}, {"item_name": "Solar Helm", "level_requirement": "Requires Level: 13", "class": "Requires Class: Sentinel", "implicits": ["+45 Armor", "+(5-10)% Fire Resistance"]}, {"item_name": "Shadow Crest", "level_requirement": "Requires Level: 15", "class": "Requires Class: Mage", "implicits": ["+18 Armor", "(10-25)% increased Critical Strike Chance"]}, {"item_name": "Forest Cowl", "level_requirement": "Requires Level: 22", "class": "Requires Class: Primalist", "implicits": ["+44 Armor"]}, {"item_name": "Fiend Cowl", "level_requirement": "Requires Level: 23", "class": "Requires Class: Acolyte", "implicits": ["+29 Armor", "(20-50)% increased Minion Health"]}, {"item_name": "Dome Cap", "level_requirement": "Requires Level: 24", "class": "Can't drop", "implicits": ["+50 Armor"]}, {"item_name": "Verdant Hood", "level_requirement": "Requires Level: 24", "class": "Requires Class: Rogue", "implicits": ["+16 Armor", "(10-24)% increased Damage Over Time"]}, {"item_name": "Full Helm", "level_requirement": "Requires Level: 28", "class": "Requires Class: Sentinel", "implicits": ["+95 Armor"]}, {"item_name": "Ruby Circlet", "level_requirement": "Requires Level: 29", "class": "Requires Class: Mage", "implicits": ["+32 Armor", "+(10-18)% Fire Resistance"]}, {"item_name": "Nomad Cowl", "level_requirement": "Requires Level: 30", "class": "Requires Class: Primalist", "implicits": ["+54 Armor", "+(14-22)% Cold Resistance"]}, {"item_name": "Tomb Cage", "level_requirement": "Requires Level: 31", "class": "Requires Class: Acolyte", "implicits": ["+23 Armor", "(25-50)% increased Spell Critical Strike Chance"]}, {"item_name": "Desert Mask", "level_requirement": "Requires Level: 32", "class": "Requires Class: Rogue", "implicits": ["+32 Armor", "+(16-32) Mana"]}, {"item_name": "Outcast Hat", "level_requirement": "Requires Level: 38", "class": "Requires Class: Rogue", "implicits": ["+27 Armor", "(5-7)% increased Bow Attack Speed", "(5-7)% increased Throwing Attack Speed"]}, {"item_name": "Bronze Casque", "level_requirement": "Requires Level: 39", "class": "Can't drop", "implicits": ["+75 Armor"]}, {"item_name": "Ivory Cowl", "level_requirement": "Requires Level: 42", "class": "Requires Class: Primalist", "implicits": ["+70 Armor", "+(3-5) Strength"]}, {"item_name": "Silver Crown", "level_requirement": "Requires Level: 42", "class": "Requires Class: Mage", "implicits": ["+70 Armor", "+(15-30)% Ward Retention"]}, {"item_name": "Winged Helm", "level_requirement": "Requires Level: 42", "class": "Requires Class: Sentinel", "implicits": ["+110 Armor", "(5-8)% increased Melee Attack Speed", "(5-8)% increased Throwing Attack Speed"]}, {"item_name": "Heretic Cage", "level_requirement": "Requires Level: 46", "class": "Requires Class: Acolyte", "implicits": ["+127 Armor"]}, {"item_name": "Kelthan Mask", "level_requirement": "Requires Level: 53", "class": "Requires Class: Rogue", "implicits": ["+46 Armor", "+(18-36)% Poison Resistance"]}, {"item_name": "Exile Hat", "level_requirement": "Requires Level: 57", "class": "Requires Class: Rogue", "implicits": ["+65 Armor", "(35-65)% increased Bow Damage", "(35-65)% increased Throwing Damage"]}, {"item_name": "Diadem", "level_requirement": "Requires Level: 59", "class": "Requires Class: Mage", "implicits": ["+55 Armor", "+(15-35) Mana"]}, {"item_name": "Myrmidon Helm", "level_requirement": "Requires Level: 60", "class": "Requires Class: Sentinel", "implicits": ["+150 Armor", "+(10-25)% Critical Strike Multiplier"]}, {"item_name": "Farwood Cowl", "level_requirement": "Requires Level: 61", "class": "Requires Class: Primalist", "implicits": ["+120 Armor", "(10-20)% increased Mana Regen"]}, {"item_name": "Revenant Cowl", "level_requirement": "Requires Level: 61", "class": "Requires Class: Acolyte", "implicits": ["+73 Armor", "(30-60)% increased Minion Damage"]}, {"item_name": "Scalebane Grimace", "level_requirement": "Requires Level: 63", "class": "Requires Class: Rogue", "implicits": ["+92 Armor", "(1-2)% of Damage Leeched as Health on Hit"]}, {"item_name": "Burial Mask", "level_requirement": "Requires Level: 64", "class": "Requires Class: Acolyte", "implicits": ["+89 Armor", "(30-60)% increased Spell Damage"]}, {"item_name": "Gladiator Helmet", "level_requirement": "Requires Level: 65", "class": "Can't drop", "implicits": ["+130 Armor"]}, {"item_name": "Darkwolf Pelt", "level_requirement": "Requires Level: 67", "class": "Requires Class: Primalist", "implicits": ["+110 Armor", "(30-60)% increased Physical Damage", "(30-60)% increased Physical Minion Damage"]}, {"item_name": "Icewolf Pelt", "level_requirement": "Requires Level: 67", "class": "Requires Class: Primalist", "implicits": ["+110 Armor", "+(32-44)% Cold Resistance", "+(100-200)% Freeze Rate Multiplier"]}, {"item_name": "Augury Helm", "level_requirement": "Requires Level: 68", "class": "Requires Class: Sentinel", "implicits": ["+300 Armor"]}, {"item_name": "Solar Crown", "level_requirement": "Requires Level: 68", "class": "Requires Class: Mage", "implicits": ["+70 Armor", "(30-60)% increased Fire Damage"]}, {"item_name": "Horned Cowl", "level_requirement": "Requires Level: 70", "class": "Requires Class: Primalist", "implicits": ["+142 Armor", "(3-5)% of Damage Leeched as Health on Hit"]}, {"item_name": "Profane Mask", "level_requirement": "Requires Level: 70", "class": "Requires Class: Acolyte", "implicits": ["+103 Armor", "+(10-15) Minion Adaptive Spell Damage"]}, {"item_name": "Solarum Helm", "level_requirement": "Requires Level: 70", "class": "Requires Class: Sentinel", "implicits": ["+210 Armor", "+(15-35)% Critical Strike Avoidance"]}, {"item_name": "Umbral Visage", "level_requirement": "Requires Level: 70", "class": "Requires Class: Rogue", "implicits": ["+78 Armor", "+(15-25)% Critical Strike Multiplier"]}, {"item_name": "Celestial Helm", "level_requirement": "Requires Level: 71", "class": "Requires Class: Mage", "implicits": ["+125 Armor", "(5-12)% increased Mana"]}, {"item_name": "Gilded Crown", "level_requirement": "Requires Level: 72", "class": "Requires Class: Mage", "implicits": ["+70 Armor", "(40-70)% increased Critical Strike Chance"]}]
+[
+    {
+        "item_name": "Battered Helm",
+        "level_requirement": "Requires Level: 1",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+30 Armor"
+        ]
+    },
+    {
+        "item_name": "Copper Circlet",
+        "level_requirement": "Requires Level: 1",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+10 Armor"
+        ]
+    },
+    {
+        "item_name": "Leather Cowl",
+        "level_requirement": "Requires Level: 1",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+12 Armor"
+        ]
+    },
+    {
+        "item_name": "Leather Mask",
+        "level_requirement": "Requires Level: 1",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+11 Armor"
+        ]
+    },
+    {
+        "item_name": "Outcast Cage",
+        "level_requirement": "Requires Level: 1",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+13 Armor"
+        ]
+    },
+    {
+        "item_name": "Refuge Helmet",
+        "level_requirement": "Requires Level: 1",
+        "class": "Can't drop",
+        "implicits": [
+            "+14 Armor"
+        ]
+    },
+    {
+        "item_name": "Crested Helm",
+        "level_requirement": "Requires Level: 4",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+40 Armor"
+        ]
+    },
+    {
+        "item_name": "Skull Cage",
+        "level_requirement": "Requires Level: 5",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+7 Armor",
+            "(10-20)% increased Spell Damage"
+        ]
+    },
+    {
+        "item_name": "Weathered Crown",
+        "level_requirement": "Requires Level: 6",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+20 Armor",
+            "+(7-15) Mana"
+        ]
+    },
+    {
+        "item_name": "Cloth Hood",
+        "level_requirement": "Requires Level: 7",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+18 Armor"
+        ]
+    },
+    {
+        "item_name": "Jewelled Circlet",
+        "level_requirement": "Requires Level: 7",
+        "class": "Can't drop",
+        "implicits": [
+            "+5 Armor",
+            "+(10-35) Mana",
+            "(5-25)% increased Spell Damage"
+        ]
+    },
+    {
+        "item_name": "Iron Casque",
+        "level_requirement": "Requires Level: 10",
+        "class": "Can't drop",
+        "implicits": [
+            "+40 Armor"
+        ]
+    },
+    {
+        "item_name": "Wolf Pelt",
+        "level_requirement": "Requires Level: 12",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+16 Armor",
+            "+(1-3) Strength"
+        ]
+    },
+    {
+        "item_name": "Solar Helm",
+        "level_requirement": "Requires Level: 13",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+45 Armor",
+            "+(5-10)% Fire Resistance"
+        ]
+    },
+    {
+        "item_name": "Shadow Crest",
+        "level_requirement": "Requires Level: 15",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+18 Armor",
+            "(10-25)% increased Critical Strike Chance"
+        ]
+    },
+    {
+        "item_name": "Forest Cowl",
+        "level_requirement": "Requires Level: 22",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+44 Armor"
+        ]
+    },
+    {
+        "item_name": "Fiend Cowl",
+        "level_requirement": "Requires Level: 23",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+29 Armor",
+            "(20-50)% increased Minion Health"
+        ]
+    },
+    {
+        "item_name": "Dome Cap",
+        "level_requirement": "Requires Level: 24",
+        "class": "Can't drop",
+        "implicits": [
+            "+50 Armor"
+        ]
+    },
+    {
+        "item_name": "Verdant Hood",
+        "level_requirement": "Requires Level: 24",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+16 Armor",
+            "(10-24)% increased Damage Over Time"
+        ]
+    },
+    {
+        "item_name": "Full Helm",
+        "level_requirement": "Requires Level: 28",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+95 Armor"
+        ]
+    },
+    {
+        "item_name": "Ruby Circlet",
+        "level_requirement": "Requires Level: 29",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+32 Armor",
+            "+(10-18)% Fire Resistance"
+        ]
+    },
+    {
+        "item_name": "Nomad Cowl",
+        "level_requirement": "Requires Level: 30",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+54 Armor",
+            "+(14-22)% Cold Resistance"
+        ]
+    },
+    {
+        "item_name": "Tomb Cage",
+        "level_requirement": "Requires Level: 31",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+23 Armor",
+            "(25-50)% increased Spell Critical Strike Chance"
+        ]
+    },
+    {
+        "item_name": "Desert Mask",
+        "level_requirement": "Requires Level: 32",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+32 Armor",
+            "+(16-32) Mana"
+        ]
+    },
+    {
+        "item_name": "Outcast Hat",
+        "level_requirement": "Requires Level: 38",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+27 Armor",
+            "(5-7)% increased Bow Attack Speed",
+            "(5-7)% increased Throwing Attack Speed"
+        ]
+    },
+    {
+        "item_name": "Bronze Casque",
+        "level_requirement": "Requires Level: 39",
+        "class": "Can't drop",
+        "implicits": [
+            "+75 Armor"
+        ]
+    },
+    {
+        "item_name": "Ivory Cowl",
+        "level_requirement": "Requires Level: 42",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+70 Armor",
+            "+(3-5) Strength"
+        ]
+    },
+    {
+        "item_name": "Silver Crown",
+        "level_requirement": "Requires Level: 42",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+70 Armor",
+            "+(15-30)% Ward Retention"
+        ]
+    },
+    {
+        "item_name": "Winged Helm",
+        "level_requirement": "Requires Level: 42",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+110 Armor",
+            "(5-8)% increased Melee Attack Speed",
+            "(5-8)% increased Throwing Attack Speed"
+        ]
+    },
+    {
+        "item_name": "Heretic Cage",
+        "level_requirement": "Requires Level: 46",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+127 Armor"
+        ]
+    },
+    {
+        "item_name": "Kelthan Mask",
+        "level_requirement": "Requires Level: 53",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+46 Armor",
+            "+(18-36)% Poison Resistance"
+        ]
+    },
+    {
+        "item_name": "Exile Hat",
+        "level_requirement": "Requires Level: 57",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+65 Armor",
+            "(35-65)% increased Bow Damage",
+            "(35-65)% increased Throwing Damage"
+        ]
+    },
+    {
+        "item_name": "Diadem",
+        "level_requirement": "Requires Level: 59",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+55 Armor",
+            "+(15-35) Mana"
+        ]
+    },
+    {
+        "item_name": "Myrmidon Helm",
+        "level_requirement": "Requires Level: 60",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+150 Armor",
+            "+(10-25)% Critical Strike Multiplier"
+        ]
+    },
+    {
+        "item_name": "Farwood Cowl",
+        "level_requirement": "Requires Level: 61",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+120 Armor",
+            "(10-20)% increased Mana Regen"
+        ]
+    },
+    {
+        "item_name": "Revenant Cowl",
+        "level_requirement": "Requires Level: 61",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+73 Armor",
+            "(30-60)% increased Minion Damage"
+        ]
+    },
+    {
+        "item_name": "Scalebane Grimace",
+        "level_requirement": "Requires Level: 63",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+92 Armor",
+            "(1-2)% of Damage Leeched as Health on Hit"
+        ]
+    },
+    {
+        "item_name": "Burial Mask",
+        "level_requirement": "Requires Level: 64",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+89 Armor",
+            "(30-60)% increased Spell Damage"
+        ]
+    },
+    {
+        "item_name": "Gladiator Helmet",
+        "level_requirement": "Requires Level: 65",
+        "class": "Can't drop",
+        "implicits": [
+            "+130 Armor"
+        ]
+    },
+    {
+        "item_name": "Darkwolf Pelt",
+        "level_requirement": "Requires Level: 67",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+110 Armor",
+            "(30-60)% increased Physical Damage",
+            "(30-60)% increased Physical Minion Damage"
+        ]
+    },
+    {
+        "item_name": "Icewolf Pelt",
+        "level_requirement": "Requires Level: 67",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+110 Armor",
+            "+(32-44)% Cold Resistance",
+            "+(100-200)% Freeze Rate Multiplier"
+        ]
+    },
+    {
+        "item_name": "Augury Helm",
+        "level_requirement": "Requires Level: 68",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+300 Armor"
+        ]
+    },
+    {
+        "item_name": "Solar Crown",
+        "level_requirement": "Requires Level: 68",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+70 Armor",
+            "(30-60)% increased Fire Damage"
+        ]
+    },
+    {
+        "item_name": "Horned Cowl",
+        "level_requirement": "Requires Level: 70",
+        "class": "Requires Class: Primalist",
+        "implicits": [
+            "+142 Armor",
+            "(3-5)% of Damage Leeched as Health on Hit"
+        ]
+    },
+    {
+        "item_name": "Profane Mask",
+        "level_requirement": "Requires Level: 70",
+        "class": "Requires Class: Acolyte",
+        "implicits": [
+            "+103 Armor",
+            "+(10-15) Minion Adaptive Spell Damage"
+        ]
+    },
+    {
+        "item_name": "Solarum Helm",
+        "level_requirement": "Requires Level: 70",
+        "class": "Requires Class: Sentinel",
+        "implicits": [
+            "+210 Armor",
+            "+(15-35)% Critical Strike Avoidance"
+        ]
+    },
+    {
+        "item_name": "Umbral Visage",
+        "level_requirement": "Requires Level: 70",
+        "class": "Requires Class: Rogue",
+        "implicits": [
+            "+78 Armor",
+            "+(15-25)% Critical Strike Multiplier"
+        ]
+    },
+    {
+        "item_name": "Celestial Helm",
+        "level_requirement": "Requires Level: 71",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+125 Armor",
+            "(5-12)% increased Mana"
+        ]
+    },
+    {
+        "item_name": "Gilded Crown",
+        "level_requirement": "Requires Level: 72",
+        "class": "Requires Class: Mage",
+        "implicits": [
+            "+70 Armor",
+            "(40-70)% increased Critical Strike Chance"
+        ]
+    }
+]

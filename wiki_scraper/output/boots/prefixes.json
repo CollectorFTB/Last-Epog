@@ -1,1 +1,226 @@
-[{"affix_name": "Attunement", "affix_form": ["Added Attunement"], "affix_values": [["(1-1)"], ["(2-2)"], ["(3-4)"], ["(5-6)"], ["(7-8)"], ["(10-12)"], ["(13-16)"]], "level_requirement": "Requires Level: 5", "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific", "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Dexterity", "affix_form": ["Added Dexterity"], "affix_values": [["(1-1)"], ["(2-2)"], ["(3-4)"], ["(5-6)"], ["(7-8)"], ["(10-12)"], ["(13-16)"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Intelligence", "affix_form": ["Added Intelligence"], "affix_values": [["(1-1)"], ["(2-2)"], ["(3-4)"], ["(5-6)"], ["(7-8)"], ["(10-12)"], ["(13-16)"]], "level_requirement": "Requires Level: 1", "class_requirement": "Requires Class: Mage / Acolyte / Non-Specific", "rarity": "Random Drop (Common)"}, {"affix_name": "Minion Dodge Rating", "affix_form": ["Added Minion Dodge Rating"], "affix_values": [["(35-65)"], ["(66-100)"], ["(101-160)"], ["(161-250)"], ["(251-400)"], ["(500-650)"], ["(651-1000)"]], "level_requirement": "Requires Level: 30", "class_requirement": "Requires Class: Primalist / Acolyte / Non-Specific", "rarity": "Random Drop (Rare)"}, {"affix_name": "Movement Speed", "affix_form": ["Increased Movement Speed"], "affix_values": [["(5-7)%"], ["(8-9)%"], ["(10-11)%"], ["(12-14)%"], ["(15-18)%"], ["(22-25)%"], ["(26-30)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Strength", "affix_form": ["Added Strength"], "affix_values": [["(1-1)"], ["(2-2)"], ["(3-4)"], ["(5-6)"], ["(7-8)"], ["(10-12)"], ["(13-16)"]], "level_requirement": "Requires Level: 1", "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific", "rarity": "Random Drop (Common)"}, {"affix_name": "Vitality", "affix_form": ["Added Vitality"], "affix_values": [["(1-1)"], ["(2-2)"], ["(3-4)"], ["(5-6)"], ["(7-8)"], ["(10-12)"], ["(13-16)"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}]
+[
+    {
+        "affix_name": "Attunement",
+        "affix_form": [
+            "Added Attunement"
+        ],
+        "affix_values": [
+            [
+                "(1-1)"
+            ],
+            [
+                "(2-2)"
+            ],
+            [
+                "(3-4)"
+            ],
+            [
+                "(5-6)"
+            ],
+            [
+                "(7-8)"
+            ],
+            [
+                "(10-12)"
+            ],
+            [
+                "(13-16)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 5",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Dexterity",
+        "affix_form": [
+            "Added Dexterity"
+        ],
+        "affix_values": [
+            [
+                "(1-1)"
+            ],
+            [
+                "(2-2)"
+            ],
+            [
+                "(3-4)"
+            ],
+            [
+                "(5-6)"
+            ],
+            [
+                "(7-8)"
+            ],
+            [
+                "(10-12)"
+            ],
+            [
+                "(13-16)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Intelligence",
+        "affix_form": [
+            "Added Intelligence"
+        ],
+        "affix_values": [
+            [
+                "(1-1)"
+            ],
+            [
+                "(2-2)"
+            ],
+            [
+                "(3-4)"
+            ],
+            [
+                "(5-6)"
+            ],
+            [
+                "(7-8)"
+            ],
+            [
+                "(10-12)"
+            ],
+            [
+                "(13-16)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Mage / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Dodge Rating",
+        "affix_form": [
+            "Added Minion Dodge Rating"
+        ],
+        "affix_values": [
+            [
+                "(35-65)"
+            ],
+            [
+                "(66-100)"
+            ],
+            [
+                "(101-160)"
+            ],
+            [
+                "(161-250)"
+            ],
+            [
+                "(251-400)"
+            ],
+            [
+                "(500-650)"
+            ],
+            [
+                "(651-1000)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 30",
+        "class_requirement": "Requires Class: Primalist / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Movement Speed",
+        "affix_form": [
+            "Increased Movement Speed"
+        ],
+        "affix_values": [
+            [
+                "(5-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(10-11)%"
+            ],
+            [
+                "(12-14)%"
+            ],
+            [
+                "(15-18)%"
+            ],
+            [
+                "(22-25)%"
+            ],
+            [
+                "(26-30)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Strength",
+        "affix_form": [
+            "Added Strength"
+        ],
+        "affix_values": [
+            [
+                "(1-1)"
+            ],
+            [
+                "(2-2)"
+            ],
+            [
+                "(3-4)"
+            ],
+            [
+                "(5-6)"
+            ],
+            [
+                "(7-8)"
+            ],
+            [
+                "(10-12)"
+            ],
+            [
+                "(13-16)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": "Requires Class: Primalist / Sentinel / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Vitality",
+        "affix_form": [
+            "Added Vitality"
+        ],
+        "affix_values": [
+            [
+                "(1-1)"
+            ],
+            [
+                "(2-2)"
+            ],
+            [
+                "(3-4)"
+            ],
+            [
+                "(5-6)"
+            ],
+            [
+                "(7-8)"
+            ],
+            [
+                "(10-12)"
+            ],
+            [
+                "(13-16)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    }
+]

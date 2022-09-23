@@ -1,1 +1,514 @@
-[{"affix_name": "Chance to Apply Frailty on Hit", "affix_form": ["Added Chance to Apply Frailty on Hit"], "affix_values": [["(14-18)%"], ["(19-22)%"], ["(23-27)%"], ["(28-32)%"], ["(33-41)%"], ["(51-64)%"], ["(66-82)%"]], "level_requirement": "Requires Level: 25", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Chance to Ignite on Hit", "affix_form": ["Added Chance to Ignite on Hit"], "affix_values": [["(12-14)%"], ["(15-19)%"], ["(20-23)%"], ["(23-27)%"], ["(28-35)%"], ["(44-54)%"], ["(55-70)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Chance to Shock on Hit", "affix_form": ["Added Chance to Shock on Hit"], "affix_values": [["(12-14)%"], ["(15-19)%"], ["(20-23)%"], ["(23-27)%"], ["(28-35)%"], ["(44-54)%"], ["(55-70)%"]], "level_requirement": "Requires Level: 20", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Chance To Shred Armour on Hit", "affix_form": ["Added Chance To Shred Armour on Hit"], "affix_values": [["(23-35)%"], ["(36-47)%"], ["(48-64)%"], ["(66-82)%"], ["(83-117)%"], ["(146-176)%"], ["(177-234)%"]], "level_requirement": "Requires Level: 27", "class_requirement": "Requires Class: Non-Specific", "rarity": "Random Drop (Rare)"}, {"affix_name": "Cold Resistance", "affix_form": ["Added Cold Resistance"], "affix_values": [["(6-11)%"], ["(12-16)%"], ["(18-25)%"], ["(26-34)%"], ["(35-53)%"], ["(58-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 8", "class_requirement": null, "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Dodge Rating", "affix_form": ["Added Dodge Rating"], "affix_values": [["(18-29)"], ["(30-42)"], ["(43-56)"], ["(57-70)"], ["(71-94)"], ["(117-146)"], ["(147-187)"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Dodge Rating", "affix_form": ["Increased Dodge Rating"], "affix_values": [["(12-16)%"], ["(18-22)%"], ["(23-28)%"], ["(29-34)%"], ["(35-44)%"], ["(56-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 16", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Elemental Resistance", "affix_form": ["Added Elemental Resistance"], "affix_values": [["(5-6)%"], ["(7-9)%"], ["(11-13)%"], ["(14-18)%"], ["(19-23)%"], ["(28-35)%"], ["(36-47)%"]], "level_requirement": "Requires Level: 27", "class_requirement": null, "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Fire Resistance", "affix_form": ["Added Fire Resistance"], "affix_values": [["(6-11)%"], ["(12-16)%"], ["(18-25)%"], ["(26-34)%"], ["(35-53)%"], ["(58-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Health", "affix_form": ["Added Health"], "affix_values": [["(6-18)"], ["(19-29)"], ["(30-47)"], ["(48-64)"], ["(66-88)"], ["(111-135)"], ["(136-176)"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Health Regeneration", "affix_form": ["Increased Health Regeneration"], "affix_values": [["(6-18)%"], ["(19-29)%"], ["(30-41)%"], ["(42-53)%"], ["(54-82)%"], ["(105-129)%"], ["(130-164)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Lightning Resistance", "affix_form": ["Added Lightning Resistance"], "affix_values": [["(6-11)%"], ["(12-16)%"], ["(18-25)%"], ["(26-34)%"], ["(35-53)%"], ["(58-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Necrotic Resistance", "affix_form": ["Added Necrotic Resistance"], "affix_values": [["(6-11)%"], ["(12-16)%"], ["(18-25)%"], ["(26-34)%"], ["(35-53)%"], ["(58-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 19", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Physical Resistance", "affix_form": ["Added Physical Resistance"], "affix_values": [["(6-11)%"], ["(12-16)%"], ["(18-25)%"], ["(26-34)%"], ["(35-53)%"], ["(58-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Poison Resistance", "affix_form": ["Added Poison Resistance"], "affix_values": [["(6-11)%"], ["(12-16)%"], ["(18-25)%"], ["(26-34)%"], ["(35-53)%"], ["(58-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 10", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Void Resistance", "affix_form": ["Added Void Resistance"], "affix_values": [["(6-11)%"], ["(12-16)%"], ["(18-25)%"], ["(26-34)%"], ["(35-53)%"], ["(58-70)%"], ["(71-88)%"]], "level_requirement": "Requires Level: 6", "class_requirement": null, "rarity": "Random Drop (Common)"}]
+[
+    {
+        "affix_name": "Chance to Apply Frailty on Hit",
+        "affix_form": [
+            "Added Chance to Apply Frailty on Hit"
+        ],
+        "affix_values": [
+            [
+                "(14-18)%"
+            ],
+            [
+                "(19-22)%"
+            ],
+            [
+                "(23-27)%"
+            ],
+            [
+                "(28-32)%"
+            ],
+            [
+                "(33-41)%"
+            ],
+            [
+                "(51-64)%"
+            ],
+            [
+                "(66-82)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 25",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Chance to Ignite on Hit",
+        "affix_form": [
+            "Added Chance to Ignite on Hit"
+        ],
+        "affix_values": [
+            [
+                "(12-14)%"
+            ],
+            [
+                "(15-19)%"
+            ],
+            [
+                "(20-23)%"
+            ],
+            [
+                "(23-27)%"
+            ],
+            [
+                "(28-35)%"
+            ],
+            [
+                "(44-54)%"
+            ],
+            [
+                "(55-70)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Chance to Shock on Hit",
+        "affix_form": [
+            "Added Chance to Shock on Hit"
+        ],
+        "affix_values": [
+            [
+                "(12-14)%"
+            ],
+            [
+                "(15-19)%"
+            ],
+            [
+                "(20-23)%"
+            ],
+            [
+                "(23-27)%"
+            ],
+            [
+                "(28-35)%"
+            ],
+            [
+                "(44-54)%"
+            ],
+            [
+                "(55-70)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 20",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Chance To Shred Armour on Hit",
+        "affix_form": [
+            "Added Chance To Shred Armour on Hit"
+        ],
+        "affix_values": [
+            [
+                "(23-35)%"
+            ],
+            [
+                "(36-47)%"
+            ],
+            [
+                "(48-64)%"
+            ],
+            [
+                "(66-82)%"
+            ],
+            [
+                "(83-117)%"
+            ],
+            [
+                "(146-176)%"
+            ],
+            [
+                "(177-234)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 27",
+        "class_requirement": "Requires Class: Non-Specific",
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Cold Resistance",
+        "affix_form": [
+            "Added Cold Resistance"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-25)%"
+            ],
+            [
+                "(26-34)%"
+            ],
+            [
+                "(35-53)%"
+            ],
+            [
+                "(58-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 8",
+        "class_requirement": null,
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Dodge Rating",
+        "affix_form": [
+            "Added Dodge Rating"
+        ],
+        "affix_values": [
+            [
+                "(18-29)"
+            ],
+            [
+                "(30-42)"
+            ],
+            [
+                "(43-56)"
+            ],
+            [
+                "(57-70)"
+            ],
+            [
+                "(71-94)"
+            ],
+            [
+                "(117-146)"
+            ],
+            [
+                "(147-187)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Dodge Rating",
+        "affix_form": [
+            "Increased Dodge Rating"
+        ],
+        "affix_values": [
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-22)%"
+            ],
+            [
+                "(23-28)%"
+            ],
+            [
+                "(29-34)%"
+            ],
+            [
+                "(35-44)%"
+            ],
+            [
+                "(56-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 16",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Elemental Resistance",
+        "affix_form": [
+            "Added Elemental Resistance"
+        ],
+        "affix_values": [
+            [
+                "(5-6)%"
+            ],
+            [
+                "(7-9)%"
+            ],
+            [
+                "(11-13)%"
+            ],
+            [
+                "(14-18)%"
+            ],
+            [
+                "(19-23)%"
+            ],
+            [
+                "(28-35)%"
+            ],
+            [
+                "(36-47)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 27",
+        "class_requirement": null,
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Fire Resistance",
+        "affix_form": [
+            "Added Fire Resistance"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-25)%"
+            ],
+            [
+                "(26-34)%"
+            ],
+            [
+                "(35-53)%"
+            ],
+            [
+                "(58-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Health",
+        "affix_form": [
+            "Added Health"
+        ],
+        "affix_values": [
+            [
+                "(6-18)"
+            ],
+            [
+                "(19-29)"
+            ],
+            [
+                "(30-47)"
+            ],
+            [
+                "(48-64)"
+            ],
+            [
+                "(66-88)"
+            ],
+            [
+                "(111-135)"
+            ],
+            [
+                "(136-176)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Health Regeneration",
+        "affix_form": [
+            "Increased Health Regeneration"
+        ],
+        "affix_values": [
+            [
+                "(6-18)%"
+            ],
+            [
+                "(19-29)%"
+            ],
+            [
+                "(30-41)%"
+            ],
+            [
+                "(42-53)%"
+            ],
+            [
+                "(54-82)%"
+            ],
+            [
+                "(105-129)%"
+            ],
+            [
+                "(130-164)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Lightning Resistance",
+        "affix_form": [
+            "Added Lightning Resistance"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-25)%"
+            ],
+            [
+                "(26-34)%"
+            ],
+            [
+                "(35-53)%"
+            ],
+            [
+                "(58-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Necrotic Resistance",
+        "affix_form": [
+            "Added Necrotic Resistance"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-25)%"
+            ],
+            [
+                "(26-34)%"
+            ],
+            [
+                "(35-53)%"
+            ],
+            [
+                "(58-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 19",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical Resistance",
+        "affix_form": [
+            "Added Physical Resistance"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-25)%"
+            ],
+            [
+                "(26-34)%"
+            ],
+            [
+                "(35-53)%"
+            ],
+            [
+                "(58-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Poison Resistance",
+        "affix_form": [
+            "Added Poison Resistance"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-25)%"
+            ],
+            [
+                "(26-34)%"
+            ],
+            [
+                "(35-53)%"
+            ],
+            [
+                "(58-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 10",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Void Resistance",
+        "affix_form": [
+            "Added Void Resistance"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-25)%"
+            ],
+            [
+                "(26-34)%"
+            ],
+            [
+                "(35-53)%"
+            ],
+            [
+                "(58-70)%"
+            ],
+            [
+                "(71-88)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 6",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    }
+]

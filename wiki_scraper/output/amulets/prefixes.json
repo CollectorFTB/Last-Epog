@@ -1,1 +1,1114 @@
-[{"affix_name": "Chance To Find Potions", "affix_form": ["Increased Chance To Find Potions"], "affix_values": [["(14-26)%"], ["(27-39)%"], ["(40-51)%"], ["(53-64)%"], ["(66-82)%"], ["(105-129)%"], ["(130-164)%"]], "level_requirement": "Requires Level: 5", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Cold Damage", "affix_form": ["Increased Cold Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Cold Penetration", "affix_form": ["Added Cold Penetration"], "affix_values": [["(4-4)%"], ["(5-5)%"], ["(6-6)%"], ["(7-7)%"], ["(8-9)%"], ["(11-12)%"], ["(13-15)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Critical Strike Chance", "affix_form": ["Increased Critical Strike Chance"], "affix_values": [["(18-23)%"], ["(25-29)%"], ["(30-35)%"], ["(36-41)%"], ["(42-58)%"], ["(70-88)%"], ["(89-117)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Critical Strike Multiplier", "affix_form": ["Added Critical Strike Multiplier"], "affix_values": [["(8-11)%"], ["(12-14)%"], ["(15-19)%"], ["(20-23)%"], ["(25-29)%"], ["(37-47)%"], ["(48-58)%"]], "level_requirement": "Requires Level: 20", "class_requirement": null, "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Damage Over Time", "affix_form": ["Increased Damage Over Time"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Damage While Channelling", "affix_form": ["Increased Damage While Channelling"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 38", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Elemental Damage", "affix_form": ["Increased Elemental Damage"], "affix_values": [["(6-11)%"], ["(12-19)%"], ["(20-28)%"], ["(29-37)%"], ["(39-53)%"], ["(64-82)%"], ["(83-105)%"]], "level_requirement": "Requires Level: 8", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Elemental Damage Over Time", "affix_form": ["Increased Elemental Damage Over Time"], "affix_values": [["(12-23)%"], ["(25-41)%"], ["(42-58)%"], ["(60-82)%"], ["(83-129)%"], ["(164-199)%"], ["(200-257)%"]], "level_requirement": "Requires Level: 50", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Fire Damage", "affix_form": ["Increased Fire Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Fire Penetration", "affix_form": ["Added Fire Penetration"], "affix_values": [["(4-4)%"], ["(5-5)%"], ["(6-6)%"], ["(7-7)%"], ["(8-9)%"], ["(11-12)%"], ["(13-15)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Freeze Rate Multiplier and Cold Resistance", "affix_form": ["Added Freeze Rate Multiplier", "Added Cold Resistance"], "affix_values": [["(23-47)%", "(6-6)%"], ["(48-76)%", "(7-7)%"], ["(77-117)%", "(8-8)%"], ["(118-164)%", "(9-9)%"], ["(165-211)%", "(11-12)%"], ["(257-316)%", "(14-16)%"], ["(317-410)%", "(18-21)%"]], "level_requirement": "Requires Level: 15", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Hybrid Stun Avoidance", "affix_form": ["Added Stun Avoidance", "Increased Stun Avoidance"], "affix_values": [["(20-40)", "(6-8)%"], ["(41-80)", "(9-11)%"], ["(81-140)", "(12-15)%"], ["(141-210)", "(16-19)%"], ["(211-300)", "(20-25)%"], ["(400-500)", "(30-37)%"], ["(501-650)", "(38-50)%"]], "level_requirement": "Requires Level: 13", "class_requirement": null, "rarity": "Random Drop (Very rare)"}, {"affix_name": "Increased Healing Effectiveness", "affix_form": ["Added Increased Healing Effectiveness"], "affix_values": [["(12-23)%"], ["(23-41)%"], ["(42-58)%"], ["(60-76)%"], ["(77-97)%"], ["(123-152)%"], ["(153-199)%"]], "level_requirement": "Requires Level: 15", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Lightning Damage", "affix_form": ["Increased Lightning Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Lightning Penetration", "affix_form": ["Added Lightning Penetration"], "affix_values": [["(4-4)%"], ["(5-5)%"], ["(6-6)%"], ["(7-7)%"], ["(8-9)%"], ["(11-12)%"], ["(13-15)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Mana", "affix_form": ["Added Mana"], "affix_values": [["(7-12)"], ["(13-20)"], ["(21-29)"], ["(30-41)"], ["(42-58)"], ["(76-94)"], ["(95-117)"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Mana Regeneration", "affix_form": ["Increased Mana Regeneration"], "affix_values": [["(12-16)%"], ["(18-22)%"], ["(23-28)%"], ["(29-34)%"], ["(35-41)%"], ["(47-53)%"], ["(54-64)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Minion Damage", "affix_form": ["Increased Minion Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Minion Health", "affix_form": ["Increased Minion Health"], "affix_values": [["(18-41)%"], ["(42-64)%"], ["(66-88)%"], ["(89-117)%"], ["(118-176)%"], ["(222-269)%"], ["(270-351)%"]], "level_requirement": "Requires Level: 6", "class_requirement": "Requires Class: Primalist / Acolyte / Non-Specific", "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Necrotic Damage", "affix_form": ["Increased Necrotic Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 6", "class_requirement": "Requires Class: Acolyte / Non-Specific", "rarity": "Random Drop (Common)"}, {"affix_name": "Necrotic Penetration", "affix_form": ["Added Necrotic Penetration"], "affix_values": [["(4-4)%"], ["(5-5)%"], ["(6-6)%"], ["(7-7)%"], ["(8-9)%"], ["(11-12)%"], ["(13-15)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Physical Damage", "affix_form": ["Increased Physical Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Physical Penetration", "affix_form": ["Added Physical Penetration"], "affix_values": [["(4-4)%"], ["(5-5)%"], ["(6-6)%"], ["(7-7)%"], ["(8-9)%"], ["(11-12)%"], ["(13-15)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Poison Damage", "affix_form": ["Increased Poison Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 11", "class_requirement": null, "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Poison Penetration", "affix_form": ["Added Poison Penetration"], "affix_values": [["(4-4)%"], ["(5-5)%"], ["(6-6)%"], ["(7-7)%"], ["(8-9)%"], ["(11-12)%"], ["(13-15)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Spell Critical Strike Chance", "affix_form": ["Increased Spell Critical Strike Chance"], "affix_values": [["(23-29)%"], ["(30-40)%"], ["(41-50)%"], ["(51-63)%"], ["(64-88)%"], ["(111-135)%"], ["(136-176)%"]], "level_requirement": "Requires Level: 15", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Spell Damage", "affix_form": ["Increased Spell Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Common)"}, {"affix_name": "Throwing Attack Damage", "affix_form": ["Increased Throwing Attack Damage"], "affix_values": [["(21-29)%"], ["(30-41)%"], ["(42-55)%"], ["(56-69)%"], ["(70-99)%"], ["(123-152)%"], ["(153-199)%"]], "level_requirement": "Requires Level: 1", "class_requirement": null, "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Throwing Damage And Fire Vulnerability", "affix_form": ["Added Throwing Attack Fire Damage", "Increased Fire Damage Taken"], "affix_values": [["(8-8)", "(12-12)%"], ["(9-11)", "(11-11)%"], ["(12-13)", "(9-9)%"], ["(14-15)", "(8-8)%"], ["(16-20)", "(7-6)%"], ["(26-30)", "(5-5)%"], ["(32-40)", "(4-4)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Void Damage", "affix_form": ["Increased Void Damage"], "affix_values": [["(7-14)%"], ["(15-25)%"], ["(26-35)%"], ["(36-46)%"], ["(47-70)%"], ["(88-111)%"], ["(112-140)%"]], "level_requirement": "Requires Level: 15", "class_requirement": "Requires Class: Sentinel / Non-Specific", "rarity": "Random Drop (Uncommon)"}, {"affix_name": "Void Penetration", "affix_form": ["Added Void Penetration"], "affix_values": [["(4-4)%"], ["(5-5)%"], ["(6-6)%"], ["(7-7)%"], ["(8-9)%"], ["(11-12)%"], ["(13-15)%"]], "level_requirement": "Requires Level: 42", "class_requirement": null, "rarity": "Random Drop (Rare)"}, {"affix_name": "Ward Gained on Kill", "affix_form": ["Added Ward Gained on Kill"], "affix_values": [["(3-5)"], ["(6-8)"], ["(9-11)"], ["(12-14)"], ["(15-19)"], ["(24-30)"], ["(31-38)"]], "level_requirement": "Requires Level: 40", "class_requirement": null, "rarity": "Random Drop (Very rare)"}, {"affix_name": "Ward Gained On Potion Use", "affix_form": ["Added Ward Gained On Potion Use"], "affix_values": [["(23-35)"], ["(36-53)"], ["(54-70)"], ["(76-94)"], ["(95-129)"], ["(176-216)"], ["(218-292)"]], "level_requirement": "Requires Level: 10", "class_requirement": "Requires Class: Mage / Acolyte / Rogue / Non-Specific", "rarity": "Random Drop (Rare)"}]
+[
+    {
+        "affix_name": "Chance To Find Potions",
+        "affix_form": [
+            "Increased Chance To Find Potions"
+        ],
+        "affix_values": [
+            [
+                "(14-26)%"
+            ],
+            [
+                "(27-39)%"
+            ],
+            [
+                "(40-51)%"
+            ],
+            [
+                "(53-64)%"
+            ],
+            [
+                "(66-82)%"
+            ],
+            [
+                "(105-129)%"
+            ],
+            [
+                "(130-164)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 5",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Cold Damage",
+        "affix_form": [
+            "Increased Cold Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Cold Penetration",
+        "affix_form": [
+            "Added Cold Penetration"
+        ],
+        "affix_values": [
+            [
+                "(4-4)%"
+            ],
+            [
+                "(5-5)%"
+            ],
+            [
+                "(6-6)%"
+            ],
+            [
+                "(7-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(11-12)%"
+            ],
+            [
+                "(13-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Critical Strike Chance",
+        "affix_form": [
+            "Increased Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(18-23)%"
+            ],
+            [
+                "(25-29)%"
+            ],
+            [
+                "(30-35)%"
+            ],
+            [
+                "(36-41)%"
+            ],
+            [
+                "(42-58)%"
+            ],
+            [
+                "(70-88)%"
+            ],
+            [
+                "(89-117)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Critical Strike Multiplier",
+        "affix_form": [
+            "Added Critical Strike Multiplier"
+        ],
+        "affix_values": [
+            [
+                "(8-11)%"
+            ],
+            [
+                "(12-14)%"
+            ],
+            [
+                "(15-19)%"
+            ],
+            [
+                "(20-23)%"
+            ],
+            [
+                "(25-29)%"
+            ],
+            [
+                "(37-47)%"
+            ],
+            [
+                "(48-58)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 20",
+        "class_requirement": null,
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Damage Over Time",
+        "affix_form": [
+            "Increased Damage Over Time"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Damage While Channelling",
+        "affix_form": [
+            "Increased Damage While Channelling"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 38",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Elemental Damage",
+        "affix_form": [
+            "Increased Elemental Damage"
+        ],
+        "affix_values": [
+            [
+                "(6-11)%"
+            ],
+            [
+                "(12-19)%"
+            ],
+            [
+                "(20-28)%"
+            ],
+            [
+                "(29-37)%"
+            ],
+            [
+                "(39-53)%"
+            ],
+            [
+                "(64-82)%"
+            ],
+            [
+                "(83-105)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 8",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Elemental Damage Over Time",
+        "affix_form": [
+            "Increased Elemental Damage Over Time"
+        ],
+        "affix_values": [
+            [
+                "(12-23)%"
+            ],
+            [
+                "(25-41)%"
+            ],
+            [
+                "(42-58)%"
+            ],
+            [
+                "(60-82)%"
+            ],
+            [
+                "(83-129)%"
+            ],
+            [
+                "(164-199)%"
+            ],
+            [
+                "(200-257)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 50",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Fire Damage",
+        "affix_form": [
+            "Increased Fire Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Fire Penetration",
+        "affix_form": [
+            "Added Fire Penetration"
+        ],
+        "affix_values": [
+            [
+                "(4-4)%"
+            ],
+            [
+                "(5-5)%"
+            ],
+            [
+                "(6-6)%"
+            ],
+            [
+                "(7-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(11-12)%"
+            ],
+            [
+                "(13-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Freeze Rate Multiplier and Cold Resistance",
+        "affix_form": [
+            "Added Freeze Rate Multiplier",
+            "Added Cold Resistance"
+        ],
+        "affix_values": [
+            [
+                "(23-47)%",
+                "(6-6)%"
+            ],
+            [
+                "(48-76)%",
+                "(7-7)%"
+            ],
+            [
+                "(77-117)%",
+                "(8-8)%"
+            ],
+            [
+                "(118-164)%",
+                "(9-9)%"
+            ],
+            [
+                "(165-211)%",
+                "(11-12)%"
+            ],
+            [
+                "(257-316)%",
+                "(14-16)%"
+            ],
+            [
+                "(317-410)%",
+                "(18-21)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 15",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Hybrid Stun Avoidance",
+        "affix_form": [
+            "Added Stun Avoidance",
+            "Increased Stun Avoidance"
+        ],
+        "affix_values": [
+            [
+                "(20-40)",
+                "(6-8)%"
+            ],
+            [
+                "(41-80)",
+                "(9-11)%"
+            ],
+            [
+                "(81-140)",
+                "(12-15)%"
+            ],
+            [
+                "(141-210)",
+                "(16-19)%"
+            ],
+            [
+                "(211-300)",
+                "(20-25)%"
+            ],
+            [
+                "(400-500)",
+                "(30-37)%"
+            ],
+            [
+                "(501-650)",
+                "(38-50)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 13",
+        "class_requirement": null,
+        "rarity": "Random Drop (Very rare)"
+    },
+    {
+        "affix_name": "Increased Healing Effectiveness",
+        "affix_form": [
+            "Added Increased Healing Effectiveness"
+        ],
+        "affix_values": [
+            [
+                "(12-23)%"
+            ],
+            [
+                "(23-41)%"
+            ],
+            [
+                "(42-58)%"
+            ],
+            [
+                "(60-76)%"
+            ],
+            [
+                "(77-97)%"
+            ],
+            [
+                "(123-152)%"
+            ],
+            [
+                "(153-199)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 15",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Lightning Damage",
+        "affix_form": [
+            "Increased Lightning Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Lightning Penetration",
+        "affix_form": [
+            "Added Lightning Penetration"
+        ],
+        "affix_values": [
+            [
+                "(4-4)%"
+            ],
+            [
+                "(5-5)%"
+            ],
+            [
+                "(6-6)%"
+            ],
+            [
+                "(7-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(11-12)%"
+            ],
+            [
+                "(13-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Mana",
+        "affix_form": [
+            "Added Mana"
+        ],
+        "affix_values": [
+            [
+                "(7-12)"
+            ],
+            [
+                "(13-20)"
+            ],
+            [
+                "(21-29)"
+            ],
+            [
+                "(30-41)"
+            ],
+            [
+                "(42-58)"
+            ],
+            [
+                "(76-94)"
+            ],
+            [
+                "(95-117)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Mana Regeneration",
+        "affix_form": [
+            "Increased Mana Regeneration"
+        ],
+        "affix_values": [
+            [
+                "(12-16)%"
+            ],
+            [
+                "(18-22)%"
+            ],
+            [
+                "(23-28)%"
+            ],
+            [
+                "(29-34)%"
+            ],
+            [
+                "(35-41)%"
+            ],
+            [
+                "(47-53)%"
+            ],
+            [
+                "(54-64)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Damage",
+        "affix_form": [
+            "Increased Minion Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Minion Health",
+        "affix_form": [
+            "Increased Minion Health"
+        ],
+        "affix_values": [
+            [
+                "(18-41)%"
+            ],
+            [
+                "(42-64)%"
+            ],
+            [
+                "(66-88)%"
+            ],
+            [
+                "(89-117)%"
+            ],
+            [
+                "(118-176)%"
+            ],
+            [
+                "(222-269)%"
+            ],
+            [
+                "(270-351)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 6",
+        "class_requirement": "Requires Class: Primalist / Acolyte / Non-Specific",
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Necrotic Damage",
+        "affix_form": [
+            "Increased Necrotic Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 6",
+        "class_requirement": "Requires Class: Acolyte / Non-Specific",
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Necrotic Penetration",
+        "affix_form": [
+            "Added Necrotic Penetration"
+        ],
+        "affix_values": [
+            [
+                "(4-4)%"
+            ],
+            [
+                "(5-5)%"
+            ],
+            [
+                "(6-6)%"
+            ],
+            [
+                "(7-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(11-12)%"
+            ],
+            [
+                "(13-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Physical Damage",
+        "affix_form": [
+            "Increased Physical Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Physical Penetration",
+        "affix_form": [
+            "Added Physical Penetration"
+        ],
+        "affix_values": [
+            [
+                "(4-4)%"
+            ],
+            [
+                "(5-5)%"
+            ],
+            [
+                "(6-6)%"
+            ],
+            [
+                "(7-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(11-12)%"
+            ],
+            [
+                "(13-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Poison Damage",
+        "affix_form": [
+            "Increased Poison Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 11",
+        "class_requirement": null,
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Poison Penetration",
+        "affix_form": [
+            "Added Poison Penetration"
+        ],
+        "affix_values": [
+            [
+                "(4-4)%"
+            ],
+            [
+                "(5-5)%"
+            ],
+            [
+                "(6-6)%"
+            ],
+            [
+                "(7-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(11-12)%"
+            ],
+            [
+                "(13-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Spell Critical Strike Chance",
+        "affix_form": [
+            "Increased Spell Critical Strike Chance"
+        ],
+        "affix_values": [
+            [
+                "(23-29)%"
+            ],
+            [
+                "(30-40)%"
+            ],
+            [
+                "(41-50)%"
+            ],
+            [
+                "(51-63)%"
+            ],
+            [
+                "(64-88)%"
+            ],
+            [
+                "(111-135)%"
+            ],
+            [
+                "(136-176)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 15",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Spell Damage",
+        "affix_form": [
+            "Increased Spell Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Common)"
+    },
+    {
+        "affix_name": "Throwing Attack Damage",
+        "affix_form": [
+            "Increased Throwing Attack Damage"
+        ],
+        "affix_values": [
+            [
+                "(21-29)%"
+            ],
+            [
+                "(30-41)%"
+            ],
+            [
+                "(42-55)%"
+            ],
+            [
+                "(56-69)%"
+            ],
+            [
+                "(70-99)%"
+            ],
+            [
+                "(123-152)%"
+            ],
+            [
+                "(153-199)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 1",
+        "class_requirement": null,
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Throwing Damage And Fire Vulnerability",
+        "affix_form": [
+            "Added Throwing Attack Fire Damage",
+            "Increased Fire Damage Taken"
+        ],
+        "affix_values": [
+            [
+                "(8-8)",
+                "(12-12)%"
+            ],
+            [
+                "(9-11)",
+                "(11-11)%"
+            ],
+            [
+                "(12-13)",
+                "(9-9)%"
+            ],
+            [
+                "(14-15)",
+                "(8-8)%"
+            ],
+            [
+                "(16-20)",
+                "(7-6)%"
+            ],
+            [
+                "(26-30)",
+                "(5-5)%"
+            ],
+            [
+                "(32-40)",
+                "(4-4)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Void Damage",
+        "affix_form": [
+            "Increased Void Damage"
+        ],
+        "affix_values": [
+            [
+                "(7-14)%"
+            ],
+            [
+                "(15-25)%"
+            ],
+            [
+                "(26-35)%"
+            ],
+            [
+                "(36-46)%"
+            ],
+            [
+                "(47-70)%"
+            ],
+            [
+                "(88-111)%"
+            ],
+            [
+                "(112-140)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 15",
+        "class_requirement": "Requires Class: Sentinel / Non-Specific",
+        "rarity": "Random Drop (Uncommon)"
+    },
+    {
+        "affix_name": "Void Penetration",
+        "affix_form": [
+            "Added Void Penetration"
+        ],
+        "affix_values": [
+            [
+                "(4-4)%"
+            ],
+            [
+                "(5-5)%"
+            ],
+            [
+                "(6-6)%"
+            ],
+            [
+                "(7-7)%"
+            ],
+            [
+                "(8-9)%"
+            ],
+            [
+                "(11-12)%"
+            ],
+            [
+                "(13-15)%"
+            ]
+        ],
+        "level_requirement": "Requires Level: 42",
+        "class_requirement": null,
+        "rarity": "Random Drop (Rare)"
+    },
+    {
+        "affix_name": "Ward Gained on Kill",
+        "affix_form": [
+            "Added Ward Gained on Kill"
+        ],
+        "affix_values": [
+            [
+                "(3-5)"
+            ],
+            [
+                "(6-8)"
+            ],
+            [
+                "(9-11)"
+            ],
+            [
+                "(12-14)"
+            ],
+            [
+                "(15-19)"
+            ],
+            [
+                "(24-30)"
+            ],
+            [
+                "(31-38)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 40",
+        "class_requirement": null,
+        "rarity": "Random Drop (Very rare)"
+    },
+    {
+        "affix_name": "Ward Gained On Potion Use",
+        "affix_form": [
+            "Added Ward Gained On Potion Use"
+        ],
+        "affix_values": [
+            [
+                "(23-35)"
+            ],
+            [
+                "(36-53)"
+            ],
+            [
+                "(54-70)"
+            ],
+            [
+                "(76-94)"
+            ],
+            [
+                "(95-129)"
+            ],
+            [
+                "(176-216)"
+            ],
+            [
+                "(218-292)"
+            ]
+        ],
+        "level_requirement": "Requires Level: 10",
+        "class_requirement": "Requires Class: Mage / Acolyte / Rogue / Non-Specific",
+        "rarity": "Random Drop (Rare)"
+    }
+]

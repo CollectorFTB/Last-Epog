@@ -1,1 +1,53 @@
-[{"item_name": "Sash", "level_requirement": "Requires Level: 1", "class": null, "implicits": ["+3 Potion Slots"]}, {"item_name": "Leather Belt", "level_requirement": "Requires Level: 14", "class": null, "implicits": ["+4 Potion Slots"]}, {"item_name": "Plated Belt", "level_requirement": "Requires Level: 19", "class": null, "implicits": ["+(50-100) Armor", "+3 Potion Slots"]}, {"item_name": "Noble Sash", "level_requirement": "Requires Level: 32", "class": null, "implicits": ["+(5-20) Mana", "+3 Potion Slots"]}, {"item_name": "Bronze Belt", "level_requirement": "Requires Level: 44", "class": null, "implicits": ["+(50-100) Armor", "+4 Potion Slots"]}, {"item_name": "Ranger's Belt", "level_requirement": "Requires Level: 60", "class": null, "implicits": ["+5 Potion Slots"]}]
+[
+    {
+        "item_name": "Sash",
+        "level_requirement": "Requires Level: 1",
+        "class": null,
+        "implicits": [
+            "+3 Potion Slots"
+        ]
+    },
+    {
+        "item_name": "Leather Belt",
+        "level_requirement": "Requires Level: 14",
+        "class": null,
+        "implicits": [
+            "+4 Potion Slots"
+        ]
+    },
+    {
+        "item_name": "Plated Belt",
+        "level_requirement": "Requires Level: 19",
+        "class": null,
+        "implicits": [
+            "+(50-100) Armor",
+            "+3 Potion Slots"
+        ]
+    },
+    {
+        "item_name": "Noble Sash",
+        "level_requirement": "Requires Level: 32",
+        "class": null,
+        "implicits": [
+            "+(5-20) Mana",
+            "+3 Potion Slots"
+        ]
+    },
+    {
+        "item_name": "Bronze Belt",
+        "level_requirement": "Requires Level: 44",
+        "class": null,
+        "implicits": [
+            "+(50-100) Armor",
+            "+4 Potion Slots"
+        ]
+    },
+    {
+        "item_name": "Ranger's Belt",
+        "level_requirement": "Requires Level: 60",
+        "class": null,
+        "implicits": [
+            "+5 Potion Slots"
+        ]
+    }
+]

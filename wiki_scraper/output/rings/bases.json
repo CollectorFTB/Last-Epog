@@ -1,1 +1,80 @@
-[{"item_name": "Jade Ring", "level_requirement": "Requires Level: 1", "class": null, "implicits": ["+(10-25) Dodge Rating"]}, {"item_name": "Silver Ring", "level_requirement": "Requires Level: 1", "class": null, "implicits": ["(3-8)% increased Movement Speed"]}, {"item_name": "Copper Ring", "level_requirement": "Requires Level: 14", "class": null, "implicits": ["(25-50)% increased Critical Strike Chance"]}, {"item_name": "Gold Ring", "level_requirement": "Requires Level: 25", "class": null, "implicits": ["+(5-18)% Elemental Resistance"]}, {"item_name": "Turquoise Ring", "level_requirement": "Requires Level: 31", "class": null, "implicits": ["(5-35)% increased Minion Damage", "(5-35)% increased Minion Health", "+(5-35)% Minion Critical Strike Multiplier"]}, {"item_name": "Sapphire Ring", "level_requirement": "Requires Level: 40", "class": null, "implicits": ["+(10-20) Mana", "(6-12)% increased Mana Regen"]}, {"item_name": "Coral Ring", "level_requirement": "Requires Level: 48", "class": null, "implicits": ["+(3-6) Vitality", "+(3-6) Health Regen"]}, {"item_name": "Ruby Ring", "level_requirement": "Requires Level: 62", "class": null, "implicits": ["+(28-45)% Fire Resistance", "(28-45)% increased Fire Damage"]}, {"item_name": "Ivory Ring", "level_requirement": "Requires Level: 66", "class": null, "implicits": ["+(33-46)% Necrotic Resistance", "+(13-26)% Ward Retention"]}]
+[
+    {
+        "item_name": "Jade Ring",
+        "level_requirement": "Requires Level: 1",
+        "class": null,
+        "implicits": [
+            "+(10-25) Dodge Rating"
+        ]
+    },
+    {
+        "item_name": "Silver Ring",
+        "level_requirement": "Requires Level: 1",
+        "class": null,
+        "implicits": [
+            "(3-8)% increased Movement Speed"
+        ]
+    },
+    {
+        "item_name": "Copper Ring",
+        "level_requirement": "Requires Level: 14",
+        "class": null,
+        "implicits": [
+            "(25-50)% increased Critical Strike Chance"
+        ]
+    },
+    {
+        "item_name": "Gold Ring",
+        "level_requirement": "Requires Level: 25",
+        "class": null,
+        "implicits": [
+            "+(5-18)% Elemental Resistance"
+        ]
+    },
+    {
+        "item_name": "Turquoise Ring",
+        "level_requirement": "Requires Level: 31",
+        "class": null,
+        "implicits": [
+            "(5-35)% increased Minion Damage",
+            "(5-35)% increased Minion Health",
+            "+(5-35)% Minion Critical Strike Multiplier"
+        ]
+    },
+    {
+        "item_name": "Sapphire Ring",
+        "level_requirement": "Requires Level: 40",
+        "class": null,
+        "implicits": [
+            "+(10-20) Mana",
+            "(6-12)% increased Mana Regen"
+        ]
+    },
+    {
+        "item_name": "Coral Ring",
+        "level_requirement": "Requires Level: 48",
+        "class": null,
+        "implicits": [
+            "+(3-6) Vitality",
+            "+(3-6) Health Regen"
+        ]
+    },
+    {
+        "item_name": "Ruby Ring",
+        "level_requirement": "Requires Level: 62",
+        "class": null,
+        "implicits": [
+            "+(28-45)% Fire Resistance",
+            "(28-45)% increased Fire Damage"
+        ]
+    },
+    {
+        "item_name": "Ivory Ring",
+        "level_requirement": "Requires Level: 66",
+        "class": null,
+        "implicits": [
+            "+(33-46)% Necrotic Resistance",
+            "+(13-26)% Ward Retention"
+        ]
+    }
+]
