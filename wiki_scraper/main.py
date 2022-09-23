@@ -69,10 +69,27 @@ def blessings_main():
     d(items, f'{slot_dir_name}/bases')
 
 
+@needs_dir(DIR_NAME)
+def idols_main():
+    for slot in IDOLS:
+        Wiki.open_wiki(slot=slot, category='items')
+        items = Wiki.scrape_items()
+        
+        slot_dir_name = f'{DIR_NAME}/{slot}'
+        if not os.path.isdir(slot_dir_name):
+            os.mkdir(slot_dir_name)
+        d(items, f'{slot_dir_name}/bases')
+
+        for affix in AFFIXES:
+            Wiki.open_wiki(slot=slot, category=affix)       
+            affix_mods = Wiki.scrape_affixes(SLOT_TO_SLOT_NAME[slot])
+            d(affix_mods, f'{slot_dir_name}/{affix}')
+    
+
 mains = {
     'blessings': blessings_main,
     'items': items_main,
-    # 'idols': idols_main
+    'idols': idols_main
 }
 
 if __name__ == '__main__':

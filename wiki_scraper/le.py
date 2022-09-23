@@ -1,3 +1,4 @@
+import pdb
 from webbrowser import BaseBrowser, Chrome
 from driver import *
 from utils import *
@@ -20,6 +21,7 @@ class Wiki:
     def open_wiki(browser, slot=None, category=None):
         if slot and category:
             browser.get(WIKI_FORMAT.format(slot=slot, category=category))
+            pdb.set_trace()
             wait_for_element('item-card', By.CLASS_NAME)
 
             rarity_selector = browser.find_element(By.CLASS_NAME, 'rarity-selector')
@@ -61,6 +63,21 @@ class Wiki:
     @staticmethod
     @needs_driver
     def scrape_blessings(browser: Chrome):
+        item_names = browser.find_elements(By.CLASS_NAME, 'item-name')
+        implicits = browser.find_elements(By.CLASS_NAME, 'item-implicit')
+        dropped_from = browser.find_elements(By.CLASS_NAME, 'dropped-from')
+
+        return [
+            {
+                'blessing_name': item_name.text,
+                'implicit': implicit.text,
+                'timeline': (timeline_data := drop.text.split('\n')[1].split(' (level: '))[0],
+                'level': int(timeline_data[1][:-1])
+            } for item_name, implicit, drop in zip(item_names, implicits, dropped_from)
+        ]
+
+
+    def scrape_idols(browser: Chrome):
         item_names = browser.find_elements(By.CLASS_NAME, 'item-name')
         implicits = browser.find_elements(By.CLASS_NAME, 'item-implicit')
         dropped_from = browser.find_elements(By.CLASS_NAME, 'dropped-from')
