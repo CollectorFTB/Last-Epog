@@ -21,11 +21,20 @@ class Screen:
 
         try:
             self.colored_image = pygame.image.load(f'assets/{self.name}.png')
-            self.colored_image = pygame.transform.scale(self.colored_image, SCREEN_RECT)
+            if screen_information[self.name]['scale']:
+                self.colored_image = pygame.transform.scale(self.colored_image, SCREEN_RECT)
             self.greyscale_image = greyscale(self.colored_image)
             self.image = self.colored_image
         except:
             self.image = None
+
+        try:
+            alignment = screen_information[self.name]['align']
+            if alignment == 'right':
+                self.origin = (self.surface.get_rect().right - self.image.get_rect().width, 0)
+
+        except:
+            self.origin = ORIGIN
 
         self._load_buttons()
         self._load_callbacks(screen_buttons)
@@ -93,10 +102,9 @@ class Screen:
         unhighlight_event = pygame.USEREVENT + 1
 
         while True:
+            self.surface.fill('black')
             if self.image:
-                self.surface.blit(self.image, ORIGIN)
-            else:
-                self.surface.fill('black')
+                self.surface.blit(self.image, self.origin)
 
             mouse_pos = pygame.mouse.get_pos()
 
