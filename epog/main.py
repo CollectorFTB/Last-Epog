@@ -1,5 +1,6 @@
 import pygame
 from app import Epog
+from framework.logic.idols import get_idols
 
 def main():
     pygame.init()
