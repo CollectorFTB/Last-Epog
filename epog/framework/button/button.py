@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 
 import pygame
-from framework.util.util import RATIO
+from framework.util.util import to_current, to_orig
 
 from framework.label.label import Label
 
@@ -38,9 +38,9 @@ class Rect:
 
 class Button:
     def __init__(self, pos, width=50, height=50, callback=None, click_rv=None, name=None):
-        self.x, self.y = pos
-        self.w, self.h = width, height
-        self.rect = Rect(int(self.x * RATIO), int(self.y * RATIO), width=int(width * RATIO), height=int(height * RATIO))
+        x,y = pos
+        self.rect = Rect(x, y, width=width, height=height)
+        self.original_values = [to_orig(self.rect.left), to_orig(self.rect.top), to_orig(self.rect.right), to_orig(self.rect.bottom)]
         self.name = name
         self.callback = callback
         self.click_rv = click_rv
@@ -64,8 +64,9 @@ class Button:
         return self.callback(self, *args, **kwargs) if self.callback else None
 
     def to_dict(self):
-        temp_button = Button((self.x, self.y), self.w, self.h, name=self.name)
-        del self.x, self.y, self.w, self.h
+        left, top, right, bottom = self.original_values
+        temp_button = Button((left, top), right-left, bottom-top, name=self.name)
+        del temp_button.original_values
         temp_button.rect = temp_button.rect.__dict__
         temp_button.type = Button.__name__
         return temp_button.__dict__
@@ -74,10 +75,13 @@ class Button:
     def from_dict(cls, button_dict):
         assert button_dict['type'] == Button.__name__
         del button_dict['type']
-        
-        return cls((button_dict['rect']['left'], button_dict['rect']['top']), 
-                    width=button_dict['rect']['right'] - button_dict['rect']['left'], 
-                    height=button_dict['rect']['bottom'] - button_dict['rect']['top'], 
+
+        orig_rect = button_dict['rect']
+        new_button = cls(pos=(to_current(orig_rect['left']), to_current(orig_rect['top'])), 
+                    width=to_current(orig_rect['right']) - to_current(orig_rect['left']), 
+                    height=to_current(orig_rect['bottom']) - to_current(orig_rect['top']), 
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'])
+        new_button.original_values = [orig_rect['left'], orig_rect['top'], orig_rect['right'], orig_rect['bottom']]
+        return new_button

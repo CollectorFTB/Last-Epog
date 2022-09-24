@@ -1,7 +1,7 @@
 from framework.button import CounterButton
 from framework.label.label import Label
 from framework.button.button import Rect
-from framework.util.util import BLACK, LEFT_CLICK
+from framework.util.util import BLACK, LEFT_CLICK, to_current
 import pygame
 
 class PassiveTreeButton(CounterButton):
@@ -38,12 +38,15 @@ class PassiveTreeButton(CounterButton):
         assert button_dict['type'] == PassiveTreeButton.__name__
         del button_dict['type']
         
-        return cls(pos=(button_dict['rect']['left'], button_dict['rect']['top']), 
-                    width=button_dict['rect']['right'] - button_dict['rect']['left'], 
-                    height=button_dict['rect']['bottom'] - button_dict['rect']['top'],
+        orig_rect = button_dict['rect']
+        new_button = cls(pos=(to_current(orig_rect['left']), to_current(orig_rect['top'])), 
+                    width=to_current(orig_rect['right']) - to_current(orig_rect['left']), 
+                    height=to_current(orig_rect['bottom']) - to_current(orig_rect['top']), 
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'],
                     max=button_dict['max'],
                     stats=button_dict['stats'],
                     required_passives=button_dict['required_passives'])
+        new_button.original_values = [orig_rect['left'], orig_rect['top'], orig_rect['right'], orig_rect['bottom']]
+        return new_button

@@ -40,7 +40,8 @@ class Screen:
                 buttons_data = json.load(f)
 
             for button_data in buttons_data:
-                cls = eval(button_data['type'])                
+                cls = eval(button_data['type'])       
+                print(cls)         
                 self.buttons.append(cls.from_dict(button_data))
         # Screen json doesnt exist, load it without buttons
         except:
@@ -148,7 +149,7 @@ class Screen:
                                 self.buttons.append(Button((i * dx + leftx, topy), (rightx-leftx), (bottomy-topy), name=f'Temp-{leftx}:{topy}'))
                             row_clicks = []
 
-                    elif debug and event.button == 2:
+                    elif debug and event.button == 3:
                         if last_click:
                             self._add_new_button(last_click, mouse_pos)
                             last_click = None
