@@ -21,11 +21,14 @@ class Screen:
 
         try:
             self.colored_image = pygame.image.load(f'assets/{self.name}.png')
-            if screen_information[self.name]['scale']:
-                self.colored_image = pygame.transform.scale(self.colored_image, SCREEN_RECT)
+            size = SCREEN_RECT
+            if screen_information[self.name]['strech'] == 2:
+                size = size[1], size[1]
+
+            self.colored_image = pygame.transform.scale(self.colored_image, size)
             self.greyscale_image = greyscale(self.colored_image)
             self.image = self.colored_image
-        except:
+        except FileNotFoundError:
             self.image = None
 
         try:
