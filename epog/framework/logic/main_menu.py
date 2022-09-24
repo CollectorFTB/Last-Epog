@@ -3,6 +3,13 @@ from framework.util.util import quit_func
 from framework.screen import Screen, PassiveTreeScreen
 
 GLOBAL_SCREEN_NAMES = ['Sentinel', 'Void Knight', 'Paladin', 'Forge Guard']
+BLESSING_SCREEN_NAME = ['Blessing']
+
+def save_passive_tree():
+    passive_tree_screens: list[PassiveTreeScreen] = [Screen.get_instance(name) for name in GLOBAL_SCREEN_NAMES]
+
+    return {button.name: button.value for screen in passive_tree_screens for button in screen.passive_tree_buttons}
+    
 
 def save_state(**kwargs):
     try:
@@ -11,11 +18,20 @@ def save_state(**kwargs):
         print('error saving')
         return 
 
+    state = {}
+    state['passive_tree'] = save_passive_tree()
+    
+    with open(f'saves/autosave', 'w') as f:
+        json.dump(state, f)
+
+def load_passive_tree(passive_tree_save):
     passive_tree_screens: list[PassiveTreeScreen] = [Screen.get_instance(name) for name in GLOBAL_SCREEN_NAMES]
 
-    passive_state = {button.name: button.value for screen in passive_tree_screens for button in screen.passive_tree_buttons}
-    with open(f'saves/autosave', 'w') as f:
-        json.dump(passive_state, f)
+    for screen in passive_tree_screens:
+        for button in screen.passive_tree_buttons:
+            if button.name in passive_tree_save:
+                button.value = passive_tree_save[button.name]
+
 
 def load_state(**kwargs):
     try:
@@ -24,15 +40,12 @@ def load_state(**kwargs):
         print('error loading')
         return 
 
-    passive_tree_screens: list[PassiveTreeScreen] = [Screen.get_instance(name) for name in GLOBAL_SCREEN_NAMES]
-
     with open(f'saves/autosave', 'r') as f:
-        passive_data = json.load(f)
+        state = json.load(f)
+    
+    load_passive_tree(state['passive_tree'])
 
-    for screen in passive_tree_screens:
-        for button in screen.passive_tree_buttons:
-            if button.name in passive_data:
-                button.value = passive_data[button.name]
+    
 
 
 

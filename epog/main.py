@@ -1,6 +1,5 @@
 import pygame
 from app import Epog
-import framework.logic.blessings 
 
 def main():
     pygame.init()
