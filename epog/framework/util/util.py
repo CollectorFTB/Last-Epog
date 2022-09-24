@@ -33,6 +33,7 @@ def group_by_value(data, key):
 
 
 def blit_text(surface, line, rect, font, color=pygame.Color('black')):
+    """tweaked version of https://stackoverflow.com/a/42015712"""
     words = [word for word in line.split(' ')]  # 2D array where each row is a list of words.
     space = font.size(' ')[0]  # The width of a space.
     max_width, max_height = rect.width, rect.height
