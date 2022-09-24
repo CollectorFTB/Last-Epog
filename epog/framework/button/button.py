@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
 import pygame
+from framework.util.util import RATIO
 
 from framework.label.label import Label
 
@@ -37,8 +38,9 @@ class Rect:
 
 class Button:
     def __init__(self, pos, width=50, height=50, callback=None, click_rv=None, name=None):
-        x,y = pos
-        self.rect = Rect(x, y, width=width, height=height)
+        self.x, self.y = pos
+        self.w, self.h = width, height
+        self.rect = Rect(int(self.x * RATIO), int(self.y * RATIO), width=int(width * RATIO), height=int(height * RATIO))
         self.name = name
         self.callback = callback
         self.click_rv = click_rv
@@ -62,7 +64,8 @@ class Button:
         return self.callback(self, *args, **kwargs) if self.callback else None
 
     def to_dict(self):
-        temp_button = Button((self.rect.left, self.rect.top), self.rect.width, self.rect.height, name=self.name)
+        temp_button = Button((self.x, self.y), self.w, self.h, name=self.name)
+        del self.x, self.y, self.w, self.h
         temp_button.rect = temp_button.rect.__dict__
         temp_button.type = Button.__name__
         return temp_button.__dict__
