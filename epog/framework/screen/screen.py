@@ -2,7 +2,7 @@ import json
 import weakref
 import pygame
 import os
-from framework.button import Button, CounterButton, PassiveTreeButton, TextButton
+from framework.button import Button, CounterButton, PassiveTreeButton, TextButton, RotatingButton
 from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, greyscale, quit_func
 from framework.logic.screen_connections import screen_information
 
@@ -13,7 +13,7 @@ class Screen:
     def get_instance(cls, name):
         return next((screen for screen in cls.INSTANCES if screen.name == name), None) 
 
-    def __init__(self, name, surface, screen_buttons):
+    def __init__(self, name, surface, screen_buttons, button_objects):
         self.surface: pygame.surface.Surface = surface
         self.parent: Screen = None
         self.buttons: list[Button] = []
@@ -29,6 +29,7 @@ class Screen:
 
         self._load_buttons()
         self._load_callbacks(screen_buttons)
+        self._load_button_objects(button_objects)
 
         self.__class__.INSTANCES.append(weakref.proxy(self))
 
@@ -51,7 +52,11 @@ class Screen:
                 button.callback = screen_buttons[self.name][button.name]
             except KeyError: # Button doesn't have a preconfigred callback
                 pass
-
+    
+    def _load_button_objects(self, button_objects):
+        for button in self.empty_buttons:
+            category, index = button.name.split('-')
+            button.objects = button_objects[category](int(index))
 
     def _save_buttons(self):
         buttons_to_dump = [button.to_dict() for button in self.buttons]
@@ -59,18 +64,24 @@ class Screen:
         with open(f'game_screens/data/{self.name}.json', 'w') as f:
             json.dump(buttons_to_dump, f)
 
+    @property
+    def empty_buttons(self):
+        empty = []
+        for button in self.buttons:
+            try:
+                button.objects
+                empty.append(button)
+            except:
+                pass
+        return empty
+        
     def _add_new_button(self, last_pos, new_pos):
         x1,y1 = new_pos
         x2,y2 = last_pos
         self.buttons.append(Button(last_pos, x1-x2, y1-y2, name=f'Temp-{x2}:{y2}'))
 
     def mainloop(self, debug=False):
-        try:
-            self.should_save = debug
-            return self._mainloop(debug=debug)
-        finally:
-            if self.should_save:
-                self._save_buttons()
+        return self._mainloop(debug=debug)
 
     def _mainloop(self, debug=False):
         pygame.display.set_caption(self.name)
@@ -102,18 +113,21 @@ class Screen:
                     highlighted_buttons[0].toggle()
                     highlighted_buttons = highlighted_buttons[1:]
 
-                if event.type == pygame.KEYDOWN and event.key == pygame.K_d:
-                    debug = not debug
+                if event.type == pygame.KEYDOWN: 
+                    if event.key == pygame.K_d:
+                        debug = not debug
+                    if event.key == pygame.K_s:
+                        self._save_buttons()
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
                         if debug and event.button == 1:
                             dragged_button = clicked_button
                             self.dragged_position = mouse_pos
-                        else:
-                            if 'Temp-' in clicked_button.name:
-                                # clicked_button.name = input(f'Replacing {clicked_button.name}: ')
+                            if 'Blessing-' in clicked_button.name:
                                 print(clicked_button.name)
+                                # clicked_button.name = input(f'Replacing {clicked_button.name}: ')
+                        else:
                             if clicked_button.click_rv:
                                 return clicked_button.click_rv
                             if clicked_button.callback:
@@ -145,13 +159,12 @@ class Screen:
                         print(mouse_pos)
 
                 if event.type == pygame.MOUSEBUTTONUP:
-                    if debug and dragged_button:
+                    if debug and dragged_button and not (mouse_pos[0] in range(dragged_button.rect.left, dragged_button.rect.right) and mouse_pos[1] in range(dragged_button.rect.top, dragged_button.rect.bottom)):
                         w,h = dragged_button.rect.width, dragged_button.rect.height
                         dragged_button.rect.left = mouse_pos[0]
                         dragged_button.rect.right = mouse_pos[0] + w
                         dragged_button.rect.top = mouse_pos[1]
                         dragged_button.rect.bottom = mouse_pos[1] + h
-                        self.should_save = True
                         dragged_button = None
 
 

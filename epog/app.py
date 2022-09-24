@@ -4,7 +4,7 @@ import pygame
 
 from framework.util.util import SCREEN_RECT
 from framework.screen import Screen, PassiveTreeScreen
-from framework.logic.screen_buttons import screen_buttons
+from framework.logic.screen_buttons import screen_buttons, button_objects
 from framework.logic.screen_connections import screen_information
 
 class Epog:
@@ -15,7 +15,7 @@ class Epog:
         for screen_file in os.listdir('game_screens/data'):
             screen_name = os.path.splitext(screen_file)[0]
             
-            screen = eval(screen_information[screen_name]['type'])(name=screen_name, surface=self.screen_surface, screen_buttons=screen_buttons)
+            screen = eval(screen_information[screen_name]['type'])(name=screen_name, surface=self.screen_surface, screen_buttons=screen_buttons, button_objects=button_objects)
             self.screens.append(screen)
 
         Screen.link_screens()

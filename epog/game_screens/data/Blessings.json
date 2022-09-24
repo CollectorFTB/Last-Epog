@@ -1,1 +1,135 @@
-[{"rect": {"left": 116, "top": 568, "right": 276, "bottom": 608}, "name": "MainMenu", "callback": null, "click_rv": null, "type": "TextButton", "text": "Back"}, {"rect": {"left": 337, "top": 500, "right": 555, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 687, "top": 500, "right": 905, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 1037, "top": 500, "right": 1255, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}, {"rect": {"left": 1387, "top": 500, "right": 1605, "bottom": 679}, "name": "Temp-337:500", "callback": null, "click_rv": null, "type": "Button"}]
+[
+    {
+        "rect": {
+            "left": 139,
+            "top": 558,
+            "right": 299,
+            "bottom": 598
+        },
+        "name": "MainMenu",
+        "callback": null,
+        "click_rv": null,
+        "type": "TextButton",
+        "text": "Back"
+    },
+    {
+        "rect": {
+            "left": 340,
+            "top": 499,
+            "right": 558,
+            "bottom": 678
+        },
+        "name": "Blessing-3",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 684,
+            "top": 500,
+            "right": 902,
+            "bottom": 679
+        },
+        "name": "Blessing-4",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 1029,
+            "top": 500,
+            "right": 1247,
+            "bottom": 679
+        },
+        "name": "Blessing-5",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 1387,
+            "top": 500,
+            "right": 1605,
+            "bottom": 679
+        },
+        "name": "Blessing-6",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 510,
+            "top": 730,
+            "right": 727,
+            "bottom": 911
+        },
+        "name": "Blessing-7",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 861,
+            "top": 730,
+            "right": 1078,
+            "bottom": 911
+        },
+        "name": "Blessing-8",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 1209,
+            "top": 730,
+            "right": 1426,
+            "bottom": 911
+        },
+        "name": "Blessing-9",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 514,
+            "top": 266,
+            "right": 729,
+            "bottom": 446
+        },
+        "name": "Blessing-0",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 862,
+            "top": 266,
+            "right": 1077,
+            "bottom": 446
+        },
+        "name": "Blessing-1",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    },
+    {
+        "rect": {
+            "left": 1210,
+            "top": 266,
+            "right": 1425,
+            "bottom": 446
+        },
+        "name": "Blessing-2",
+        "callback": null,
+        "click_rv": null,
+        "type": "RotatingButton"
+    }
+]
