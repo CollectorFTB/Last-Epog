@@ -41,7 +41,6 @@ class Screen:
 
             for button_data in buttons_data:
                 cls = eval(button_data['type'])       
-                print(cls)         
                 self.buttons.append(cls.from_dict(button_data))
         # Screen json doesnt exist, load it without buttons
         except:

@@ -1,5 +1,4 @@
 from framework.util.util import open_scraped_data, group_by_value
-from pprint import pprint as pp
 import ipdb
 blessings_data = open_scraped_data('blessings/bases')
 
