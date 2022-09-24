@@ -12,7 +12,7 @@ class RotatingButton(Button):
 
     def hover(self, surface):
         pass
-        Label(Rect(self.rect.left - 300, self.rect.bottom - 30, self.rect.right + 300, self.rect.bottom+70), self.objects[self.value]['implicit']).draw(surface)
+        Label(Rect(self.rect.left - 100 , self.rect.bottom, self.rect.right + 100, self.rect.bottom), self.objects[self.value]['implicit']).draw(surface, slide=True)
 
     def _callback(self, *args, **kwargs):
         try:

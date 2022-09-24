@@ -1,6 +1,7 @@
 import json
 import pygame
 import sys
+import ipdb
 import numpy as np
 
 BLACK = (0, 0, 0)
@@ -27,6 +28,24 @@ def group_by_value(data, key):
         groups.append([elem for elem in data if key(elem) == value])
         i = data.index(groups[-1][-1]) + 1
     return groups
+
+
+def blit_text(surface, line, rect, font, color=pygame.Color('black')):
+    words = [word for word in line.split(' ')]  # 2D array where each row is a list of words.
+    space = font.size(' ')[0]  # The width of a space.
+    max_width, max_height = rect.width, rect.height
+    x, y = rect.left, rect.top
+    cur_width = 0
+    for word in words:
+        word_surface = font.render(word, 0, color)
+        word_width, word_height = word_surface.get_size()
+        if cur_width + word_width >= max_width:
+            cur_width = 0
+            x = rect.left  # Reset the x.
+            y += word_height  # Start on new row.
+        surface.blit(word_surface, (x + cur_width, y))
+        cur_width += word_width + space
+
 
 def greyscale(surface: pygame.Surface):
     arr = pygame.surfarray.pixels3d(surface)
