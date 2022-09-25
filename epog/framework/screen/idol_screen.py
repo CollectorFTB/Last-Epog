@@ -2,7 +2,7 @@ from operator import attrgetter
 from framework.util.util import SCREEN_RECT
 from framework.button.rotating_button import RotatingButton
 from framework.screen import Screen
-from framework.logic.idols import IDOL_GRID
+from framework.logic.idols import IDOL_GRID, put_on_grid, fit_into_grid, remove_from_grid
 from functools import partial
 from copy import deepcopy
 import pygame
@@ -37,7 +37,7 @@ def pos_to_grid(mouse_pos):
 
     # ipdb.set_trace()
     try:
-        j = next(i for i in range(5) if mouse_pos[0] in range(left + i*(gap+length), right + bottom*(gap+length)))
+        j = next(i for i in range(5) if mouse_pos[0] in range(left + i*(gap+length), right + i*(gap+length)))
         i = next(i for i in range(5) if mouse_pos[1] in range(top + i*(gap+length), bottom + i*(gap+length)))
     except StopIteration:
         return None
@@ -51,6 +51,8 @@ class IdolScreen(Screen):
         super().__init__(*args, **kwargs)
 
         self.grid = deepcopy(IDOL_GRID)
+        self.locked_idols = []
+        self.dragged_locked_pos = None
         self.idol_button.callback = embed_affix_buttons(RotatingButton._callback, self.affix_buttons)
 
     @property
@@ -58,9 +60,21 @@ class IdolScreen(Screen):
         return [button for button in self.buttons if 'Prefix' in button.name or 'Suffix' in button.name]
 
     @property
+    def trash_button(self):
+        return next(button for button in self.buttons if 'Trash' == button.name)
+
+    @property
     def idol_button(self):
         return next(button for button in self.buttons if 'Idol' in button.name)
-        
+    
+    @property
+    def prefix_button(self):
+        return next(button for button in self.buttons if 'Prefix' in button.name)
+    
+    @property
+    def suffix_button(self):
+        return next(button for button in self.buttons if 'Suffix' in button.name)
+
     def _load_button_objects(self, button_objects):
         self.all_idols = button_objects['Idols']('Sentinel')
 
@@ -76,22 +90,52 @@ class IdolScreen(Screen):
                 button.key = attrgetter('name')
 
     def handle_mouse_down_event(self, event, debug):
-        rv =  super().handle_mouse_down_event(event, debug)
+        mouse_pos = pygame.mouse.get_pos()
         
-        if self.idol_button.check_collision(pygame.mouse.get_pos()):
+        if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
+            if clicked_button.click_rv:
+                return clicked_button.click_rv
+        
+        x,y = mouse_pos
+        grid_pos = pos_to_grid((x - self.origin[0], y))
+        
+        if grid_pos and not isinstance(self.grid[grid_pos[0]][grid_pos[1]], int):
+            self.dragged_locked_pos = grid_pos
+
+        if self.idol_button.check_collision(mouse_pos):
             self.dragging = True
         
-        return rv
 
     def handle_mouse_up_event(self, event, debug):
-        rv = super().handle_mouse_up_event(event, debug)
-        x,y = pygame.mouse.get_pos()
+        mouse_pos = pygame.mouse.get_pos()
+        
+        if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
+            if clicked_button.callback:
+                clicked_button.callback(mouse=event.button, screen=self, button=clicked_button)
+        
+        x,y = mouse_pos
         grid_pos = pos_to_grid((x - self.origin[0], y))
         if grid_pos and self.dragging:
-            print('lock on: ', grid_pos)
+            idol = self.idol_button.current_object
+            if fit_into_grid(self.grid, grid_pos[0], grid_pos[1], idol):
+                put_on_grid(self.grid, grid_pos[0], grid_pos[1], idol)
+
+                idol.pos = grid_pos
+                self.locked_idols.append(idol)
+
+                print(self.locked_idols)
+                print(self.grid)
         
+        if self.dragged_locked_pos and self.trash_button.check_collision(mouse_pos):
+            i, j = self.dragged_locked_pos
+            idol = self.grid[i][j].__repr__.__self__
+            remove_from_grid(self.grid, i, j, idol)
+            self.locked_idols.remove(idol)
+            
+
+            
+        self.dragged_locked_pos = None
         self.dragging = False
-        return rv
 """
 idol_type rotating button
 idol_prefix rotating button

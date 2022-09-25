@@ -4,6 +4,7 @@ from dataclasses import dataclass, field
 from framework.util.util import open_scraped_data
 from more_itertools import flatten
 from typing import Any, ClassVar
+from weakref import proxy
 
 IDOLS = ['idols11', 'idols11_2', 'idols12', 'idols21', 'idols13', 'idols31', 'idols14', 'idols41', 'idols22']
 
@@ -20,6 +21,16 @@ def fit_into_grid(grid, y, x, idol):
     grid_slice = [line[x:x+w] for line in grid[y:y+h]]
     return all(cell == 1 for cell in flatten(grid_slice))
 
+def put_on_grid(grid, y, x, idol):
+    p = proxy(idol)
+    for i in range(y, y + idol.height):
+        for j in range(x, x + idol.width):
+            grid[i][j] = p
+
+def remove_from_grid(grid, y, x, idol):
+    for i in range(y, y + idol.height):
+        for j in range(x, x + idol.width):
+            grid[i][j] = 1
 
 @dataclass
 class Affix:
@@ -52,7 +63,6 @@ class Idol:
     drop_level: int
     all_prefixes: list = field(default_factory=list)
     all_suffixes: list = field(default_factory=list)
-    image: Any = None
 
     def is_class_specific(self):
         return self.required_class != 'Any'
