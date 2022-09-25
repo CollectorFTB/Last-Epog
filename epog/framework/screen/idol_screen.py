@@ -7,6 +7,15 @@ from functools import partial
 from copy import deepcopy
 import pygame
 
+"""
+TODO: 
+idol images
+update self.grid after lock on
+put image to grid after lock on
+add trash can (when dragged to - delete the thing that was there (idol/))
+
+"""
+
 # calculated once dont question it
 GRID_ORIGIN = (SCREEN_RECT[1] * 104/720, SCREEN_RECT[1] * 132 / 720, SCREEN_RECT[1] * 103/720, SCREEN_RECT[1] * 4/720)
 
