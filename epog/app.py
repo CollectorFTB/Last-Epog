@@ -3,7 +3,7 @@ import sys
 import pygame
 
 from framework.util.util import SCREEN_RECT
-from framework.screen import Screen, PassiveTreeScreen
+from framework.screen import Screen, PassiveTreeScreen, IdolScreen
 from framework.logic.screen_buttons import screen_buttons, button_objects
 from framework.logic.screen_connections import screen_information
 

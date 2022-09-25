@@ -1,3 +1,11 @@
+"""
+TODO: yellow bar progress
+TODO: highlight allocated skills
+TODO: update is_unlocked to include single skill dependencies
+TODO: fill out all the buttons for all the passive trees
+"""
+
+
 from framework.screen import Screen
 from framework.button import PassiveTreeButton
 from operator import attrgetter

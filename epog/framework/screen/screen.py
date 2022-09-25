@@ -2,12 +2,14 @@ import json
 import weakref
 import pygame
 import os
-from framework.button import Button, CounterButton, PassiveTreeButton, TextButton, RotatingButton
-from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, greyscale, quit_func
+from framework.button import Button, CounterButton, PassiveTreeButton, TextButton, RotatingButton, AffixButton
+from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, greyscale, quit_func, to_orig
 from framework.logic.screen_connections import screen_information
 
 class Screen:
     INSTANCES = []
+    unhighlight_event = pygame.USEREVENT + 1
+
 
     @classmethod
     def get_instance(cls, name):
@@ -98,11 +100,10 @@ class Screen:
     def _mainloop(self, debug=False):
         pygame.display.set_caption(self.name)
 
-        last_click = None
-        dragged_button = None
-        row_clicks = []
-        highlighted_buttons = []
-        unhighlight_event = pygame.USEREVENT + 1
+        self.last_click = None
+        self.row_clicks = []
+        self.dragged_button = None
+        self.highlighted_buttons = []
 
         while True:
             self.surface.fill('black')
@@ -119,68 +120,81 @@ class Screen:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     quit_func()
-               
-                if event.type == unhighlight_event:
-                    highlighted_buttons[0].toggle()
-                    highlighted_buttons = highlighted_buttons[1:]
+
+                if event.type == pygame.MOUSEBUTTONDOWN:
+                    if (next_screen := self.handle_mouse_down_event(event, debug)):
+                        return next_screen
+
+                if event.type == self.unhighlight_event:
+                    self.highlighted_buttons[0].toggle()
+                    self.highlighted_buttons = self.highlighted_buttons[1:]
 
                 if event.type == pygame.KEYDOWN: 
                     if event.key == pygame.K_d:
                         debug = not debug
                     if event.key == pygame.K_s:
                         self._save_buttons()
-
-                if event.type == pygame.MOUSEBUTTONDOWN:
-                    if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
-                        if debug and event.button == 1:
-                            dragged_button = clicked_button
-                            self.dragged_position = mouse_pos
-                            if 'Blessing-' in clicked_button.name:
-                                print(clicked_button.name)
-                                # clicked_button.name = input(f'Replacing {clicked_button.name}: ')
-                        else:
-                            if clicked_button.click_rv:
-                                return clicked_button.click_rv
-                            if clicked_button.callback:
-                                clicked_button.callback(mouse=event.button, screen=self)
-                                clicked_button.toggle()
-                                highlighted_buttons.append(clicked_button)
-                                pygame.time.set_timer(unhighlight_event, 200, 1)
-                    
-                    elif debug and event.button == 1:
-                        row_clicks.append(mouse_pos)
-                        if len(row_clicks) == 5:
-                            leftx = row_clicks[0][0]
-                            rightx = row_clicks[1][0]
-                            topy = row_clicks[2][1]
-                            bottomy = row_clicks[3][1]
-                            dx = row_clicks[4][0] - leftx
-                            for i in range(int(input('row length?'))):
-                                self.buttons.append(Button((i * dx + leftx, topy), (rightx-leftx), (bottomy-topy), name=f'Temp-{leftx}:{topy}'))
-                            row_clicks = []
-
-                    elif debug and event.button == 3:
-                        if last_click:
-                            self._add_new_button(last_click, mouse_pos)
-                            last_click = None
-                        else:
-                            last_click = mouse_pos
-                    else:
-                        last_click = None
-                        print(mouse_pos)
-
+                
                 if event.type == pygame.MOUSEBUTTONUP:
-                    if debug and dragged_button and not (mouse_pos[0] in range(dragged_button.rect.left, dragged_button.rect.right) and mouse_pos[1] in range(dragged_button.rect.top, dragged_button.rect.bottom)):
-                        w,h = dragged_button.rect.width, dragged_button.rect.height
-                        dragged_button.rect.left = mouse_pos[0]
-                        dragged_button.rect.right = mouse_pos[0] + w
-                        dragged_button.rect.top = mouse_pos[1]
-                        dragged_button.rect.bottom = mouse_pos[1] + h
-                        dragged_button = None
-
+                    self.handle_mouse_up_event(event, debug)
 
             pygame.display.update()
     
+    def handle_mouse_up_event(self, event, debug):
+        mouse_pos = pygame.mouse.get_pos()
+
+        if debug and self.dragged_button and not (mouse_pos[0] in range(self.dragged_button.rect.left, self.dragged_button.rect.right) and mouse_pos[1] in range(self.dragged_button.rect.top, self.dragged_button.rect.bottom)):
+            w,h = self.dragged_button.rect.width, self.dragged_button.rect.height
+            self.dragged_button.rect.left = mouse_pos[0]
+            self.dragged_button.rect.right = mouse_pos[0] + w
+            self.dragged_button.rect.top = mouse_pos[1]
+            self.dragged_button.rect.bottom = mouse_pos[1] + h
+            self.dragged_button.original_values = [to_orig(mouse_pos[0]), to_orig(mouse_pos[1]), to_orig(mouse_pos[0] + w), to_orig(mouse_pos[1] + h)]
+            self.dragged_button = None
+
+    def handle_mouse_down_event(self, event, debug):
+        mouse_pos = pygame.mouse.get_pos()
+
+        if (clicked_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
+            if debug and event.button == 1:
+                self.dragged_button = clicked_button
+                self.dragged_position = mouse_pos
+                if 'Blessing-' in clicked_button.name:
+                    print(clicked_button.name)
+                    # clicked_button.name = input(f'Replacing {clicked_button.name}: ')
+            else:
+                if clicked_button.click_rv:
+                    return clicked_button.click_rv
+                if clicked_button.callback:
+                    clicked_button.callback(mouse=event.button, screen=self, button=clicked_button)
+                    clicked_button.toggle()
+                    self.highlighted_buttons.append(clicked_button)
+                    pygame.time.set_timer(self.unhighlight_event, 200, 1)
+        
+        elif debug and event.button == 1:
+            self.row_clicks.append(mouse_pos)
+            if len(self.row_clicks) == 5:
+                leftx = self.row_clicks[0][0]
+                rightx = self.row_clicks[1][0]
+                topy = self.row_clicks[2][1]
+                bottomy = self.row_clicks[3][1]
+                dx = self.row_clicks[4][0] - leftx
+                print(f'left, top, right, buttom, gap', leftx, topy, rightx,bottomy, self.row_clicks[4][0] - rightx)
+                for i in range(int(input('row length?'))):
+                    self.buttons.append(Button((i * dx + leftx, topy), (rightx-leftx), (bottomy-topy), name=f'Temp-{leftx}:{topy}'))
+                self.row_clicks.clear()
+
+        elif debug and event.button == 3:
+            if self.last_click:
+                self._add_new_button(self.last_click, mouse_pos)
+                self.last_click = None
+            else:
+                self.last_click = mouse_pos
+        else:
+            self.last_click = None
+            print(mouse_pos)
+
+
     @classmethod
     def link_screens(cls):
         """Set each screen's buttons with names matching to other existing screens, to redirect to that screen when clicked"""

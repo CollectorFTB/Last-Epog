@@ -2,6 +2,7 @@ from framework.button.button import Rect
 from framework.label.label import Label
 from framework.button.button import Button
 from framework.util.util import to_current
+from operator import attrgetter, itemgetter
 
 class RotatingButton(Button):
     def __init__(self, *args, **kwargs):
@@ -9,10 +10,11 @@ class RotatingButton(Button):
         self.value = 0
         self.objects = []
         self.callback = self._callback
+        self.key = itemgetter('implicit') if 'Blessing' in self.name else attrgetter('name') 
 
     def hover(self, surface):
         pass
-        Label(Rect(self.rect.left - 100 , self.rect.bottom, self.rect.right + 100, self.rect.bottom), self.objects[self.value]['implicit']).draw(surface, slide=True)
+        Label(Rect(self.rect.left - 50 , self.rect.bottom, self.rect.right + 150, self.rect.bottom), self.key(self.objects[self.value])).draw(surface, slide=True)
 
     def _callback(self, *args, **kwargs):
         try:
