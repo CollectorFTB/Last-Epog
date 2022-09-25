@@ -1,6 +1,3 @@
-import pygame
-
-
 screen_information = {
     'MainMenu': {'type': 'Screen', 'parent': None, 'strech': True},
     'Sentinel': {'type': 'PassiveTreeScreen', 'parent': 'MainMenu', 'strech': 0},
@@ -8,5 +5,5 @@ screen_information = {
     'Forge Guard': {'type': 'PassiveTreeScreen', 'parent': 'MainMenu', 'strech': 0},
     'Paladin': {'type': 'PassiveTreeScreen', 'parent': 'MainMenu', 'strech': 0},
     'Blessings': {'type': 'Screen', 'parent': 'MainMenu', 'strech': 0},
-    'Idols': {'type': 'Screen', 'parent': 'MainMenu', 'align': 'right', 'strech': 2}
+    'Idols': {'type': 'IdolScreen', 'parent': 'MainMenu', 'align': 'right', 'strech': 2}
 }
