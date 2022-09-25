@@ -3,7 +3,7 @@ import parse
 from dataclasses import dataclass, field
 from framework.util.util import open_scraped_data
 from more_itertools import flatten
-from typing import ClassVar
+from typing import Any, ClassVar
 
 IDOLS = ['idols11', 'idols11_2', 'idols12', 'idols21', 'idols13', 'idols31', 'idols14', 'idols41', 'idols22']
 
@@ -52,6 +52,7 @@ class Idol:
     drop_level: int
     all_prefixes: list = field(default_factory=list)
     all_suffixes: list = field(default_factory=list)
+    image: Any = None
 
     def is_class_specific(self):
         return self.required_class != 'Any'
