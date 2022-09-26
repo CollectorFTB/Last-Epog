@@ -29,8 +29,11 @@ class RotatingButton(Button):
     def draw(self, screen: pygame.surface.Surface, debug):
         super().draw(screen, debug)
     
-        if self.current_object.name in item_db:
-            screen.blit(get_image_from_db(self.current_object.name), (self.rect.left, self.rect.top))
+        try:
+            if self.current_object.name in item_db:
+                screen.blit(get_image_from_db(self.current_object.name), (self.rect.left, self.rect.top))
+        except:
+            pass
 
 
     def _callback(self, *args, **kwargs):

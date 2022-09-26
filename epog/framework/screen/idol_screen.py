@@ -9,11 +9,8 @@ import pygame
 
 """
 TODO: 
-idol images
-update self.grid after lock on
+idol images ~
 put image to grid after lock on
-add trash can (when dragged to - delete the thing that was there (idol/))
-
 """
 
 # calculated once dont question it
@@ -119,20 +116,17 @@ class IdolScreen(Screen):
             idol = self.idol_button.current_object
             if fit_into_grid(self.grid, grid_pos[0], grid_pos[1], idol):
                 put_on_grid(self.grid, grid_pos[0], grid_pos[1], idol)
+                self.locked_idols.append((idol, self.prefix_button.value, self.suffix_button.value))
 
-                idol.pos = grid_pos
-                self.locked_idols.append(idol)
-
-                print(self.locked_idols)
-                print(self.grid)
+                print([li[1:] for li in self.locked_idols])
         
         if self.dragged_locked_pos and self.trash_button.check_collision(mouse_pos):
             i, j = self.dragged_locked_pos
             idol = self.grid[i][j].__repr__.__self__
             remove_from_grid(self.grid, i, j, idol)
-            self.locked_idols.remove(idol)
+            locked_idol = next(elem for elem in self.locked_idols if elem[0] == idol)
+            self.locked_idols.remove(locked_idol)
             
-
             
         self.dragged_locked_pos = None
         self.dragging = False
