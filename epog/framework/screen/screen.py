@@ -94,6 +94,13 @@ class Screen:
         x2,y2 = last_pos
         self.buttons.append(Button(last_pos, x1-x2, y1-y2, name=f'Temp-{x2}:{y2}'))
 
+    def draw_buttons(self, debug):
+        mouse_pos = pygame.mouse.get_pos()
+        for button in self.buttons:
+                button.draw(self.surface, debug=debug)
+                if button.check_collision(mouse_pos):
+                    button.hover(self.surface)                            
+            
     def mainloop(self, debug=False):
         return self._mainloop(debug=debug)
 
@@ -110,13 +117,8 @@ class Screen:
             if self.image:
                 self.surface.blit(self.image, self.origin)
 
-            mouse_pos = pygame.mouse.get_pos()
+            self.draw_buttons(debug)
 
-            for button in self.buttons:
-                button.draw(self.surface, debug=debug)
-                if button.check_collision(mouse_pos):
-                    button.hover(self.surface)                            
-            
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     quit_func()

@@ -1,4 +1,5 @@
 from operator import attrgetter
+from framework.logic.item_db import get_image_from_db
 from framework.util.util import SCREEN_RECT
 from framework.button.rotating_button import RotatingButton
 from framework.screen import Screen
@@ -41,6 +42,11 @@ def pos_to_grid(mouse_pos):
     
     return i, j
 
+def grid_to_pos(grid_pos):
+    left, top, length, gap = GRID_ORIGIN
+    left, top, length, gap = int(left), int(top), int(length), int(gap)
+
+    return left + grid_pos[1] * (gap + length), top + grid_pos[1] * (gap + length)
 
 class IdolScreen(Screen):
     def __init__(self, *args, **kwargs):
@@ -85,6 +91,21 @@ class IdolScreen(Screen):
             elif name == 'Idol':
                 button.objects = self.all_idols
                 button.key = attrgetter('name')
+
+    def draw_buttons(self, debug=False):
+        rv =  super().draw_buttons(debug)
+
+        for idol, _, _ in self.locked_idols:
+            image = get_image_from_db(idol.name)
+            for i,row in enumerate(self.grid):
+                for j, cell in enumerate(row):
+                    if cell == idol:
+                        origin = grid_to_pos((i, j))
+                        origin = self.origin[0] + origin[0], self.origin[1] + origin[1]
+                        self.surface.blit(image, origin)
+                        
+
+        return rv
 
     def handle_mouse_down_event(self, event, debug):
         mouse_pos = pygame.mouse.get_pos()
