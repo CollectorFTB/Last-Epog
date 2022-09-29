@@ -1,3 +1,4 @@
+from collections import defaultdict
 import json
 import pygame
 
@@ -36,12 +37,14 @@ item_db = {"Small Eterran Idol": "I445",
 "Adorned Silver Idol": "I474",
 "Adorned Volcano Idol": "I475"}
 
-cached_images = {}
+cached_images = defaultdict(dict)
 
-def get_image_from_db(name):
+def get_image_from_db(name, size=None):
     try:
-        return cached_images[name]
+        # transform after getting from cache or update cache
+        return cached_images[name][size]
     except:
         (_, (x, y)), (_, w), (_, h) = sprite_index[item_db[name]].items()
-        cached_images[name] = all_items_image.subsurface((x,y,w,h))
-        return cached_images[name]
+        image = all_items_image.subsurface((x,y,w,h))
+        cached_images[name][size] = pygame.transform.scale(image, size) if size else image
+        return cached_images[name][size]

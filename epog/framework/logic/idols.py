@@ -1,4 +1,3 @@
-from importlib.machinery import all_suffixes
 import parse
 from dataclasses import dataclass, field
 from framework.util.util import open_scraped_data
@@ -19,7 +18,8 @@ IDOL_GRID = [
 def fit_into_grid(grid, y, x, idol):
     w, h = idol.width, idol.height
     grid_slice = [line[x:x+w] for line in grid[y:y+h]]
-    return all(cell == 1 for cell in flatten(grid_slice))
+    all_cells = list(flatten(grid_slice))
+    return len(all_cells) == w * h and all(cell == 1 for cell in all_cells)
 
 def put_on_grid(grid, y, x, idol):
     p = proxy(idol)

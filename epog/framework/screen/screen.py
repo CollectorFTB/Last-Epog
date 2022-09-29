@@ -47,6 +47,9 @@ class Screen:
 
         self.__class__.INSTANCES.append(weakref.proxy(self))
 
+    def button_with_name(self, name):
+        matching_buttons = [button for button in self.buttons if name in button.name]
+        return matching_buttons if len(matching_buttons) > 1 else matching_buttons[0]
 
     def _load_buttons(self):
         try:

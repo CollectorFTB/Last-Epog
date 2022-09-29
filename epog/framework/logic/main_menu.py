@@ -1,5 +1,8 @@
+from copy import deepcopy
+import itertools
 import json
 from sys import prefix
+from framework.logic.idols import IDOL_GRID
 from framework.util.util import quit_func
 from framework.screen import Screen, PassiveTreeScreen, idol_screen
 from weakref import proxy
@@ -18,21 +21,18 @@ def save_blessings():
     return {button.name: button.value for button in blessing_buttons}
 
 def save_idols():
+    import ipdb; from pprint import pprint as pprint; ipdb.set_trace()
     idol_screen = Screen.get_instance(IDOL_SCREEN_NAME)
     saved_idols = []
     for idol, prefix_index, suffix_index in idol_screen.locked_idols:
         saved_idols.append((idol_screen.all_idols.index(idol), prefix_index, suffix_index))
 
-    saved_grid = []
-    for i in range(len(idol_screen.grid)):
-        row = []
-        for j in range(len(idol_screen.grid[i])):
-            if (wr := idol_screen.grid[i][j]) in [0, 1]:
-                row.append(wr)
-            else:
-                row.append(next(str(i) for i, (idol, _, _) in enumerate(idol_screen.locked_idols) if idol == wr))
-
-        saved_grid.append(row)
+    saved_grid = deepcopy(IDOL_GRID)
+    for pos_index, pos in enumerate(idol_screen.locked_positions):
+        idol = idol_screen.locked_idols[pos_index][0] 
+        i,j = pos
+        for _i,_j in itertools.product(range(idol.height), range(idol.width)):
+            saved_grid[i + _i][j + _j] = str(pos_index)
     return (saved_idols, saved_grid)
 
 
@@ -65,23 +65,25 @@ def load_idols(idols_save):
     for idol_index, prefix_index, suffix_index in loaded_idols:
         idol_screen.locked_idols.append((idol_screen.all_idols[idol_index], prefix_index, suffix_index))
 
-    grid = []
-    for i in range(len(loaded_grid)):
-        row = []
-        for j in range(len(loaded_grid[i])):
-            if (wr := loaded_grid[i][j]) in [0, 1]:
-                row.append(wr)
-            else:
+    idol_screen.locked_positions = [None] * len(idol_screen.locked_idols)
+    grid = loaded_grid
+    passed = []
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if (wr := grid[i][j]) not in [0, 1]:
+                print(i,j, grid[i][j])
                 idol, _, _ = idol_screen.locked_idols[int(wr)]
-                row.append(proxy(idol))
-
-        grid.append(row)
+                if wr not in passed:
+                    passed.append(wr)
+                    idol_screen.locked_positions[int(wr)] = (i, j)
+                grid[i][j] = proxy(idol)
+                    
     
-    
+        
     idol_screen.grid = grid
     from pprint import pprint as pp
     pp(grid)
-    pp(idol_screen.locked_idols)
+    # pp(idol_screen.locked_idols)
 
 
 def load_state(**kwargs):
