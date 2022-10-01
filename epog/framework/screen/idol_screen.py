@@ -94,7 +94,6 @@ class IdolScreen(Screen):
         grid_pos = pos_to_grid((x - self.origin[0], y))
         
         if grid_pos and not isinstance((idol := self.grid[grid_pos[0]][grid_pos[1]]), int):
-            print('draggin!')
             self.dragged_locked_idol = idol.__repr__.__self__
 
         if self.idol_button.check_collision(mouse_pos):

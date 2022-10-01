@@ -21,7 +21,6 @@ def save_blessings():
     return {button.name: button.value for button in blessing_buttons}
 
 def save_idols():
-    import ipdb; from pprint import pprint as pprint; ipdb.set_trace()
     idol_screen = Screen.get_instance(IDOL_SCREEN_NAME)
     saved_idols = []
     for idol, prefix_index, suffix_index in idol_screen.locked_idols:
@@ -71,19 +70,13 @@ def load_idols(idols_save):
     for i in range(len(grid)):
         for j in range(len(grid[i])):
             if (wr := grid[i][j]) not in [0, 1]:
-                print(i,j, grid[i][j])
                 idol, _, _ = idol_screen.locked_idols[int(wr)]
                 if wr not in passed:
                     passed.append(wr)
                     idol_screen.locked_positions[int(wr)] = (i, j)
                 grid[i][j] = proxy(idol)
                     
-    
-        
     idol_screen.grid = grid
-    from pprint import pprint as pp
-    pp(grid)
-    # pp(idol_screen.locked_idols)
 
 
 def load_state(**kwargs):

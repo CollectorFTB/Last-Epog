@@ -1,7 +1,6 @@
 import json
 import pygame
 import sys
-import ipdb
 import numpy as np
 
 BLACK = (0, 0, 0)

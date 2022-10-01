@@ -18,7 +18,6 @@ class CounterButton(Button):
             return
             
         if self._is_unlocked(self):
-            print('Allocated!')
             return self._increment() if mouse == LEFT_CLICK else self._decrement()
         print('Cant allocate :(', self.value, self.name, self.required_passives)
 

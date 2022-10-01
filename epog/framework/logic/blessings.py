@@ -1,5 +1,4 @@
 from framework.util.util import open_scraped_data, group_by_value
-import ipdb
 blessings_data = open_scraped_data('blessings/bases')
 
 normal_blessings = [blessing for blessing in blessings_data if 'Grand ' not in blessing['blessing_name']]
