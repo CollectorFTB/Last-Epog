@@ -1,10 +1,11 @@
+import pygame
 from copy import deepcopy
 import itertools
 import json
-from sys import prefix
 from framework.logic.idols import IDOL_GRID
-from framework.util.util import quit_func
-from framework.screen import Screen, PassiveTreeScreen, idol_screen
+from framework.util.util import quit_func, ORIGINAL_RECT
+from framework.screen import Screen, PassiveTreeScreen
+from framework.button import Button
 from weakref import proxy
 
 GLOBAL_SCREEN_NAMES = ['Sentinel', 'Void Knight', 'Paladin', 'Forge Guard']
@@ -87,8 +88,23 @@ def load_state(**kwargs):
     load_blessings(state['blessings'])
     load_idols(state['idols'])
 
+def change_resolution(**kwargs):
+    RESOLUTIONS = [(1920, 1080), (1600, 900), (1280, 720)]
+    current_ratio = Screen.RATIO
+    current_resolution = Screen.RESOLUTION
+    resolution_button = Screen.get_instance('MainMenu').button_with_name('Resolution')
+    Screen.RESOLUTION = RESOLUTIONS[(RESOLUTIONS.index(current_resolution) + 1) % 3]
+    Screen.RATIO = Screen.RESOLUTION[0] / ORIGINAL_RECT[0]
+    Button.RATIO = Screen.RATIO
+    resolution_button.text = f'{Screen.RESOLUTION[0]}x{Screen.RESOLUTION[1]}'
+    new_surface = pygame.display.set_mode(Screen.RESOLUTION)
+    for screen in Screen.INSTANCES:
+        screen.screen_surface = new_surface
+        screen.refresh(Screen.RATIO / current_ratio)
+
 main_menu = {
     'quit': quit_func,
     'save': save_state,
     'load': load_state,
+    'Resolution': change_resolution
 }

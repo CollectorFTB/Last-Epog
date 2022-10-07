@@ -2,14 +2,13 @@ import os
 import sys
 import pygame
 
-from framework.util.util import SCREEN_RECT
 from framework.screen import Screen, PassiveTreeScreen, IdolScreen
 from framework.logic.screen_buttons import screen_buttons, button_objects
 from framework.logic.screen_connections import screen_information
 
 class Epog:
     def __init__(self):
-        self.screen_surface = pygame.display.set_mode(SCREEN_RECT)
+        self.screen_surface = pygame.display.set_mode(Screen.RESOLUTION)
         pygame.display.set_caption("Epog")
         self.screens: list[Screen] = []
         for screen_file in os.listdir('game_screens/data'):

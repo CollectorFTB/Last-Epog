@@ -1,9 +1,6 @@
-from framework.button.button import Rect
-from framework.label.label import Label
 from framework.button import RotatingButton
-from framework.util.util import to_current, WHITE
+from framework.util.util import WHITE
 from framework.util.font import font
-from operator import attrgetter, itemgetter
 
 class AffixButton(RotatingButton):
     def __init__(self, *args, **kwargs):
@@ -43,9 +40,9 @@ class AffixButton(RotatingButton):
         del button_dict['type']
 
         orig_rect = button_dict['rect']
-        new_button = cls(pos=(to_current(orig_rect['left']), to_current(orig_rect['top'])), 
-                    width=to_current(orig_rect['right']) - to_current(orig_rect['left']), 
-                    height=to_current(orig_rect['bottom']) - to_current(orig_rect['top']), 
+        new_button = cls(pos=(AffixButton.scale_size(orig_rect['left']), AffixButton.scale_size(orig_rect['top'])), 
+                    width=AffixButton.scale_size(orig_rect['right']) - AffixButton.scale_size(orig_rect['left']), 
+                    height=AffixButton.scale_size(orig_rect['bottom']) - AffixButton.scale_size(orig_rect['top']), 
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'])

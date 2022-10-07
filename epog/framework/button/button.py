@@ -1,9 +1,6 @@
 from dataclasses import dataclass
 
 import pygame
-from framework.util.util import to_current, to_orig
-
-from framework.label.label import Label
 
 @dataclass
 class Rect:
@@ -37,10 +34,25 @@ class Rect:
 
 
 class Button:
+    RATIO = 1
+
+    @classmethod 
+    def to_raw(cls, value):
+        return int(value / cls.RATIO)
+
+    @classmethod
+    def scale_size(cls, value):
+        return int(value * cls.RATIO)
+
+    def refresh(self):
+        left, top, right, bottom = self.original_values
+        w, h = Button.scale_size(right-left), Button.scale_size(bottom-top)
+        self.rect = Rect(Button.scale_size(left), Button.scale_size(top), width=w, height=h)
+
     def __init__(self, pos, width=50, height=50, callback=None, click_rv=None, name=None):
         x,y = pos
         self.rect = Rect(x, y, width=width, height=height)
-        self.original_values = [to_orig(self.rect.left), to_orig(self.rect.top), to_orig(self.rect.right), to_orig(self.rect.bottom)]
+        self.original_values = [Button.to_raw(self.rect.left), Button.to_raw(self.rect.top), Button.to_raw(self.rect.right), Button.to_raw(self.rect.bottom)]
         self.name = name
         self.callback = callback
         self.click_rv = click_rv
@@ -77,9 +89,9 @@ class Button:
         del button_dict['type']
 
         orig_rect = button_dict['rect']
-        new_button = cls(pos=(to_current(orig_rect['left']), to_current(orig_rect['top'])), 
-                    width=to_current(orig_rect['right']) - to_current(orig_rect['left']), 
-                    height=to_current(orig_rect['bottom']) - to_current(orig_rect['top']), 
+        new_button = cls(pos=(Button.scale_size(orig_rect['left']), Button.scale_size(orig_rect['top'])), 
+                    width=Button.scale_size(orig_rect['right']) - Button.scale_size(orig_rect['left']), 
+                    height=Button.scale_size(orig_rect['bottom']) - Button.scale_size(orig_rect['top']), 
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'])

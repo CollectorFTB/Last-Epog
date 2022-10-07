@@ -1,7 +1,6 @@
 from framework.button import Button
-from framework.button.button import Rect
 from framework.util.font import font
-from framework.util.util import WHITE, GREEN, to_current
+from framework.util.util import WHITE, GREEN
 
 class TextButton(Button):
     def __init__(self, text, *args, **kwargs):
@@ -32,9 +31,9 @@ class TextButton(Button):
         del button_dict['type']
         
         orig_rect = button_dict['rect']
-        new_button = cls(pos=(to_current(orig_rect['left']), to_current(orig_rect['top'])), 
-                    width=to_current(orig_rect['right']) - to_current(orig_rect['left']), 
-                    height=to_current(orig_rect['bottom']) - to_current(orig_rect['top']), 
+        new_button = cls(pos=(TextButton.scale_size(orig_rect['left']), TextButton.scale_size(orig_rect['top'])), 
+                    width=TextButton.scale_size(orig_rect['right']) - TextButton.scale_size(orig_rect['left']), 
+                    height=TextButton.scale_size(orig_rect['bottom']) - TextButton.scale_size(orig_rect['top']), 
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'],

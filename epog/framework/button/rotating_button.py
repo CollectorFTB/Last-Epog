@@ -2,10 +2,8 @@ import os
 import pygame
 from operator import attrgetter, itemgetter
 
-from framework.button.button import Rect
+from framework.button.button import Button, Rect
 from framework.label.label import Label
-from framework.button.button import Button
-from framework.util.util import to_current
 from framework.logic.item_db import item_db, get_image_from_db
 
 class RotatingButton(Button):
@@ -60,9 +58,9 @@ class RotatingButton(Button):
         del button_dict['type']
 
         orig_rect = button_dict['rect']
-        new_button = cls(pos=(to_current(orig_rect['left']), to_current(orig_rect['top'])), 
-                    width=to_current(orig_rect['right']) - to_current(orig_rect['left']), 
-                    height=to_current(orig_rect['bottom']) - to_current(orig_rect['top']), 
+        new_button = cls(pos=(RotatingButton.scale_size(orig_rect['left']), RotatingButton.scale_size(orig_rect['top'])), 
+                    width=RotatingButton.scale_size(orig_rect['right']) - RotatingButton.scale_size(orig_rect['left']), 
+                    height=RotatingButton.scale_size(orig_rect['bottom']) - RotatingButton.scale_size(orig_rect['top']), 
                     callback=button_dict['callback'], 
                     click_rv=button_dict['click_rv'], 
                     name=button_dict['name'])

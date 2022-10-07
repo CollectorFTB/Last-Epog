@@ -1,21 +1,13 @@
 from operator import attrgetter
-from framework.logic.item_db import get_image_from_db
-from framework.util.util import SCREEN_RECT
-from framework.button.rotating_button import RotatingButton
 from framework.screen import Screen
+from framework.button.rotating_button import RotatingButton
+from framework.logic.item_db import get_image_from_db
 from framework.logic.idols import IDOL_GRID, put_on_grid, fit_into_grid, remove_from_grid
-from functools import partial
 from copy import deepcopy
 import pygame
 
-"""
-TODO: 
-idol images ~
-put image to grid after lock on
-"""
 
-# calculated once dont question it
-GRID_ORIGIN = (SCREEN_RECT[1] * 104/720, SCREEN_RECT[1] * 128 / 720, SCREEN_RECT[1] * 103/720, SCREEN_RECT[1] * 4/720)
+GRID_ORIGIN = (156, 192, 154, 6)
 
 def embed_affix_buttons(func, affix_buttons):
     def _idol_callback(button, *args, **kwargs):
@@ -27,9 +19,8 @@ def embed_affix_buttons(func, affix_buttons):
     return _idol_callback
 
 
-def pos_to_grid(mouse_pos):
-    left, top, length, gap = GRID_ORIGIN
-    left, top, length, gap = int(left), int(top), int(length), int(gap)
+def pos_to_grid(mouse_pos, grid_origin):
+    left, top, length, gap = grid_origin
     right, bottom = left + length, top + length
     
     try:
@@ -40,10 +31,8 @@ def pos_to_grid(mouse_pos):
     
     return i, j
 
-def grid_to_pos(grid_pos):
-    left, top, length, gap = GRID_ORIGIN
-    left, top, length, gap = int(left), int(top), int(length), int(gap)
-
+def grid_to_pos(grid_pos, grid_origin):
+    left, top, length, gap = grid_origin
     return left + grid_pos[1] * (gap + length), top + grid_pos[0] * (gap + length)
 
 class IdolScreen(Screen):
@@ -56,6 +45,10 @@ class IdolScreen(Screen):
         self.locked_positions = []
         self.dragged_locked_idol = None
         self.idol_button.callback = embed_affix_buttons(RotatingButton._callback, self.button_with_name('fix'))
+
+    @property
+    def idol_origin(cls):
+        return [cls.scale_size(coord) for coord in GRID_ORIGIN]
 
     @property
     def idol_button(self):
@@ -72,11 +65,11 @@ class IdolScreen(Screen):
     def draw_buttons(self, debug=False):
         rv =  super().draw_buttons(debug)
 
-        _, _, width, gap = GRID_ORIGIN
+        _, _, width, gap = self.idol_origin
         for position, (idol, _, _) in zip(self.locked_positions, self.locked_idols):
             i,j = position
             image = get_image_from_db(idol.name, (idol.width * (width + gap) - gap, idol.height * (width + gap) - gap))
-            origin = grid_to_pos((i, j))
+            origin = grid_to_pos((i, j), self.idol_origin)
             origin = self.origin[0] + origin[0], self.origin[1] + origin[1]
             self.surface.blit(image, origin)
 
@@ -91,7 +84,7 @@ class IdolScreen(Screen):
                 return clicked_button.click_rv
         
         x,y = mouse_pos
-        grid_pos = pos_to_grid((x - self.origin[0], y))
+        grid_pos = pos_to_grid((x - self.origin[0], y), self.idol_origin)
         
         if grid_pos and not isinstance((idol := self.grid[grid_pos[0]][grid_pos[1]]), int):
             self.dragged_locked_idol = idol.__repr__.__self__
@@ -108,7 +101,7 @@ class IdolScreen(Screen):
                 clicked_button.callback(mouse=event.button, screen=self, button=clicked_button)
         
         x,y = mouse_pos
-        grid_pos = pos_to_grid((x - self.origin[0], y))
+        grid_pos = pos_to_grid((x - self.origin[0], y), self.idol_origin)
         if grid_pos and self.dragging:
             idol = self.idol_button.current_object
             if fit_into_grid(self.grid, grid_pos[0], grid_pos[1], idol):

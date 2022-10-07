@@ -2,7 +2,6 @@ import parse
 from dataclasses import dataclass, field
 from framework.util.util import open_scraped_data
 from more_itertools import flatten
-from typing import Any, ClassVar
 from weakref import proxy
 
 IDOLS = ['idols11', 'idols11_2', 'idols12', 'idols21', 'idols13', 'idols31', 'idols14', 'idols41', 'idols22']

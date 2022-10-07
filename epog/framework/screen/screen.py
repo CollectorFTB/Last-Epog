@@ -1,19 +1,34 @@
 import json
 import weakref
 import pygame
-import os
 from framework.button import Button, CounterButton, PassiveTreeButton, TextButton, RotatingButton, AffixButton
-from framework.util.util import LEFT_CLICK, ORIGIN, SCREEN_RECT, greyscale, quit_func, to_orig
+from framework.util.util import DEFAULT_SCREEN_RECT, LEFT_CLICK, ORIGIN, ORIGINAL_RECT, greyscale, quit_func
 from framework.logic.screen_connections import screen_information
 
 class Screen:
     INSTANCES = []
+    RESOLUTION = DEFAULT_SCREEN_RECT
     unhighlight_event = pygame.USEREVENT + 1
-
+    RATIO = RESOLUTION[0] / ORIGINAL_RECT[0]
+    Button.RATIO = RATIO
 
     @classmethod
     def get_instance(cls, name):
         return next((screen for screen in cls.INSTANCES if screen.name == name), None) 
+
+    @classmethod 
+    def to_raw(cls, value, ratio=None):
+        ratio = ratio or cls.RATIO
+        if isinstance(value, int) or isinstance(value, float):
+            return int(value / ratio)
+        return [int(v / ratio) for v in value]
+        
+    @classmethod
+    def scale_size(cls, value, ratio=None):
+        ratio = ratio or cls.RATIO
+        if isinstance(value, int) or isinstance(value, float):
+            return int(value * ratio)
+        return [int(v * ratio) for v in value]
 
     def __init__(self, name, surface, screen_buttons, button_objects):
         self.surface: pygame.surface.Surface = surface
@@ -23,7 +38,7 @@ class Screen:
 
         try:
             self.colored_image = pygame.image.load(f'assets/{self.name}.png')
-            size = SCREEN_RECT
+            size = Screen.RESOLUTION
             if screen_information[self.name]['strech'] == 2:
                 size = size[1], size[1]
 
@@ -46,6 +61,13 @@ class Screen:
         self._load_button_objects(button_objects)
 
         self.__class__.INSTANCES.append(weakref.proxy(self))
+
+    def refresh(self, ratio_difference):
+        self.origin = Screen.scale_size(self.origin, ratio_difference)
+        if self.image:
+            self.image = pygame.transform.scale(self.image, self.RESOLUTION)
+        for button in self.buttons:
+            button.refresh()
 
     def button_with_name(self, name):
         matching_buttons = [button for button in self.buttons if name in button.name]
@@ -154,7 +176,7 @@ class Screen:
             self.dragged_button.rect.right = mouse_pos[0] + w
             self.dragged_button.rect.top = mouse_pos[1]
             self.dragged_button.rect.bottom = mouse_pos[1] + h
-            self.dragged_button.original_values = [to_orig(mouse_pos[0]), to_orig(mouse_pos[1]), to_orig(mouse_pos[0] + w), to_orig(mouse_pos[1] + h)]
+            self.dragged_button.original_values = [Screen.to_raw(mouse_pos[0]), Screen.to_raw(mouse_pos[1]), Screen.to_raw(mouse_pos[0] + w), Screen.to_raw(mouse_pos[1] + h)]
             self.dragged_button = None
 
     def handle_mouse_down_event(self, event, debug):

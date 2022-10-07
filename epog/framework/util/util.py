@@ -8,10 +8,7 @@ WHITE = (255, 255, 255)
 GREEN = (0, 255, 0)
 ORIGIN = (0, 0)
 ORIGINAL_RECT = (1920, 1080)
-SCREEN_RECT = (1280, 720)
-RATIO = SCREEN_RECT[0] / ORIGINAL_RECT[0]
-to_orig = lambda x: int(x/RATIO)
-to_current = lambda x: int(x*RATIO)
+DEFAULT_SCREEN_RECT = (1280, 720)
 LEFT_CLICK = 1
 MIDDLE_CLICK = 2
 RIGHT_CLICK = 3
@@ -61,3 +58,10 @@ def greyscale(surface: pygame.Surface):
 def quit_func(*args, **kwargs):
     pygame.quit()
     sys.exit()
+
+def list_mul(l, m):
+    print(l, m)
+    return [int(element * m) for element in l]
+
+def list_add(l, a):
+    return [element + a for element in l]
