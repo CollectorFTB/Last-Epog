@@ -13,8 +13,8 @@ def embed_affix_buttons(func, affix_buttons):
     def _idol_callback(button, *args, **kwargs):
         prefix_button, suffix_button = affix_buttons
         rv = func(button, *args, **kwargs)
-        prefix_button.objects, prefix_button.value = button.objects[button.value].all_prefixes, 0
-        suffix_button.objects, prefix_button.value = button.objects[button.value].all_suffixes, 0
+        prefix_button.load_affixes(button.objects[button.value].all_prefixes)
+        suffix_button.load_affixes(button.objects[button.value].all_suffixes)
         return rv
     return _idol_callback
 
@@ -66,7 +66,7 @@ class IdolScreen(Screen):
         rv =  super().draw_buttons(debug)
 
         _, _, width, gap = self.idol_origin
-        for position, (idol, _, _) in zip(self.locked_positions, self.locked_idols):
+        for position, (idol, _, _, _) in zip(self.locked_positions, self.locked_idols):
             i,j = position
             image = get_image_from_db(idol.name, (idol.width * (width + gap) - gap, idol.height * (width + gap) - gap))
             origin = grid_to_pos((i, j), self.idol_origin)
@@ -88,6 +88,7 @@ class IdolScreen(Screen):
         
         if grid_pos and not isinstance((idol := self.grid[grid_pos[0]][grid_pos[1]]), int):
             self.dragged_locked_idol = idol.__repr__.__self__
+            self.dragged_locked_idol_pos = grid_pos
 
         if self.idol_button.check_collision(mouse_pos):
             self.dragging = True
@@ -107,10 +108,10 @@ class IdolScreen(Screen):
             if fit_into_grid(self.grid, grid_pos[0], grid_pos[1], idol):
                 put_on_grid(self.grid, grid_pos[0], grid_pos[1], idol)
                 self.locked_positions.append(grid_pos)
-                self.locked_idols.append((idol, self.button_with_name('Prefix').value, self.button_with_name('Suffix').value))
+                self.locked_idols.append((idol, self.button_with_name('Prefix').value, self.button_with_name('Suffix').value, 0))
         
         if self.dragged_locked_idol and self.button_with_name('Trash').check_collision(mouse_pos):
-            index, locked_idol, pos = next((index, i, p) for index, (i, p) in enumerate(zip(self.locked_idols, self.locked_positions)) if i[0] is self.dragged_locked_idol)
+            index, locked_idol, pos = next((index, i, p) for index, (i, p) in enumerate(zip(self.locked_idols, self.locked_positions)) if i[0] is self.dragged_locked_idol and p == self.dragged_locked_idol_pos)
             i, j = pos
             remove_from_grid(self.grid, i, j, locked_idol[0])
             self.locked_idols.remove(locked_idol)

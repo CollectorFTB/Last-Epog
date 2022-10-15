@@ -69,6 +69,9 @@ class Button:
     def hover(self, surface):
         pass
 
+    def scroll(self, button):
+        pass
+
     def toggle(self):
         pass
 

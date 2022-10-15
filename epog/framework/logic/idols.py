@@ -1,5 +1,6 @@
 import parse
 from dataclasses import dataclass, field
+from framework.logic.affix_values import FLAT_PARSER, PRECENT_PARSER
 from framework.util.util import open_scraped_data
 from more_itertools import flatten
 from weakref import proxy
@@ -38,7 +39,39 @@ class Affix:
     values: list
     required_level: str
     required_class: str
-    rarity: str
+    rarity: str 
+
+    def is_precent(self):
+        return '%' in self.values[0][0]
+
+    def get_roll(self, roll):
+        i = 0
+        parser = PRECENT_PARSER if self.is_precent() else FLAT_PARSER
+        for tier in self.values:
+            if len(tier) != 1:
+                print('NONE HAHA')
+                return None
+            
+            for mod in tier:
+                min, max = parser.parse(mod).named.values()
+                min, max = int(min), int(max)
+                if i + max-min < roll:
+                    i += max-min + 1
+                else:
+                    return min + (roll - i)
+    
+    @property
+    def max_roll(self):
+        i = 0
+        for tier in self.values:
+            for mod in tier:
+                if '%' in mod:
+                    min, max = PRECENT_PARSER.parse(mod).named.values()
+                else:
+                    min, max = FLAT_PARSER.parse(mod).named.values()
+                min, max = int(min), int(max)
+                i += max-min + 1
+        return i - 1
 
     def relevant_to(self, item, class_name):
         return not item.is_class_specific() or class_name in self.required_class or not self.is_class_specific()

@@ -1,1 +1,130 @@
-{"passive_tree": {"Juggernaut": 2, "Fearless": 8, "Armour Clad": 5, "Time and Faith": 5, "Abyssal Endurance": 10, "Temporal Corruption": 6, "World Eater": 6, "Void Corruption": 1, "Void Bolts": 8, "Renouncement": 5, "Eternal Form": 10, "Echoing Strikes": 5, "Void Aegis": 2, "Time Legion": 10, "Dread": 15, "Avatar of Regret": 1, "Defiance": 5, "Valor": 10, "Blinding Light": 0}, "blessings": {"Blessing-3": 5, "Blessing-4": 9, "Blessing-5": 0, "Blessing-6": 1, "Blessing-7": 0, "Blessing-8": 0, "Blessing-9": 0, "Blessing-0": 2, "Blessing-1": 0, "Blessing-2": 5}, "idols": [[[4, 4, 0], [8, 8, 0], [3, 4, 6], [3, 4, 0], [3, 4, 5], [7, 8, 4], [0, 3, 6], [0, 0, 6], [0, 1, 6]], [[0, "1", "1", "8", 0], ["0", "1", "1", "4", "4"], ["0", "6", 0, "3", "3"], ["0", "5", "5", "5", "5"], [0, "2", "2", "7", 0]]]}
+{
+    "passive_tree": {
+        "Juggernaut": 2,
+        "Fearless": 8,
+        "Armour Clad": 5,
+        "Time and Faith": 5,
+        "Abyssal Endurance": 10,
+        "Temporal Corruption": 6,
+        "World Eater": 6,
+        "Void Corruption": 1,
+        "Void Bolts": 8,
+        "Renouncement": 5,
+        "Eternal Form": 10,
+        "Echoing Strikes": 5,
+        "Void Aegis": 2,
+        "Time Legion": 10,
+        "Dread": 15,
+        "Avatar of Regret": 1,
+        "Defiance": 5,
+        "Valor": 10,
+        "Blinding Light": 0
+    },
+    "blessings": {
+        "Blessing-3": 5,
+        "Blessing-4": 9,
+        "Blessing-5": 0,
+        "Blessing-6": 1,
+        "Blessing-7": 0,
+        "Blessing-8": 0,
+        "Blessing-9": 0,
+        "Blessing-0": 2,
+        "Blessing-1": 0,
+        "Blessing-2": 5
+    },
+    "idols": [
+        [
+            [
+                4,
+                4,
+                0,
+                0
+            ],
+            [
+                8,
+                8,
+                0,
+                0
+            ],
+            [
+                3,
+                4,
+                6,
+                0
+            ],
+            [
+                3,
+                4,
+                0,
+                0
+            ],
+            [
+                3,
+                4,
+                5,
+                0
+            ],
+            [
+                7,
+                8,
+                4,
+                0
+            ],
+            [
+                0,
+                3,
+                6,
+                0
+            ],
+            [
+                0,
+                0,
+                6,
+                0
+            ],
+            [
+                0,
+                1,
+                6,
+                0
+            ]
+        ],
+        [
+            [
+                0,
+                "1",
+                "1",
+                "8",
+                0
+            ],
+            [
+                "0",
+                "1",
+                "1",
+                "4",
+                "4"
+            ],
+            [
+                "0",
+                "6",
+                0,
+                "3",
+                "3"
+            ],
+            [
+                "0",
+                "5",
+                "5",
+                "5",
+                "5"
+            ],
+            [
+                0,
+                "2",
+                "2",
+                "7",
+                0
+            ]
+        ]
+    ]
+}

@@ -24,8 +24,8 @@ def save_blessings():
 def save_idols():
     idol_screen = Screen.get_instance(IDOL_SCREEN_NAME)
     saved_idols = []
-    for idol, prefix_index, suffix_index in idol_screen.locked_idols:
-        saved_idols.append((idol_screen.all_idols.index(idol), prefix_index, suffix_index))
+    for idol, prefix_index, suffix_index, roll in idol_screen.locked_idols:
+        saved_idols.append((idol_screen.all_idols.index(idol), prefix_index, suffix_index, roll))
 
     saved_grid = deepcopy(IDOL_GRID)
     for pos_index, pos in enumerate(idol_screen.locked_positions):
@@ -62,8 +62,8 @@ def load_idols(idols_save):
     loaded_idols, loaded_grid = idols_save
     idol_screen = Screen.get_instance(IDOL_SCREEN_NAME)
     idol_screen.locked_idols.clear()
-    for idol_index, prefix_index, suffix_index in loaded_idols:
-        idol_screen.locked_idols.append((idol_screen.all_idols[idol_index], prefix_index, suffix_index))
+    for idol_index, prefix_index, suffix_index, roll in loaded_idols:
+        idol_screen.locked_idols.append((idol_screen.all_idols[idol_index], prefix_index, suffix_index, roll))
 
     idol_screen.locked_positions = [None] * len(idol_screen.locked_idols)
     grid = loaded_grid
@@ -71,7 +71,7 @@ def load_idols(idols_save):
     for i in range(len(grid)):
         for j in range(len(grid[i])):
             if (wr := grid[i][j]) not in [0, 1]:
-                idol, _, _ = idol_screen.locked_idols[int(wr)]
+                idol, _, _, _ = idol_screen.locked_idols[int(wr)]
                 if wr not in passed:
                     passed.append(wr)
                     idol_screen.locked_positions[int(wr)] = (i, j)

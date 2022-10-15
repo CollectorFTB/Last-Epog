@@ -12,6 +12,8 @@ DEFAULT_SCREEN_RECT = (1280, 720)
 LEFT_CLICK = 1
 MIDDLE_CLICK = 2
 RIGHT_CLICK = 3
+SCROLL_UP = 4
+SCROLL_DOWN = 5
 
 def open_scraped_data(item_path):
     with open(f'../wiki_scraper/output/{item_path}.json', 'r') as f:
@@ -65,3 +67,6 @@ def list_mul(l, m):
 
 def list_add(l, a):
     return [element + a for element in l]
+
+def is_scroll_click(button):
+    return button in [SCROLL_DOWN, SCROLL_UP]

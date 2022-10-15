@@ -2,7 +2,7 @@ import json
 import weakref
 import pygame
 from framework.button import Button, CounterButton, PassiveTreeButton, TextButton, RotatingButton, AffixButton
-from framework.util.util import DEFAULT_SCREEN_RECT, LEFT_CLICK, ORIGIN, ORIGINAL_RECT, greyscale, quit_func
+from framework.util.util import DEFAULT_SCREEN_RECT, LEFT_CLICK, ORIGIN, ORIGINAL_RECT, SCROLL_DOWN, SCROLL_UP, greyscale, is_scroll_click, quit_func
 from framework.logic.screen_connections import screen_information
 
 class Screen:
@@ -35,6 +35,7 @@ class Screen:
         self.parent: Screen = None
         self.buttons: list[Button] = []
         self.name = name
+        self.is_mouse_clicked = False
 
         try:
             self.colored_image = pygame.image.load(f'assets/{self.name}.png')
@@ -148,22 +149,28 @@ class Screen:
                 if event.type == pygame.QUIT:
                     quit_func()
 
-                if event.type == pygame.MOUSEBUTTONDOWN:
+                elif event.type == pygame.MOUSEBUTTONDOWN and not is_scroll_click(event.button):
+                    self.is_mouse_clicked = True
                     if (next_screen := self.handle_mouse_down_event(event, debug)):
                         return next_screen
 
-                if event.type == self.unhighlight_event:
+                elif event.type == self.unhighlight_event:
                     self.highlighted_buttons[0].toggle()
                     self.highlighted_buttons = self.highlighted_buttons[1:]
 
-                if event.type == pygame.KEYDOWN: 
+                elif event.type == pygame.KEYDOWN: 
                     if event.key == pygame.K_d:
                         debug = not debug
                     if event.key == pygame.K_s:
                         self._save_buttons()
                 
-                if event.type == pygame.MOUSEBUTTONUP:
-                    self.handle_mouse_up_event(event, debug)
+                elif event.type == pygame.MOUSEBUTTONUP and not is_scroll_click(event.button):
+                    if self.is_mouse_clicked:
+                        self.handle_mouse_up_event(event, debug)
+                    self.is_mouse_clicked = False
+
+                elif event.type == pygame.MOUSEWHEEL:
+                    self.handle_mouse_scroll_event(event, debug)
 
             pygame.display.update()
     
@@ -219,9 +226,14 @@ class Screen:
                 self.last_click = mouse_pos
         else:
             self.last_click = None
-            print(mouse_pos)
+            print(mouse_pos, event.button)
 
-
+    def handle_mouse_scroll_event(self, event, debug):
+        mouse_pos = pygame.mouse.get_pos()
+        if (scrolled_button := next((button for button in self.buttons if button.check_collision(mouse_pos)), None)):
+            is_up = event.y == -1
+            scrolled_button.scroll(is_up)
+    
     @classmethod
     def link_screens(cls):
         """Set each screen's buttons with names matching to other existing screens, to redirect to that screen when clicked"""
