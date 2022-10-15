@@ -1,7 +1,6 @@
 import os
 import sys
 import json
-from pprint import pprint as pp
 from selenium import webdriver
 
 from driver import driver

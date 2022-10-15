@@ -62,7 +62,6 @@ def quit_func(*args, **kwargs):
     sys.exit()
 
 def list_mul(l, m):
-    print(l, m)
     return [int(element * m) for element in l]
 
 def list_add(l, a):
